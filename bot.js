@@ -62,11 +62,11 @@ client.on('message', message => {
   // 747882956520947814 is the bot's ID.
   if (message.author.id !== "747882956520947814") {
     
-    let msg = message.content.split(" ");
+    let msg = message.content.toLowerCase().split(" ");
     
     // Gayet iyi module
     let keywords = ["kız", "erkek", "voleybol", "karışık"];
-    keywords.forEach((e, i) => msg.indexOf(e.toLowerCase()) !== -1 ? keywords[i] = true : null);
+    keywords.forEach((e, i) => msg.indexOf(e) !== -1 ? keywords[i] = true : null);
     if (keywords.every(e => e === true)) {
       message.channel.send(`> ${message.content}\n<@${message.author.id}> gayet iyi`);
       return;
