@@ -66,7 +66,7 @@ client.on('message', message => {
     
     // Gayet iyi module
     let keywords = ["kız", "erkek", "voleybol", "karışık"];
-    keywords.forEach((e, i) => msg.indexOf(e) !== -1 ? keywords[i] = true : null);
+    keywords.forEach((e, i) => msg.indexOf(e.toLowerCase()) !== -1 ? keywords[i] = true : null);
     if (keywords.every(e => e === true)) {
       message.channel.send(`> ${message.content}\n<@${message.author.id}> gayet iyi`);
       return;
@@ -158,7 +158,7 @@ client.on('message', message => {
   
   
   
-  message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time ¯\_(ツ)_/¯.`);
+  message.channel.send(`/shrug > \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time`);
   
 });
 
