@@ -158,7 +158,7 @@ client.on('message', message => {
   
   
   
-  message.channel.send(`/shrug > \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time`);
+  message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time ¯\\_(ツ)\_/¯.`);
   
 });
 
