@@ -71,7 +71,7 @@ client.on('message', message => {
                     ["karışık", "beraber", "birlikte", "karşılıklı", "karisik", "karsilikli", "toplu", "topluca"]];
     keywords.forEach((e, i) => e.some(word => msg.indexOf(word) !== -1 ? true : false) ? keywords[i] = true : null);
     if (keywords.every(e => e === true)) {
-      message.channel.send(`> ${message.content.replace(/^> .*\n/, "")}\n<@${message.author.id}> **gayet iyi** :afro:`);
+      message.channel.send(`> ${message.content.replace(/^> .*\n/, "")}\n<@${message.author.id}> **gayet iyi** <:afro:744923369279062156>`);
       return;
     }
     
