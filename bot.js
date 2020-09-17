@@ -79,7 +79,7 @@ client.on('message', message => {
     }
     
     // Mizyaz module
-    let regexp_mizyaz = /islo+[ş|s]\S*/i;
+    let regexp_mizyaz = /[i|İ]slo+[ş|s]\S*/i;
     let mizyaz = message.content.match(regexp_mizyaz);
     if (mizyaz !== null && mizyaz.length > 0 && client.mizyazModule) {
       message.channel.send(`<@644968168040955904>:\n> ${message.content.replace(/^> .*\n/, "")}`);
