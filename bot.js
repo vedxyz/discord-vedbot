@@ -142,8 +142,12 @@ client.on('message', message => {
       }
       
       let moduleKey = args[0] + "Module";
-      if (client.hasOwnProperty(moduleKey)) client[moduleKey] = client[moduleKey] ? false : true;
-      message.channel.send(`"${args[0]}" module is now **${client[moduleKey] ? "ENABLED" : "DISABLED"}**.`);
+      if (client.hasOwnProperty(moduleKey)) {
+        client[moduleKey] = client[moduleKey] ? false : true;
+        message.channel.send(`"${args[0]}" module is now **${client[moduleKey] ? "ENABLED" : "DISABLED"}**.`);
+      } else {
+        message.channel.send("No such module exists at this time.");
+      }
       return;
     }
     
@@ -180,6 +184,22 @@ client.on('message', message => {
     return;
   }
   
+  // Mizyaz's ID is 644968168040955904
+  if (command === "togglemodule" && message.author.id === "644968168040955904") {
+      
+    if (args.length === 0) {
+      message.channel.send("Toggle the _mizyaz_ module by using \`v!togglemodule mizyaz\`.");
+      return;
+    }
+    
+    if (args[0] === "mizyaz") {
+      client.mizyazModule = client.mizyazModule ? false : true;
+      message.channel.send(`"mizyaz" module is now **${client.mizyazModule ? "ENABLED" : "DISABLED"}**.`);
+    }
+    return;
+  }
+  
+  
   // Add more commands here
   // ...
   
@@ -187,7 +207,7 @@ client.on('message', message => {
   
   
   
-  message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time ¯\\_(ツ)\_/¯.`);
+  message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time, or you don't have the permission ¯\\_(ツ)\_/¯.`);
   
 });
 
