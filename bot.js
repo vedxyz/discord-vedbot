@@ -55,6 +55,9 @@ client.once('ready', () => {
   
   // Construct a set to prevent misactions caused by removal of reactions by the bot
   client.recentlyRemovedReactions = new Set();
+  
+  client.gayetiyiModule = true;
+  client.mizyazModule = true;
 });
 
 client.on('message', message => {
@@ -70,10 +73,19 @@ client.on('message', message => {
                     ["voleybol", "basketbol", "halısaha", "halisaha", "tenis", "badminton", "futbol", "bilardo", "yuzme", "yüzme", "havuz", "deniz", "güreş", "gures"], 
                     ["karışık", "beraber", "birlikte", "karşılıklı", "karisik", "karsilikli", "toplu", "topluca"]];
     keywords.forEach((e, i) => e.some(word => msg.indexOf(word) !== -1 ? true : false) ? keywords[i] = true : null);
-    if (keywords.every(e => e === true)) {
+    if (keywords.every(e => e === true) && client.gayetiyiModule) {
       message.channel.send(`> ${message.content.replace(/^> .*\n/, "")}\n<@${message.author.id}> **gayet iyi** <:afro:744923369279062156>`);
       return;
     }
+    
+    // Mizyaz module
+    let regexp_mizyaz = /islo+[ş|s]\S*/i;
+    let mizyaz = message.content.match(regexp_mizyaz);
+    if (mizyaz !== null && mizyaz.length > 0 && client.mizyazModule) {
+      message.channel.send(`<@644968168040955904>:\n> ${message.content.replace(/^> .*\n/, "")}`);
+      return;
+    }
+    
     
   }
   
@@ -118,6 +130,20 @@ client.on('message', message => {
     
     if (command === "killbot") { // Command for killing bot process
       modchannel.send("=> Killing the bot.").then(() => process.exit());
+      return;
+    }
+    
+    
+    if (command === "togglemodule") {
+      
+      if (args.length === 0) {
+        message.channel.send("You can toggle modules for _mizyaz_ and _gayetiyi_.");
+        return;
+      }
+      
+      let moduleKey = args[0] + "Module";
+      if (client.hasOwnProperty(moduleKey)) client[moduleKey] = client[moduleKey] ? false : true;
+      message.channel.send(`"${args[0]}" module is now **${client[moduleKey] ? "ENABLED" : "DISABLED"}**.`);
       return;
     }
     
