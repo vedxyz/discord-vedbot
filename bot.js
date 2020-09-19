@@ -68,9 +68,9 @@ client.on('message', message => {
     let msg = message.content.toLowerCase().split(" ");
     
     // Gayet iyi module
-    let keywords = [["kız", "kızla", "kızlarla", "kızı", "kızın", "kızların", "kıza", "kızlı", "kiz", "kizla", "kizlarla", "kizi", "kizin", "kizlarin", "kiza", "kizli"], 
-                    ["erkek", "erkekle", "erkeklerle", "erkeği", "erkegi", "erkeğin", "erkegin", "erkeklerin", "erkeğe", "erkege", "erkekli"], 
-                    ["voleybol", "basketbol", "halısaha", "halisaha", "tenis", "badminton", "futbol", "bilardo", "yuzme", "yüzme", "havuz", "deniz", "güreş", "gures"], 
+    let keywords = [["kız", "kızla", "kızlarla", "kızı", "kızın", "kızların", "kıza", "kızlı", "kızlar", "kiz", "kizla", "kizlarla", "kizi", "kizin", "kizlarin", "kiza", "kizli", "kizlar"], 
+                    ["erkek", "erkekle", "erkeklerle", "erkeği", "erkegi", "erkeğin", "erkegin", "erkeklerin", "erkeğe", "erkege", "erkekli", "erkekler"], 
+                    ["voleybol", "basketbol", "halısaha", "halisaha", "tenis", "badminton", "futbol", "bilardo", "yuzme", "yüzme", "havuz", "deniz", "güreş", "gures", "parti"], 
                     ["karışık", "beraber", "birlikte", "karşılıklı", "karisik", "karsilikli", "toplu", "topluca"]];
     keywords.forEach((e, i) => e.some(word => msg.indexOf(word) !== -1 ? true : false) ? keywords[i] = true : null);
     if (keywords.every(e => e === true) && client.gayetiyiModule) {
@@ -207,7 +207,7 @@ client.on('message', message => {
   
   
   
-  message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time, or you don't have the permission ¯\\_(ツ)\_/¯.`);
+  message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time, or you don't have the permission to use it ¯\\_(ツ)\_/¯.`);
   
 });
 
