@@ -67,6 +67,14 @@ client.on('message', message => {
     
     let msg = message.content.toLowerCase().split(" ");
     
+    // Harun abi module
+    let regexp_harunabi = /\sharun abi\S*/i;
+    let harunabi = message.content.match(regexp_harunabi);
+    if (harunabi !== null && harunabi.length > 0 && client.harunabiModule) {
+      message.channel.send(`<@${message.author.id}> Aaa demek ki harun abi muhabbeti o yani kadın olduğuma inanmıyorlar demek kiii mxlwkdmxsşşsöcmsşqödmdlaşs gerçekten mi yaa xkşamdödşsşdmdöd oha söylemişti bi arkadaş burda değişik insanlar var diye demek ki ondanmış dlspdmcmsşdlmfdl cidden çok iyi yaaa 😂`);
+      return;
+    }
+    
     // Gayet iyi module
     let keywords = [["kız", "kızla", "kızlarla", "kızı", "kızın", "kızların", "kıza", "kızlı", "kızlar", "kiz", "kizla", "kizlarla", "kizi", "kizin", "kizlarin", "kiza", "kizli", "kizlar"], 
                     ["erkek", "erkekle", "erkeklerle", "erkeği", "erkegi", "erkeğin", "erkegin", "erkeklerin", "erkeğe", "erkege", "erkekli", "erkekler"], 
@@ -203,14 +211,18 @@ client.on('message', message => {
   
   
   if (command === "gayetiyikeywords") {
+    let keywords = [["kız", "kızla", "kızlarla", "kızı", "kızın", "kızların", "kıza", "kızlı", "kızlar", "kiz", "kizla", "kizlarla", "kizi", "kizin", "kizlarin", "kiza", "kizli", "kizlar"], 
+                    ["erkek", "erkekle", "erkeklerle", "erkeği", "erkegi", "erkeğin", "erkegin", "erkeklerin", "erkeğe", "erkege", "erkekli", "erkekler"], 
+                    ["voleybol", "basketbol", "halısaha", "halisaha", "tenis", "badminton", "futbol", "bilardo", "yuzme", "yüzme", "havuz", "deniz", "güreş", "gures", "parti"], 
+                    ["karışık", "beraber", "birlikte", "karşılıklı", "karisik", "karsilikli", "toplu", "topluca"]];
     message.channel.send("Use at least one word from each category to make a very well message <:afro:744923369279062156>:\n\n" + keywords.map(e => e.join(", ")).join("\n---\n"));
     return;
   }
   
   
   if (command = "help") {
-    message.channel.send("Commands (prefix them with " + cfg.prefix + "):\n" +
-                          "*/->setrule (admin)\n" +
+    message.channel.send("**Commands** (prefix them with " + cfg.prefix + "):\n" +
+                          "->setrule (admin)\n" +
                           "->killbot (admin)\n" +
                           "->togglemodule (admin)\n" +
                           "->rule\n" +
