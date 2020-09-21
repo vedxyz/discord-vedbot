@@ -82,8 +82,9 @@ client.on('message', message => {
     // Mizyaz module
     let regexp_mizyaz = /[i|İ]slo+[ş|s]\S*/i;
     let mizyaz = message.content.match(regexp_mizyaz);
-    if (mizyaz !== null && mizyaz.length > 0 && client.mizyazModule) {
-      message.channel.send(`<@644968168040955904>:\n> ${message.content.replace(/^> .*\n/, "")}`);
+    if (mizyaz !== null && mizyaz.length > 0 && client.mizyazModule && message.author.id !== "644968168040955904") {
+      message.delete();
+      message.channel.send(`<@${message.author.id}> says to <@644968168040955904>:\n> ${message.content.replace(/^> .*\n/, "")}`);
       return;
     }
     
@@ -96,9 +97,9 @@ client.on('message', message => {
   
   let args = message.content.slice(cfg.prefix.length).split(" ");
   let command = args.shift();
+  let guildmember = message.guild.members.cache.get(message.author.id);
   
-  
-  if (message.channel.id === modchannel.id) { // Admin commands
+  if (guildmember.hasPermission("ADMINISTRATOR")) { // Admin commands
     
     if (command === "setrule") { // Command for setting community rules 
       
@@ -138,7 +139,7 @@ client.on('message', message => {
     if (command === "togglemodule") {
       
       if (args.length === 0) {
-        message.channel.send("You can toggle modules for _mizyaz_ and _gayetiyi_.");
+        message.channel.send(`Modules:\n_mizyaz_: ${client[mizyazModule] ? "ENABLED" : "DISABLED"}\n_gayetiyi_: ${client[gayetiyiModule] ? "ENABLED" : "DISABLED"}`);
         return;
       }
       
@@ -197,6 +198,24 @@ client.on('message', message => {
       client.mizyazModule = client.mizyazModule ? false : true;
       message.channel.send(`"mizyaz" module is now **${client.mizyazModule ? "ENABLED" : "DISABLED"}**.`);
     }
+    return;
+  }
+  
+  
+  if (command === "gayetiyikeywords") {
+    message.channel.send("Use at least one word from each category to make a very well message <:afro:744923369279062156>:\n\n" + keywords.map(e => e.join(", ")).join("\n---\n"));
+    return;
+  }
+  
+  
+  if (command = "help") {
+    message.channel.send("Commands (prefix them with " + cfg.prefix + "):\n" +
+                          "*/->setrule (admin)\n" +
+                          "->killbot (admin)\n" +
+                          "->togglemodule (admin)\n" +
+                          "->rule\n" +
+                          "->gayetiyikeywords\n" +
+                          "->help");
     return;
   }
   
