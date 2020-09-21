@@ -58,6 +58,7 @@ client.once('ready', () => {
   
   client.gayetiyiModule = true;
   client.mizyazModule = true;
+  client.harunabiModule = true;
 });
 
 client.on('message', message => {
@@ -147,7 +148,7 @@ client.on('message', message => {
     if (command === "togglemodule") {
       
       if (args.length === 0) {
-        message.channel.send(`Modules:\n_mizyaz_: ${client[mizyazModule] ? "ENABLED" : "DISABLED"}\n_gayetiyi_: ${client[gayetiyiModule] ? "ENABLED" : "DISABLED"}`);
+        message.channel.send(`Modules:\n_mizyaz_: ${client[mizyazModule] ? "ENABLED" : "DISABLED"}\n_gayetiyi_: ${client[gayetiyiModule] ? "ENABLED" : "DISABLED"}\n_harunabi_: ${client[harunabiModule] ? "ENABLED" : "DISABLED"}`);
         return;
       }
       
