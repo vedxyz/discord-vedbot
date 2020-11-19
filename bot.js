@@ -5,75 +5,100 @@ const Discord = require('discord.js');
 const cfg = require('./config.json');
 const client = new Discord.Client();
 
-let logchannel = "747640224687063051"; // sunucu-log
-let modchannel = "747640969675145247"; // mod-sohbet
-let entrychannel = "747640369998594168"; // giriş-kanalı
-let rulechannel = "747640189521887392"; // kurallar
-let rolechannel = "747640528107208766"; // rol-seçimi
+let logChannel = "747640224687063051"; // sunucu-log
+let modChannel = "747640969675145247"; // mod-sohbet
+let entryChannel = "747640369998594168"; // giriş-kanalı
+let ruleChannel = "747640189521887392"; // kurallar
+let roleChannel = "747640528107208766"; // rol-seçimi
+let englishChannel = "757528071183007827"; // english
 
-let rulemessageM1 = "747986938035699733"; // Rule message part 1
-let rulemessageM2 = "747987100091154524"; // Rule message part 2
-let rulemessage = "747987290625802331"; // Actual rule reaction message
-let rolemessage = "747994966109847662"; // Role reaction message
+let ruleMessage_1 = "747986938035699733"; // Rule message part 1
+let ruleMessage_2 = "747987100091154524"; // Rule message part 2
+let ruleMessage = "747987290625802331"; // Actual rule reaction message
+let roleMessage = "747994966109847662"; // Role reaction message
 
-let ruleroleID = "748022553502548009"; // Role that keeps track of whether rules were confirmed
+let roleRulesConfirmation_roleID = "748022553502548009"; // Role that keeps track of whether rules were confirmed
 
-let role9roleID = "747937428987445298"; // Role for 9th grade
-let role10roleID = "747937642662068254"; // Role for 10th grade
-let role11roleID = "747937653768585217"; // Role for 11th grade
-let role12roleID = "747937661393829988"; // Role for 12th grade
-let roleUniroleID = "747937764745412678"; // Role for university undergraduates 
-let roleGradroleID = "747937816155258881"; // Role for highschool graduates
+let role9_roleID = "747937428987445298"; // Role for 9th grade
+let role10_roleID = "747937642662068254"; // Role for 10th grade
+let role11_roleID = "747937653768585217"; // Role for 11th grade
+let role12_roleID = "747937661393829988"; // Role for 12th grade
+let roleUni_roleID = "747937764745412678"; // Role for university undergraduates 
+let roleGrad_roleID = "747937816155258881"; // Role for highschool graduates
 
-let roleMFroleID = "747939067030667274"; // Role for MathScience
-let roleTMroleID = "747938960923426956"; // Role for TurkishMath
-let roleTSroleID = "747939082151264346"; // Role for TurkishSocial
-let roleDILroleID = "747939096097194165"; // Role for Linguistics
+let roleMF_roleID = "747939067030667274"; // Role for MathScience
+let roleTM_roleID = "747938960923426956"; // Role for TurkishMath
+let roleTS_roleID = "747939082151264346"; // Role for TurkishSocial
+let roleDIL_roleID = "747939096097194165"; // Role for Linguistics
 
-let roleconfirmedID = "747940776981561365"; // Role for final confirmation of members
+let roleMemberConfirmed_roleID = "747940776981561365"; // Role for final confirmation of members
 
 const isDigit = n => n >= 0 && n <= 9;
 
 client.once('ready', () => {
+  
   console.log('>> Ready!');
   
   // Grab required channels
   let clientChannelCache = client.channels.cache;
-  logchannel = clientChannelCache.get(logchannel);
-  modchannel = clientChannelCache.get(modchannel);
-  entrychannel = clientChannelCache.get(entrychannel);
-  rulechannel = clientChannelCache.get(rulechannel);
-  rolechannel = clientChannelCache.get(rolechannel);
+  logChannel = clientChannelCache.get(logChannel);
+  modChannel = clientChannelCache.get(modChannel);
+  entryChannel = clientChannelCache.get(entryChannel);
+  ruleChannel = clientChannelCache.get(ruleChannel);
+  roleChannel = clientChannelCache.get(roleChannel);
   
-  logchannel.send("=> VedBot has initialized successfully.");
+  logChannel.send("=> VedBot has initialized successfully.");
   
   // Fetch required messages
-  rulechannel.messages.fetch(rulemessage).then(msg => rulemessage = msg);
-  rulechannel.messages.fetch(rulemessageM1).then(msg => rulemessageM1 = msg);
-  rulechannel.messages.fetch(rulemessageM2).then(msg => rulemessageM2 = msg);
-  rolechannel.messages.fetch(rolemessage).then(msg => rolemessage = msg);
+  ruleChannel.messages.fetch(ruleMessage).then(msg => ruleMessage = msg);
+  ruleChannel.messages.fetch(ruleMessage_1).then(msg => ruleMessage_1 = msg);
+  ruleChannel.messages.fetch(ruleMessage_2).then(msg => ruleMessage_2 = msg);
+  roleChannel.messages.fetch(roleMessage).then(msg => roleMessage = msg);
   
   // Construct a set to prevent misactions caused by removal of reactions by the bot
   client.recentlyRemovedReactions = new Set();
   
+  // Set modules to ON by default
   client.gayetiyiModule = true;
   client.mizyazModule = true;
   client.harunabiModule = true;
+  
 });
 
 client.on('message', message => {
   
-  // 747882956520947814 is the bot's ID.
-  if (message.author.id !== "747882956520947814") {
+  if (message.author.id !== client.user.id) {
     
-    let msg = message.content.toLowerCase().split(" ");
+    let msg = message.content.toLowerCase().split(/\s/);
+    
+    // Mobile-desktop forum link helper
+    let DH_links = [];
+    let regExp_linkDH = /^https?:\/\/(mobile|forum)\.donanimhaber.com\//i;
+    
+    msg.filter(e => e.startsWith("http")).forEach(function (e) { 
+      
+      let DH_convertedUrl = e.replace(regExp_linkDH, (match, p1) => "https://" + (p1.toLowerCase() === "mobile" ? "forum" : "mobile") + ".donanimhaber.com/");
+      
+      if (DH_convertedUrl !== e) DH_links.push(DH_convertedUrl);
+      
+    });
+    
+    if (DH_links.length) {
+      
+      let DH_linksString = DH_links.map((e, i) => "Link #" + (i + 1) + ": <" + e + ">").join("\n");
+      message.reply("Alternate desktop/mobile link(s):\n" + DH_linksString);
+      
+    }
     
     // Harun abi module
-    let regexp_harunabi = /\sharun abi\S*/i;
-    let harunabi = message.content.match(regexp_harunabi);
-    if (harunabi !== null && harunabi.length > 0 && client.harunabiModule) {
+    let regExp_harunabi = /\bharun abi\S*/i;
+    let harunabiFlag = message.content.match(regExp_harunabi);
+    
+    if (harunabiFlag !== null && harunabiFlag.length > 0 && client.harunabiModule) {
+      
       message.channel.send(`<@${message.author.id}> Aaa demek ki harun abi muhabbeti o yani kadın olduğuma inanmıyorlar demek kiii mxlwkdmxsşşsöcmsşqödmdlaşs gerçekten mi yaa xkşamdödşsşdmdöd oha söylemişti bi arkadaş burda değişik insanlar var diye demek ki ondanmış dlspdmcmsşdlmfdl cidden çok iyi yaaa 😂`);
       return;
+      
     }
     
     // Gayet iyi module
@@ -81,22 +106,28 @@ client.on('message', message => {
                     ["erkek", "erkekle", "erkeklerle", "erkeği", "erkegi", "erkeğin", "erkegin", "erkeklerin", "erkeğe", "erkege", "erkekli", "erkekler"], 
                     ["voleybol", "basketbol", "halısaha", "halisaha", "tenis", "badminton", "futbol", "bilardo", "yuzme", "yüzme", "havuz", "deniz", "güreş", "gures", "parti"], 
                     ["karışık", "beraber", "birlikte", "karşılıklı", "karisik", "karsilikli", "toplu", "topluca"]];
+    
     keywords.forEach((e, i) => e.some(word => msg.indexOf(word) !== -1 ? true : false) ? keywords[i] = true : null);
-    if (keywords.every(e => e === true) && client.gayetiyiModule) {
-      let responselang = message.channel.id !== "757528071183007827" ? "gayet iyi" : "very well";
-      message.channel.send(`> ${message.content.replace(/^> .*\n/, "")}\n<@${message.author.id}> **${responselang}** <:afro:744923369279062156>`);
+    
+    if (client.gayetiyiModule && keywords.every(e => e === true)) {
+      
+      let localResponse = message.channel.id !== englishChannel ? "gayet iyi" : "very well";
+      message.channel.send(`> ${message.content.replace(/^> .*\n/, "")}\n<@${message.author.id}> **${localResponse}** <:afro:744923369279062156>`);
       return;
+      
     }
     
     // Mizyaz module
-    let regexp_mizyaz = /[i|İ]slo+[ş|s]\S*/i;
-    let mizyaz = message.content.match(regexp_mizyaz);
-    if (mizyaz !== null && mizyaz.length > 0 && client.mizyazModule && message.author.id !== "644968168040955904") {
+    let regExp_mizyaz = /[i|İ]slo+[ş|s]\S*/i;
+    let mizyazFlag = message.content.match(regExp_mizyaz);
+    
+    if (mizyazFlag !== null && mizyazFlag.length > 0 && client.mizyazModule && message.author.id !== "644968168040955904") {
+      
       message.delete();
       message.channel.send(`<@${message.author.id}> says to <@644968168040955904>:\n> ${message.content.replace(/^> .*\n/, "")}`);
       return;
+      
     }
-    
     
   }
   
@@ -118,8 +149,10 @@ client.on('message', message => {
       
       // Check for errors in command syntax
       if (ruleID < 1 || ruleID > 15 || ![...ruleID].every(isDigit)) {
+        
         message.channel.send(`Usage: \`${cfg.prefix}setrule [ID] [rule content]\`\nNote: 0 < ID < 16\nExample: \`${cfg.prefix}setrule 7 The content of the rule to be set.\``);
         return;
+        
       }
       
       console.log(`Writing to ${ruleKey}: ${ruleContent}`);
@@ -133,33 +166,45 @@ client.on('message', message => {
         // Log the new rule
         console.log("Wrote new rule successfully.");
         message.channel.send(`**${ruleKey}:** ${cfg[ruleKey]}`);
+        
       });
       
       return;
+      
     }
     
     
     if (command === "killbot") { // Command for killing bot process
-      modchannel.send("=> Killing the bot.").then(() => process.exit());
+      
+      logChannel.send("=> Killing the bot.").then(() => process.exit());
       return;
+      
     }
     
     
     if (command === "togglemodule") {
       
       if (args.length === 0) {
-        message.channel.send(`Modules:\n_mizyaz_: ${client[mizyazModule] ? "ENABLED" : "DISABLED"}\n_gayetiyi_: ${client[gayetiyiModule] ? "ENABLED" : "DISABLED"}\n_harunabi_: ${client[harunabiModule] ? "ENABLED" : "DISABLED"}`);
+        
+        message.channel.send(`Modules:\n_mizyaz_ -> **${client.mizyazModule ? "ENABLED" : "DISABLED"}**\n_gayetiyi_ -> **${client.gayetiyiModule ? "ENABLED" : "DISABLED"}**\n_harunabi_ -> **${client.harunabiModule ? "ENABLED" : "DISABLED"}**`);
         return;
+        
       }
       
       let moduleKey = args[0] + "Module";
       if (client.hasOwnProperty(moduleKey)) {
-        client[moduleKey] = client[moduleKey] ? false : true;
+        
+        client[moduleKey] = !client[moduleKey];
         message.channel.send(`"${args[0]}" module is now **${client[moduleKey] ? "ENABLED" : "DISABLED"}**.`);
+        
       } else {
+        
         message.channel.send("No such module exists at this time.");
+        
       }
+      
       return;
+      
     }
     
     // Add more admin commands here
@@ -173,55 +218,71 @@ client.on('message', message => {
     let ruleKey = `rule${ruleID}`;
     
     if (!args.length) {
+      
       let ruleStack = [];
       
       for (let i = 1; i <= 15; i++) {
+        
         ruleKey = "rule" + i;
         ruleStack.push(`**#${i}:** ${cfg[ruleKey]}`);
+        
       }
       
       message.channel.send(ruleStack.join("\n\n"), { split: true });
       
       return;
+      
     }
     
     if (ruleID < 1 || ruleID > 15 || ![...ruleID].every(isDigit)) {
-      message.channel.send(`Usage: \`${cfg.prefix}rule [ID]\`\nNote: 0 < ID < 16\nLeave ID option blank to list all rules.`);
       
+      message.channel.send(`Usage: \`${cfg.prefix}rule [ID]\`\nNote: 0 < ID < 16\nLeave ID option blank to list all rules.`);
       return;
+      
     }
     
     message.channel.send(`**#${ruleID}:** ${cfg[ruleKey]}`);
     return;
+    
   }
   
   // Mizyaz's ID is 644968168040955904
   if (command === "togglemodule" && message.author.id === "644968168040955904") {
       
     if (args.length === 0) {
+      
       message.channel.send("Toggle the _mizyaz_ module by using \`v!togglemodule mizyaz\`.");
       return;
+      
     }
     
     if (args[0] === "mizyaz") {
+      
       client.mizyazModule = client.mizyazModule ? false : true;
       message.channel.send(`"mizyaz" module is now **${client.mizyazModule ? "ENABLED" : "DISABLED"}**.`);
+      
     }
+    
     return;
+    
   }
   
   
   if (command === "gayetiyikeywords") {
+    
     let keywords = [["kız", "kızla", "kızlarla", "kızı", "kızın", "kızların", "kıza", "kızlı", "kızlar", "kiz", "kizla", "kizlarla", "kizi", "kizin", "kizlarin", "kiza", "kizli", "kizlar"], 
                     ["erkek", "erkekle", "erkeklerle", "erkeği", "erkegi", "erkeğin", "erkegin", "erkeklerin", "erkeğe", "erkege", "erkekli", "erkekler"], 
                     ["voleybol", "basketbol", "halısaha", "halisaha", "tenis", "badminton", "futbol", "bilardo", "yuzme", "yüzme", "havuz", "deniz", "güreş", "gures", "parti"], 
                     ["karışık", "beraber", "birlikte", "karşılıklı", "karisik", "karsilikli", "toplu", "topluca"]];
+    
     message.channel.send("Use at least one word from each category to make a very well message <:afro:744923369279062156>:\n\n" + keywords.map(e => e.join(", ")).join("\n---\n"));
     return;
+    
   }
   
   
-  if (command = "help") {
+  if (command === "help") {
+    
     message.channel.send("**Commands** (prefix them with " + cfg.prefix + "):\n" +
                           "->setrule (admin)\n" +
                           "->killbot (admin)\n" +
@@ -230,28 +291,29 @@ client.on('message', message => {
                           "->gayetiyikeywords\n" +
                           "->help");
     return;
+    
   }
   
   
   // Add more commands here
   // ...
   
-  
-  
-  
-  
   message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time, or you don't have the permission to use it ¯\\_(ツ)\_/¯.`);
   
 });
 
 client.on('guildMemberAdd', member => {
-  logchannel.send(`:o: -> Joined the server: **${member.displayName}**#${member.user.discriminator}`);
   
-  entrychannel.send(`Merhaba <@${member.id}> :),\nSunucunun tamamına erişmek için;\n1- <#${rulechannel.id}>'ı onaylamanız\n2- <#${rolechannel.id}> kanalından bölüm ve sınıf seçmeniz\ngerekmekte.`);
+  logChannel.send(`:o: -> Joined the server: **${member.displayName}**#${member.user.discriminator}`);
+  
+  entryChannel.send(`Merhaba <@${member.id}> :),\nSunucunun tamamına erişmek için;\n1- <#${ruleChannel.id}>'ı onaylamanız\n2- <#${roleChannel.id}> kanalından bölüm ve sınıf seçmeniz\ngerekmekte.`);
+  
 });
 
 client.on('guildMemberRemove', member => {
-  logchannel.send(`:x: -> Left the server: **${member.displayName}**#${member.user.discriminator}`);
+  
+  logChannel.send(`:x: -> Left the server: **${member.displayName}**#${member.user.discriminator}`);
+  
 });
 
 
@@ -260,37 +322,37 @@ function roleSwitchSafety (caller, gradecheck, guildmember, reaction, memberID) 
   
   if (caller !== "🇦" && gradecheck[0]) {
     gradecheck[0] = false;
-    guildmember.roles.remove(role9roleID);
+    guildmember.roles.remove(role9_roleID);
     reaction.message.reactions.cache.get("🇦").users.remove(memberID);
   } 
   
   if (caller !== "🇧" && gradecheck[1]) {
     gradecheck[1] = false;
-    guildmember.roles.remove(role10roleID);
+    guildmember.roles.remove(role10_roleID);
     reaction.message.reactions.cache.get("🇧").users.remove(memberID);
   } 
   
   if (caller !== "🇨" && gradecheck[2]) {
     gradecheck[2] = false;
-    guildmember.roles.remove(role11roleID);
+    guildmember.roles.remove(role11_roleID);
     reaction.message.reactions.cache.get("🇨").users.remove(memberID);
   } 
   
   if (caller !== "🇩" && gradecheck[3]) {
     gradecheck[3] = false;
-    guildmember.roles.remove(role12roleID);
+    guildmember.roles.remove(role12_roleID);
     reaction.message.reactions.cache.get("🇩").users.remove(memberID);
   } 
   
   if (caller !== "🇲" && gradecheck[4]) {
     gradecheck[4] = false;
-    guildmember.roles.remove(roleGradroleID);
+    guildmember.roles.remove(roleGrad_roleID);
     reaction.message.reactions.cache.get("🇲").users.remove(memberID);
   } 
   
   if (caller !== "🇺" && gradecheck[5]) {
     gradecheck[5] = false;
-    guildmember.roles.remove(roleUniroleID);
+    guildmember.roles.remove(roleUni_roleID);
     reaction.message.reactions.cache.get("🇺").users.remove(memberID);
   }
   
@@ -299,84 +361,84 @@ function roleSwitchSafety (caller, gradecheck, guildmember, reaction, memberID) 
 
 client.on('messageReactionAdd', function (reaction, member) {
   
-  if (reaction.message.id === rulemessage.id || reaction.message.id === rolemessage.id) {
+  if (reaction.message.id === ruleMessage.id || reaction.message.id === roleMessage.id) {
     
     let guildmember = reaction.message.guild.members.cache.get(member.id);
     
-    let gradecheck = [guildmember.roles.cache.has(role9roleID),
-                      guildmember.roles.cache.has(role10roleID),
-                      guildmember.roles.cache.has(role11roleID),
-                      guildmember.roles.cache.has(role12roleID),
-                      guildmember.roles.cache.has(roleGradroleID),
-                      guildmember.roles.cache.has(roleUniroleID)];
-    let grade = gradecheck.indexOf(true);
+    let gradeCheckArray = [guildmember.roles.cache.has(role9_roleID),
+                      guildmember.roles.cache.has(role10_roleID),
+                      guildmember.roles.cache.has(role11_roleID),
+                      guildmember.roles.cache.has(role12_roleID),
+                      guildmember.roles.cache.has(roleGrad_roleID),
+                      guildmember.roles.cache.has(roleUni_roleID)];
+    let gradeCheckFlag = gradeCheckArray.indexOf(true);
     
     let reactionConfirmsRules = false;
     
-    let emojiname = reaction.emoji.name;
+    let emojiName = reaction.emoji.name;
     
-    if (reaction.message.id === rulemessage.id) {
+    if (reaction.message.id === ruleMessage.id) {
       
-      if (emojiname === "👍") {
-        guildmember.roles.add(ruleroleID);
+      if (emojiName === "👍") {
+        guildmember.roles.add(roleRulesConfirmation_roleID);
         reactionConfirmsRules = true;
       } else {
         reaction.users.remove(member.id);
         return;
       }
       
-    } else if (reaction.message.id === rolemessage.id) {
+    } else if (reaction.message.id === roleMessage.id) {
       
-      if (!guildmember.roles.cache.has(roleconfirmedID)) {
-        if (emojiname === "🔴") {
-          guildmember.roles.add(roleMFroleID);
-        } else if (emojiname === "🔵") {
-          guildmember.roles.add(roleTMroleID);
-        } else if (emojiname === "🟢") {
-          guildmember.roles.add(roleTSroleID);
-        } else if (emojiname === "🟣") {
-          guildmember.roles.add(roleDILroleID);
-        } else if (emojiname === "🇦") {
+      if (!guildmember.roles.cache.has(roleMemberConfirmed_roleID)) {
+        if (emojiName === "🔴") {
+          guildmember.roles.add(roleMF_roleID);
+        } else if (emojiName === "🔵") {
+          guildmember.roles.add(roleTM_roleID);
+        } else if (emojiName === "🟢") {
+          guildmember.roles.add(roleTS_roleID);
+        } else if (emojiName === "🟣") {
+          guildmember.roles.add(roleDIL_roleID);
+        } else if (emojiName === "🇦") {
           
-          guildmember.roles.add(role9roleID);
-          gradecheck[0] = true;
+          guildmember.roles.add(role9_roleID);
+          gradeCheckArray[0] = true;
           
-          if (grade !== -1) roleSwitchSafety("🇦", gradecheck, guildmember, reaction, member.id);
+          if (gradeCheckFlag !== -1) roleSwitchSafety("🇦", gradeCheckArray, guildmember, reaction, member.id);
           
-        } else if (emojiname === "🇧") {
+        } else if (emojiName === "🇧") {
           
-          guildmember.roles.add(role10roleID);
-          gradecheck[1] = true;
+          guildmember.roles.add(role10_roleID);
+          gradeCheckArray[1] = true;
             
-          if (grade !== -1) roleSwitchSafety("🇧", gradecheck, guildmember, reaction, member.id);
+          if (gradeCheckFlag !== -1) roleSwitchSafety("🇧", gradeCheckArray, guildmember, reaction, member.id);
             
-        } else if (emojiname === "🇨") {
+        } else if (emojiName === "🇨") {
           
-          guildmember.roles.add(role11roleID);
-          gradecheck[2] = true;
+          guildmember.roles.add(role11_roleID);
+          gradeCheckArray[2] = true;
             
-          if (grade !== -1) roleSwitchSafety("🇨", gradecheck, guildmember, reaction, member.id);
+          if (gradeCheckFlag !== -1) roleSwitchSafety("🇨", gradeCheckArray, guildmember, reaction, member.id);
           
-        } else if (emojiname === "🇩") {
+        } else if (emojiName === "🇩") {
           
-          guildmember.roles.add(role12roleID);
-          gradecheck[3] = true;
+          guildmember.roles.add(role12_roleID);
+          gradeCheckArray[3] = true;
             
-          if (grade !== -1) roleSwitchSafety("🇩", gradecheck, guildmember, reaction, member.id);
+          if (gradeCheckFlag !== -1) roleSwitchSafety("🇩", gradeCheckArray, guildmember, reaction, member.id);
           
-        } else if (emojiname === "🇲") {
+        } else if (emojiName === "🇲") {
           
-          guildmember.roles.add(roleGradroleID);
-          gradecheck[4] = true;
+          guildmember.roles.add(roleGrad_roleID);
+          gradeCheckArray[4] = true;
             
-          if (grade !== -1) roleSwitchSafety("🇲", gradecheck, guildmember, reaction, member.id);
+          if (gradeCheckFlag !== -1) roleSwitchSafety("🇲", gradeCheckArray, guildmember, reaction, member.id);
           
-        } else if (emojiname === "🇺") {
+        } else if (emojiName === "🇺") {
           
-          guildmember.roles.add(roleUniroleID);
-          gradecheck[5] = true;
+          guildmember.roles.add(roleUni_roleID);
+          gradeCheckArray[5] = true;
             
-          if (grade !== -1) roleSwitchSafety("🇺", gradecheck, guildmember, reaction, member.id);
+          if (gradeCheckFlag !== -1) roleSwitchSafety("🇺", gradeCheckArray, guildmember, reaction, member.id);
           
         } else {
           reaction.users.remove(member.id);
@@ -384,22 +446,22 @@ client.on('messageReactionAdd', function (reaction, member) {
         
       } else {
         
-        if (emojiname === "🇷") {
+        if (emojiName === "🇷") {
           
-          guildmember.roles.remove(roleconfirmedID);
-          guildmember.roles.remove(roleMFroleID);
-          guildmember.roles.remove(roleTSroleID);
-          guildmember.roles.remove(roleTMroleID);
-          guildmember.roles.remove(roleDILroleID);
+          guildmember.roles.remove(roleMemberConfirmed_roleID);
+          guildmember.roles.remove(roleMF_roleID);
+          guildmember.roles.remove(roleTS_roleID);
+          guildmember.roles.remove(roleTM_roleID);
+          guildmember.roles.remove(roleDIL_roleID);
           reaction.message.reactions.cache.get("🔴").users.remove(member.id);
           reaction.message.reactions.cache.get("🟣").users.remove(member.id);
           reaction.message.reactions.cache.get("🔵").users.remove(member.id);
           reaction.message.reactions.cache.get("🟢").users.remove(member.id);
           
-          roleSwitchSafety(null, gradecheck, guildmember, reaction, member.id);
+          roleSwitchSafety(null, gradeCheckArray, guildmember, reaction, member.id);
           
           reaction.users.remove(member.id);
-          logchannel.send(`:regional_indicator_r: -> **${guildmember.displayName}**#${member.discriminator} just reset their roles.`);
+          logChannel.send(`:regional_indicator_r: -> **${guildmember.displayName}**#${member.discriminator} just reset their roles.`);
           return;
           
         } else {
@@ -411,67 +473,67 @@ client.on('messageReactionAdd', function (reaction, member) {
     }
     
     
-    if (guildmember.roles.cache.has(ruleroleID) || reactionConfirmsRules) {
+    if (guildmember.roles.cache.has(roleRulesConfirmation_roleID) || reactionConfirmsRules) {
       
-      let countgrade = gradecheck.reduce((acc, val) => acc += val ? 1 : 0, 0);
-      let hasTS = rolemessage.reactions.cache.has("🟢");
-      let hasTM = rolemessage.reactions.cache.has("🔵");
-      let hasMF = rolemessage.reactions.cache.has("🔴");
-      let hasDIL = rolemessage.reactions.cache.has("🟣");
+      let countgrade = gradeCheckArray.reduce((acc, val) => acc += val ? 1 : 0, 0);
+      let hasTS = roleMessage.reactions.cache.has("🟢");
+      let hasTM = roleMessage.reactions.cache.has("🔵");
+      let hasMF = roleMessage.reactions.cache.has("🔴");
+      let hasDIL = roleMessage.reactions.cache.has("🟣");
       
-      if ((guildmember.roles.cache.has(roleMFroleID) || 
-           guildmember.roles.cache.has(roleTMroleID) ||
-           guildmember.roles.cache.has(roleTSroleID) ||
-           guildmember.roles.cache.has(roleDILroleID) ) && countgrade === 1) {
+      if ((guildmember.roles.cache.has(roleMF_roleID) || 
+           guildmember.roles.cache.has(roleTM_roleID) ||
+           guildmember.roles.cache.has(roleTS_roleID) ||
+           guildmember.roles.cache.has(roleDIL_roleID) ) && countgrade === 1) {
         
-        guildmember.roles.add(roleconfirmedID);
+        guildmember.roles.add(roleMemberConfirmed_roleID);
         
-        if (gradecheck[0]) {
+        if (gradeCheckArray[0]) {
           client.recentlyRemovedReactions.add(`${member.id}A`);
-          rolemessage.reactions.cache.get("🇦").users.remove(member.id);
+          roleMessage.reactions.cache.get("🇦").users.remove(member.id);
         } 
-        if (gradecheck[1]) {
+        if (gradeCheckArray[1]) {
           client.recentlyRemovedReactions.add(`${member.id}B`);
-          rolemessage.reactions.cache.get("🇧").users.remove(member.id);
+          roleMessage.reactions.cache.get("🇧").users.remove(member.id);
         } 
-        if (gradecheck[2]) {
+        if (gradeCheckArray[2]) {
           client.recentlyRemovedReactions.add(`${member.id}C`);
-          rolemessage.reactions.cache.get("🇨").users.remove(member.id);
+          roleMessage.reactions.cache.get("🇨").users.remove(member.id);
         } 
-        if (gradecheck[3]) {
+        if (gradeCheckArray[3]) {
           client.recentlyRemovedReactions.add(`${member.id}D`);
-          rolemessage.reactions.cache.get("🇩").users.remove(member.id);
+          roleMessage.reactions.cache.get("🇩").users.remove(member.id);
         } 
-        if (gradecheck[4]) {
+        if (gradeCheckArray[4]) {
           client.recentlyRemovedReactions.add(`${member.id}M`);
-          rolemessage.reactions.cache.get("🇲").users.remove(member.id);
+          roleMessage.reactions.cache.get("🇲").users.remove(member.id);
         } 
-        if (gradecheck[5]) {
+        if (gradeCheckArray[5]) {
           client.recentlyRemovedReactions.add(`${member.id}U`);
-          rolemessage.reactions.cache.get("🇺").users.remove(member.id);
+          roleMessage.reactions.cache.get("🇺").users.remove(member.id);
         }
         if (hasMF) {
           client.recentlyRemovedReactions.add(`${member.id}MF`);
-          rolemessage.reactions.cache.get("🔴").users.remove(member.id);
+          roleMessage.reactions.cache.get("🔴").users.remove(member.id);
         }
         if (hasTM) {
           client.recentlyRemovedReactions.add(`${member.id}TM`);
-          rolemessage.reactions.cache.get("🔵").users.remove(member.id);
+          roleMessage.reactions.cache.get("🔵").users.remove(member.id);
         }
         if (hasTS) {
           client.recentlyRemovedReactions.add(`${member.id}TS`);
-          rolemessage.reactions.cache.get("🟢").users.remove(member.id);
+          roleMessage.reactions.cache.get("🟢").users.remove(member.id);
         }
         if (hasDIL) {
           client.recentlyRemovedReactions.add(`${member.id}DIL`);
-          rolemessage.reactions.cache.get("🟣").users.remove(member.id);
+          roleMessage.reactions.cache.get("🟣").users.remove(member.id);
         }
         
       }
       
     }
     
-  } else if (reaction.message.id === rulemessageM1.id || reaction.message.id === rulemessageM2.id) {
+  } else if (reaction.message.id === ruleMessage_1.id || reaction.message.id === ruleMessage_2.id) {
     reaction.users.remove(member.id);
   }
   
@@ -493,37 +555,37 @@ client.on("messageReactionRemove", function (reaction, member) {
   if (client.recentlyRemovedReactions.has(`${member.id}DIL`)) return client.recentlyRemovedReactions.delete(`${member.id}DIL`);
   if (client.recentlyRemovedReactions.has(`${member.id}TM`)) return client.recentlyRemovedReactions.delete(`${member.id}TM`);
   
-
+  
   let guildmember = reaction.message.guild.members.cache.get(member.id);
   
-  if ((reaction.message.id === rulemessage.id || reaction.message.id === rolemessage.id)) {
+  if ((reaction.message.id === ruleMessage.id || reaction.message.id === roleMessage.id)) {
     
     let emojiname = reaction.emoji.name;
-      
-    if (emojiname === "👍" && reaction.message.id === rulemessage.id) {
-      guildmember.roles.remove(ruleroleID);
-    } else if (reaction.message.id === rolemessage.id) {
+    
+    if (emojiname === "👍" && reaction.message.id === ruleMessage.id) {
+      guildmember.roles.remove(roleRulesConfirmation_roleID);
+    } else if (reaction.message.id === roleMessage.id) {
       if (emojiname === "🔴") {
-        guildmember.roles.remove(roleMFroleID);
+        guildmember.roles.remove(roleMF_roleID);
       } else if (emojiname === "🟢") {
-        guildmember.roles.remove(roleTSroleID);
+        guildmember.roles.remove(roleTS_roleID);
       } else if (emojiname === "🟣") {
-        guildmember.roles.remove(roleDILroleID);
+        guildmember.roles.remove(roleDIL_roleID);
       } else if (emojiname === "🇦") {
-        guildmember.roles.remove(role9roleID);
+        guildmember.roles.remove(role9_roleID);
       } else if (emojiname === "🇧") {
-        guildmember.roles.remove(role10roleID);
+        guildmember.roles.remove(role10_roleID);
       } else if (emojiname === "🇨") {
-        guildmember.roles.remove(role11roleID);
+        guildmember.roles.remove(role11_roleID);
       } else if (emojiname === "🇩") {
-        guildmember.roles.remove(role12roleID);
+        guildmember.roles.remove(role12_roleID);
       } else if (emojiname === "🇲") {
-        guildmember.roles.remove(roleGradroleID);
+        guildmember.roles.remove(roleGrad_roleID);
       } else if (emojiname === "🇺") {
-        guildmember.roles.remove(roleUniroleID);
+        guildmember.roles.remove(roleUni_roleID);
       } else if (emojiname === "🔵") {
         if (client.recentlyRemovedReactions.has(`${member.id}TM`)) return client.recentlyRemovedReactions.delete(`${member.id}TM`);
-        guildmember.roles.remove(roleTMroleID);
+        guildmember.roles.remove(roleTM_roleID);
       } 
     } 
   }
