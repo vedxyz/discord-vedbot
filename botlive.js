@@ -5,33 +5,45 @@ const Discord = require('discord.js');
 const cfg = require('./config.json');
 const client = new Discord.Client();
 
-let logChannel = "747640224687063051"; // sunucu-log
-let modChannel = "747640969675145247"; // mod-sohbet
-let entryChannel = "747640369998594168"; // giriş-kanalı
-let ruleChannel = "747640189521887392"; // kurallar
-let roleChannel = "747640528107208766"; // rol-seçimi
+let logChannel = "734656031975538769"; // sunucu-log
+let modChannel = "732522268160294915"; // mod-sohbet
+let entryChannel = "747482854891585587"; // giriş-kanalı
+let ruleChannel = "748339001680855150"; // kurallar
+let roleChannel = "733985125020336163"; // rol-seçimi
 let englishChannel = "757528071183007827"; // english
 
-let ruleMessage_1 = "747986938035699733"; // Rule message part 1
-let ruleMessage_2 = "747987100091154524"; // Rule message part 2
-let ruleMessage = "747987290625802331"; // Actual rule reaction message
-let roleMessage = "747994966109847662"; // Role reaction message
+let ruleMessage_1 = "748343437815971881"; // Rule message part 1
+let ruleMessage_2 = "748343468518015146"; // Rule message part 2
+let ruleMessage = "748343495630127114"; // Actual rule reaction message
+let roleMessage = "748345920885751838"; // Role reaction message
 
-let roleRulesConfirmation_roleID = "748022553502548009"; // Role that keeps track of whether rules were confirmed
+let roleRulesConfirmation_roleID = "748497006632370276"; // Role that keeps track of whether rules were confirmed
 
-let role9_roleID = "747937428987445298"; // Role for 9th grade
-let role10_roleID = "747937642662068254"; // Role for 10th grade
-let role11_roleID = "747937653768585217"; // Role for 11th grade
-let role12_roleID = "747937661393829988"; // Role for 12th grade
-let roleUni_roleID = "747937764745412678"; // Role for university undergraduates 
-let roleGrad_roleID = "747937816155258881"; // Role for highschool graduates
+let role9_roleID = "747564711003947110"; // Role for 9th grade
+let role10_roleID = "747480172831178783"; // Role for 10th grade
+let role11_roleID = "747337717230075926"; // Role for 11th grade
+let role12_roleID = "747337599781175437"; // Role for 12th grade
+let roleUni_roleID = "747336531055869974"; // Role for university undergraduates 
+let roleGrad_roleID = "747337898801627206"; // Role for highschool graduates
 
-let roleMF_roleID = "747939067030667274"; // Role for MathScience
-let roleTM_roleID = "747938960923426956"; // Role for TurkishMath
-let roleTS_roleID = "747939082151264346"; // Role for TurkishSocial
-let roleDIL_roleID = "747939096097194165"; // Role for Linguistics
+let roleMF_roleID = "732233176126324788"; // Role for MathScience
+let roleTM_roleID = "732233054642372632"; // Role for TurkishMath
+let roleTS_roleID = "732233226894180423"; // Role for TurkishSocial
+let roleDIL_roleID = "732233196707774464"; // Role for Linguistics
 
-let roleMemberConfirmed_roleID = "747940776981561365"; // Role for final confirmation of members
+let roleMemberConfirmed_roleID = "732149516735873045"; // Role for final confirmation of members
+
+let logChannel_CS = "802972980371128420"; // bot-log  802972980371128420
+let crCommandChannel = "715297879132078131";
+
+let csServer = "774334667972280320"; // real 774334667972280320
+let crServer = "237606889863512074"; 
+
+let sectionRoles = {
+  "CS1021": "802122896864182304", // 802122896864182304
+  "CS1022": "802122943940263946", // 802122943940263946
+  "CS1023": "802122991361720372"  // 802122991361720372
+};
 
 const isDigit = n => n >= 0 && n <= 9;
 
@@ -47,7 +59,7 @@ client.once('ready', () => {
   ruleChannel = clientChannelCache.get(ruleChannel);
   roleChannel = clientChannelCache.get(roleChannel);
   
-  logChannel.send("=> VedBot has initialized successfully.");
+  logChannel.send("```=> VedBot is running.```");
   
   // Fetch required messages
   ruleChannel.messages.fetch(ruleMessage).then(msg => ruleMessage = msg);
@@ -63,11 +75,175 @@ client.once('ready', () => {
   client.mizyazModule = true;
   client.harunabiModule = true;
   
+  // CS server
+  logChannel_CS = clientChannelCache.get(logChannel_CS);
+  logChannel_CS.send("```=> VedBot is running.```");
+  
+  // CR server
+  crCommandChannel = clientChannelCache.get(crCommandChannel);
+  
+});
+
+client.on('voiceStateUpdate', (oldState, newState) => {
+  
+  if (oldState.guild.id === crServer && oldState.member.id === "234395307759108106" && newState.channelID === null) {
+    
+    crCommandChannel.send({ files: ["https://cdn.discordapp.com/attachments/795054934470557728/814976435021283429/5kuavjmbnhz11.png"] });
+    
+    console.log("update voice");
+  }
+  
 });
 
 client.on('message', message => {
   
-  if (message.guild.id === "774334667972280320") {
+  if (message.channel.type === "dm" && message.author.id !== client.user.id) {
+    
+    message.channel.send("Sorry, I'm currently functional only if you reach out to me on the server, rather than with a private message like this.\nIf you needed help, try calling `" + cfg.prefix + "help` on the server.\nIf that ***really*** doesn't solve your problem, contact <@123867745191198720>.")
+    return;
+    
+  }
+  
+  if (message.guild === null || message.guild.id === crServer) return;
+  
+  if (message.guild.id === csServer) {
+    
+    if (message.author.id !== client.user.id) {
+      
+      let msg = message.content.toLowerCase().split(/\s/);
+      
+      // Mobile-desktop forum link helper
+      let DH_links = [];
+      let regExp_linkDH = /^https?:\/\/(mobile|forum)\.donanimhaber.com\//i;
+      
+      msg.filter(e => e.startsWith("http")).forEach(function (e) { 
+        
+        let DH_convertedUrl = e.replace(regExp_linkDH, (match, p1) => "https://" + (p1.toLowerCase() === "mobile" ? "forum" : "mobile") + ".donanimhaber.com/");
+        
+        if (DH_convertedUrl !== e) DH_links.push(DH_convertedUrl);
+        
+      });
+      
+      if (DH_links.length) {
+        
+        let DH_linksString = DH_links.map((e, i) => "Link #" + (i + 1) + ": <" + e + ">").join("\n");
+        message.reply("Alternate desktop/mobile link(s):\n" + DH_linksString);
+        
+      }
+      
+    }
+    
+    // Commands module
+    
+    if (!message.content.startsWith(cfg.prefix)) return;
+    
+    let args = message.content.slice(cfg.prefix.length).split(" ");
+    let command = args.shift();
+    let guildmember = message.guild.members.cache.get(message.author.id);
+    
+    if (guildmember.hasPermission("ADMINISTRATOR")) { // Admin commands
+      
+      if (command === "killbot") { // Command for killing bot process
+        
+        logChannel_CS.send("=> Killing the bot.").then(() => process.exit());
+        return;
+        
+      }
+      
+      // Add more admin commands here
+      // ...
+      
+    }
+    
+    if (command === "setrole") {
+      
+      let userToSet = message.guild.members.cache.get(message.author.id);
+      
+      if (args.length === 3) {
+        
+        if (sectionRoles.hasOwnProperty(args[0].toUpperCase() + args[1] + args[2])) {
+          
+          Object.entries(sectionRoles)
+                .filter(e => e[0]
+                .startsWith(args[0].toUpperCase() + args[1]))
+                .map(e => e[1])
+                .forEach(e => userToSet.roles.remove(e));
+          
+          setTimeout(() => userToSet.roles.add(sectionRoles[args[0].toUpperCase() + args[1] + args[2]]), 1500);
+          
+          message.react("👍");
+          
+        } else {
+          
+          message.reply("ERROR: Unrecognized arguments. Are you sure this course/section exists?");
+          
+        }
+        
+      } else {
+        
+        message.reply("ERROR: Insufficient arguments. Use `v!help` to see syntax.");
+        
+      }
+      
+      setTimeout(() => message.delete(), 30000);
+      return;
+      
+    }
+    
+    if (command === "removerole") {
+      
+      let userToSet = message.guild.members.cache.get(message.author.id);
+      
+      if (args.length === 3) {
+        
+        if (sectionRoles.hasOwnProperty(args[0].toUpperCase() + args[1] + args[2])) {
+          
+          if (userToSet.roles.cache.has(sectionRoles[args[0].toUpperCase() + args[1] + args[2]])) {
+            
+            userToSet.roles.remove(sectionRoles[args[0].toUpperCase() + args[1] + args[2]]);
+            
+            message.react("👍");
+            
+          } else {
+            
+            message.reply("ERROR: You currently do not have this role.");
+            
+          }
+          
+        } else {
+          
+          message.reply("ERROR: Unrecognized arguments. Are you sure this course/section exists?");
+          
+        }
+        
+      } else {
+        
+        message.reply("ERROR: Insufficient arguments. Use `v!help` to see syntax.");
+        
+      }
+      
+      setTimeout(() => message.delete(), 30000);
+      return;
+      
+    }
+    
+    if (command === "help") {
+      
+      message.channel.send("**How to use**:\n" +
+                            "`v!setrole [DEPARTMENT] [COURSE ID] [SECTION]`\n" +
+                            "`v!removerole [DEPARTMENT] [COURSE ID] [SECTION]`\n" +
+                            "Example: `v!setrole CS 102 2`");
+      return;
+      
+    }
+    
+    
+    // Add more commands here
+    // ...
+    
+    message.channel.send(`> \`${message.content}\`\n<@${message.author.id}> Unfortunately, no such command exists for me at this time, or you don't have the permission to use it ¯\\_(ツ)\_/¯.`);
+    
+    
     return;
   }
   
@@ -308,7 +484,7 @@ client.on('message', message => {
 
 client.on('guildMemberAdd', member => {
   
-  if (member.guild.id === "774334667972280320") {
+  if (member.guild.id === csServer || member.guild.id === crServer) {
     return;
   }
   
@@ -320,7 +496,7 @@ client.on('guildMemberAdd', member => {
 
 client.on('guildMemberRemove', member => {
   
-  if (member.guild.id === "774334667972280320") {
+  if (member.guild.id === crServer || member.guild.id === csServer) {
     return;
   }
   
@@ -373,7 +549,7 @@ function roleSwitchSafety (caller, gradecheck, guildmember, reaction, memberID) 
 
 client.on('messageReactionAdd', function (reaction, member) {
   
-  if (reaction.message.guild.id === "774334667972280320") {
+  if (reaction.message.guild.id === crServer || reaction.message.guild.id === csServer) {
     return;
   }
   
@@ -559,7 +735,7 @@ client.on('messageReactionAdd', function (reaction, member) {
 client.on("messageReactionRemove", function (reaction, member) {
   
   //console.log(client.recentlyRemovedReactions);
-  if (reaction.message.guild.id === "774334667972280320") {
+  if (reaction.message.guild.id === crServer || reaction.message.guild.id === csServer) {
     return;
   }
   
