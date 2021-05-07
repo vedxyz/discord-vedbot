@@ -164,7 +164,7 @@ client.on("message", message => {
   
   try {
     
-    moduleResult = ["mizyaz", "dhlink", "gayetiyi", "harunabi"].map(module => client.modules.get(module).onMsg(message, optional)).filter(e => e);
+    moduleResult = ["mizyaz", "dhlink", "gayetiyi", "harunabi", "vedconcept"].map(module => client.modules.get(module).onMsg(message, optional)).filter(e => e);
     
   } catch (error) {
     

@@ -10,7 +10,7 @@ module.exports = {
   guilds: ["dh"],
   onMsg(message, optional) {
     
-    if (!this.guilds.some(srv => cfg[srv].id === message.guild.id) || !this.state) return;
+    if (message.channel.type === "dm" || !this.guilds.some(srv => cfg[srv].id === message.guild.id) || !this.state) return;
     
     // Mizyaz module
     let regExp_mizyaz = /[i|İ]slo+[ş|s]\S*/i;

@@ -11,7 +11,7 @@ module.exports = {
     
     if (oldState.member.id === cfg.cr.musicbot_id && newState.channelID === null) {
       
-      let image = Math.random() > 0.5 ? 
+      let image = Math.random() > 0.1 ? 
         "https://cdn.discordapp.com/attachments/795054934470557728/814976435021283429/5kuavjmbnhz11.png" : 
         "https://cdn.discordapp.com/attachments/396863166325456896/828790065999904778/iu.png";
       
