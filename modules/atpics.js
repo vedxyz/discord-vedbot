@@ -1,7 +1,7 @@
 const cfg = require("../config.json");
 
 module.exports = {
-  name: "vedconcept",
+  name: "atpics",
   description: "",
   state: true,
   guilds: ["cr"],
@@ -9,9 +9,17 @@ module.exports = {
     
     if (message.channel.type === "dm" || !this.guilds.some(srv => cfg[srv].id === message.guild.id) || !this.state) return;
     
-    if (cfg.cr.concepts.some(concept => message.mentions.users.has(concept))) {
+    const at_pics = [];
+    
+    message.mentions.users.each(user => {
+      if (cfg.cr.at_pics.hasOwnProperty(user.id) && at_pics.length < 10) {
+        at_pics.push(cfg.cr.at_pics[user.id]);
+      }
+    });
+    
+    if (at_pics.length !== 0) {
       
-      message.reply({ files: ["https://cdn.discordapp.com/attachments/795054934470557728/839531844818042890/image0.png"] });
+      message.reply({ files: at_pics });
       
       return false;
       
