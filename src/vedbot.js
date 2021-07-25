@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const Discord = require("discord.js");
-const cfg = require("./config.json");
+const cfg = require("../config.json");
 
 const client = new Discord.Client({ presence: {
   status: "online",

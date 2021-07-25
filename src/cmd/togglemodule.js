@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const cfg = require("../config.json");
+const cfg = require("../../config.json");
 
 const ved = "123867745191198720";
 

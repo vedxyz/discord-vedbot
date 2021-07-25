@@ -1,4 +1,4 @@
-const cfg = require("../config.json");
+const cfg = require("../../config.json");
 
 function roleSwitchSafety(caller, gradecheck, guildmember, reaction, memberID) {
   

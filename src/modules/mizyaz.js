@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const cfg = require("../config.json");
+const cfg = require("../../config.json");
 
 const mizyaz = "644968168040955904";
 
