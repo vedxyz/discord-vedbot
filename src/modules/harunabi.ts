@@ -1,17 +1,19 @@
-const cfg = require("../config.json");
+import { BotModule } from "../vedbot";
 
-module.exports = {
+/* eslint-disable consistent-return */
+import cfg from "../config.json";
+
+export default {
   name: "harunabi",
   description: "",
   state: true,
   guilds: ["dh"],
-  onMsg(message, optional) {
+  onMsg(message) {
     
-    if (!this.guilds.some(srv => cfg[srv].id === message.guild.id) || !this.state) return;
+    if (!this.guilds.some(srv => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) || !this.state) return;
     
     // Harun abi module
-    let regExp_harunabi = /\bharun abi\S*/i;
-    let harunabiFlag = message.content.match(regExp_harunabi);
+    const harunabiFlag = message.content.match(/\bharun abi\S*/i);
     
     if (harunabiFlag !== null && harunabiFlag.length > 0) {
       
@@ -20,4 +22,4 @@ module.exports = {
     }
     
   }
-};
+} as BotModule;

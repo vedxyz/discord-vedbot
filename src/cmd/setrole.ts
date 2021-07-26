@@ -1,28 +1,33 @@
-const cfg = require("../config.json");
+import cfg from "../config.json";
+import { BotCommand } from "../vedbot";
 
-module.exports = {
+export default {
   name: "setrole",
   aliases: ["roleset"],
   description: "",
   args: true,
   usage: "[DEPARTMENT] [COURSE ID] [SECTION]",
   guilds: ["cs"],
-  permissions: false,
+  permissions: [],
   execute(message, args) {
     
-    let sectionRoles = cfg.cs.roles.sections;
-    let userToSet = message.guild.members.cache.get(message.author.id);
+    if (!message.guild) return;
+    
+    const sectionRoles = cfg.servers.cs.roles.sections;
+    const userToSet = message.guild.members.cache.get(message.author.id);
+    
+    if (!userToSet) return;
     
     if (args.length === 3) {
       
-      if (sectionRoles.hasOwnProperty(args[0].toUpperCase() + args[1] + args[2])) {
+      if (Object.prototype.hasOwnProperty.call(sectionRoles, args[0].toUpperCase() + args[1] + args[2])) {
         
         Object.entries(sectionRoles)
               .filter(e => e[0].startsWith(args[0].toUpperCase() + args[1]))
               .map(e => e[1])
               .forEach(e => userToSet.roles.remove(e));
         
-        setTimeout(() => userToSet.roles.add(sectionRoles[args[0].toUpperCase() + args[1] + args[2]]), 1500);
+        setTimeout(() => userToSet.roles.add(sectionRoles[args[0].toUpperCase() + args[1] + args[2] as keyof typeof sectionRoles]), 1500);
         
         message.react("👍");
         
@@ -41,4 +46,4 @@ module.exports = {
     setTimeout(() => message.delete(), 30000);
     
   }
-};
+} as BotCommand;

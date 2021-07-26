@@ -1,9 +1,14 @@
-const fs = require("fs");
-const path = require("path");
+/* eslint-disable no-console */
+/* eslint-disable radix */
+/* eslint-disable global-require */
+/* eslint-disable consistent-return */
+import fs from "fs";
+import path from "path";
+import { BotCommand, vedbot } from "../vedbot";
 
-module.exports = {
+export default {
   name: "setrule",
-  aliases: false,
+  aliases: [],
   description: "Set rules for the DH server.",
   args: true,
   usage: "[ID] [rule content]",
@@ -14,11 +19,11 @@ module.exports = {
     delete require.cache[require.resolve("../config.json")];
     const cfg = require("../config.json");
     
-    let ruleID = args.shift();
-    let ruleContent = args.join(" ");
+    const ruleID = parseInt(args.shift() || "");
+    const ruleContent = args.join(" ");
     
     // Check for errors in command syntax
-    if (![...ruleID].every(char => Number.isInteger(parseInt(char))) || ruleID < 1 || ruleID > cfg.dh.rules.length) {
+    if (Number.isInteger(ruleID) || ruleID < 1 || ruleID > cfg.dh.rules.length) {
       
       return message.reply(
         `Usage: \`${cfg.prefix}${this.name} ${this.usage}\`\n` + 
@@ -40,13 +45,13 @@ module.exports = {
       console.log("Wrote new rule successfully.");
       
       try {
-        message.client.commands.get("rule").execute(message, [ruleID]);
+        vedbot.commands.collection.get("rule")?.execute(message, [ruleID.toString()]);
       } catch (error) {
         console.log(error);
-        message.reply("The rule was written, but something went wrong in showing it.");
+        message.reply("The rule was written, but something went wrong while showing it.");
       }
       
     });
     
   }
-};
+} as BotCommand;

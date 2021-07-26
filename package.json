@@ -4,11 +4,23 @@
   "description": "",
   "main": "vedbot.js",
   "scripts": {
-    "launch": "node vedbot.js"
+    "build": "tsc",
+    "start": "node ./build/vedbot.js",
+    "persist": "pm2 start ./build/vedbot.js"
   },
   "author": "Ved",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "prettier": "2.3.2"
   }
 }
