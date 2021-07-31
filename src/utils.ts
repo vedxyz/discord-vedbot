@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 import fs from "fs";
@@ -19,7 +20,7 @@ const loadBotFiles = (...botFileCollection: BotFileCollection<BotCommand | BotMo
   botFileCollection.forEach((collection) => {
     fs.readdirSync(path.join(__dirname, collection.rootdir))
       .filter((file) => file.endsWith(".js"))
-      .map((file) => require(path.join(__dirname, collection.rootdir, file)))
+      .map((file) => require(path.join(__dirname, collection.rootdir, file)).default)
       .forEach((fileImport: BotCommand | BotModule) => {
         collection.set(fileImport.name, fileImport);
         console.log(`Loaded BotFile: ${fileImport.name}`);
