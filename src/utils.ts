@@ -32,8 +32,7 @@ const reloadBotFile = (collection: BotFileCollection<BotCommand | BotModule>, fi
   const filePath = path.join(__dirname, collection.rootdir, `${filename}.js`);
 
   delete require.cache[require.resolve(filePath)];
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const reloadedFile: BotCommand | BotModule = require(filePath);
+  const reloadedFile: BotCommand | BotModule = require(filePath).default;
   collection.set(reloadedFile.name, reloadedFile);
   console.log(`Reloaded BotFile: ${reloadedFile.name}`);
 };

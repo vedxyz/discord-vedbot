@@ -13,11 +13,11 @@ export default {
     const ruleID = parseInt(args.shift() || "", 10);
     const ruleContent = args.join(" ");
 
-    if (Number.isInteger(ruleID) || ruleID < 1 || ruleID > cfg.servers.dh.rules.length) {
+    if (Number.isNaN(ruleID) || ruleID < 1 || ruleID > cfg.servers.dh.rules.length) {
       message.reply(
-        `Usage: \`${cfg.prefix}${this.name} ${this.usage}\`\n
-         Example: \`${cfg.prefix}${this.name} 7 The content of the rule to be set.\`\n
-         Note: Max rule ID is ${cfg.servers.dh.rules.length}.`
+        `Usage: \`${cfg.prefix}${this.name} ${this.usage}\`
+Example: \`${cfg.prefix}${this.name} 7 The content of the rule to be set.\`
+Note: Max rule ID is ${cfg.servers.dh.rules.length}.`
       );
     } else {
       console.log(`Writing rule to ${ruleID}: ${ruleContent}`);

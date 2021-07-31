@@ -6,10 +6,9 @@ export default {
   description: "",
   args: false,
   usage: "",
-  guilds: ["dh"],
+  guilds: ["dh", "cs", "cr"],
   permissions: ["ADMINISTRATOR"],
-  // eslint-disable-next-line no-unused-vars
-  execute(message, args) {
-    // TODO
+  execute(message) {
+    message.reply("This command still has not been implemented...");
   },
 } as BotCommand;
