@@ -1,5 +1,4 @@
-import cfg from "../config.json";
-import { BotModule } from "../vedbot";
+import { BotModule, cfg } from "../vedbot";
 
 export default {
   name: "atpics",

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./build/vedbot.js",
-    "persist": "pm2 start ./build/vedbot.js"
+    "persist": "pm2 start ./build/vedbot.js",
+    "prettier": "npx prettier --write ./src"
   },
   "author": "Ved",
   "license": "ISC",

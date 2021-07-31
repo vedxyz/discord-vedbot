@@ -1,47 +1,10 @@
 // https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=bot
 
-import fs from "fs";
-import Discord, {
-  Channel,
-  GuildMember,
-  Message,
-  MessageReaction,
-  PartialGuildMember,
-  PartialUser,
-  PermissionString,
-  TextChannel,
-  User,
-  VoiceChannel,
-  VoiceState,
-} from "discord.js";
-import cfg from "./config.json";
+import Discord, { GuildMember, Message, TextChannel, User } from "discord.js";
+import { BotCommand, BotModule } from "./interface";
+import utils, { BotFileCollection } from "./utils";
 
-interface BotModule {
-  rootdir?: string;
-  name: string;
-  description: string;
-  state: boolean;
-  guilds: string[];
-  onMsg?: (message: Message, optional: any) => any;
-  onVoiceUpdate?: (oldState: VoiceState, newState: VoiceState, optional: any) => any;
-  onMemberJoin?: (member: GuildMember, optional: any) => any;
-  onMemberLeave?: (member: GuildMember, optional: any) => any;
-  onReactionAdd?: (reaction: MessageReaction, user: User, optional: any) => any;
-  onReactionRemove?: (reaction: MessageReaction, user: User, optional: any) => any;
-}
-
-interface BotCommand {
-  rootdir?: string;
-  name: string;
-  aliases: string[];
-  description: string;
-  args: boolean;
-  usage: string;
-  guilds: string[];
-  permissions: PermissionString[];
-  allowedUser?: string[];
-  execute: (message: Message, args: string[]) => any;
-}
+const cfg = utils.loadConfig();
 
 const client = new Discord.Client({
   presence: {
@@ -55,45 +18,27 @@ const client = new Discord.Client({
 });
 
 const vedbot = {
-  commands: {
-    rootdir: "./cmd",
-    collection: new Discord.Collection<string, BotCommand>(),
-  },
-  modules: {
-    rootdir: "./modules",
-    collection: new Discord.Collection<string, BotModule>(),
-  },
-  serverVars: {
+  commands: new BotFileCollection<BotCommand>("cmd"),
+  modules: new BotFileCollection<BotModule>("modules"),
+  guilds: {
     dh: {
-      key: "dh",
       channels: new Map<string, TextChannel>(),
       messages: new Map<string, Message | undefined>(),
       reactionQueue: new Set<string>(),
     },
     cr: {
-      key: "cr",
       channels: new Map<string, TextChannel>(),
     },
     cs: {
-      key: "cs",
       channels: new Map<string, TextChannel>(),
     },
   },
 };
-const dh = vedbot.serverVars.dh;
-const cr = vedbot.serverVars.cr;
+const dh = vedbot.guilds.dh;
 
 // Grab and register commands & modules
 
-[vedbot.modules, vedbot.commands].forEach((importType) => {
-  const files = fs.readdirSync(importType.rootdir).filter((file) => file.endsWith(".js"));
-
-  for (const file of files) {
-    const fileObject = require(`${importType.rootdir}/${file}`);
-    fileObject.rootdir = importType.rootdir;
-    importType.collection.set(fileObject.name, fileObject);
-  }
-});
+utils.loadBotFiles(vedbot.modules, vedbot.commands);
 
 // Begin here
 
@@ -102,17 +47,12 @@ client.once("ready", async () => {
 
   // Grab required channels
 
-  Object.entries(cfg.servers.dh.channels).forEach(async ([channelName, channelID]) => {
-    vedbot.serverVars.dh.channels.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
-  });
-
-  Object.entries(cfg.servers.cr.channels).forEach(async ([channelName, channelID]) => {
-    vedbot.serverVars.cr.channels.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
-  });
-
-  Object.entries(cfg.servers.cs.channels).forEach(async ([channelName, channelID]) => {
-    vedbot.serverVars.cs.channels.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
-  });
+  utils.fetchConfigChannels(
+    client,
+    [cfg.servers.dh.channels, vedbot.guilds.dh.channels],
+    [cfg.servers.cr.channels, vedbot.guilds.cr.channels],
+    [cfg.servers.cs.channels, vedbot.guilds.cs.channels]
+  );
 
   // Fetch required messages
 
@@ -125,7 +65,7 @@ client.once("ready", async () => {
 });
 
 client.on("voiceStateUpdate", (oldState, newState) => {
-  vedbot.modules.collection.get("michelle")?.onVoiceUpdate!(oldState, newState, cr.channels.get("commands"));
+  vedbot.modules.get("michelle")?.onVoiceUpdate!(oldState, newState);
 });
 
 client.on("message", (message) => {
@@ -142,8 +82,7 @@ client.on("message", (message) => {
     const commandName = args.shift() || "";
 
     const command =
-      vedbot.commands.collection.get(commandName) ||
-      vedbot.commands.collection.find((cmd) => cmd.aliases.includes(commandName));
+      vedbot.commands.get(commandName) || vedbot.commands.find((cmd) => cmd.aliases.includes(commandName));
 
     if (!command) {
       return message.reply("There is no such command.");
@@ -185,13 +124,11 @@ client.on("message", (message) => {
 
   // Modules
 
-  let optional = {};
-
-  let moduleResult = [];
+  let moduleResult: any[] = [];
 
   try {
     moduleResult = ["mizyaz", "dhlink", "gayetiyi", "harunabi", "atpics"]
-      .map((module) => vedbot.modules.collection.get(module)?.onMsg!(message, optional))
+      .map((module) => vedbot.modules.get(module)?.onMsg!(message))
       .filter((e) => e);
   } catch (error) {
     console.error(error);
@@ -201,27 +138,21 @@ client.on("message", (message) => {
 });
 
 client.on("guildMemberAdd", (member) => {
-  vedbot.modules.collection.get("guildjoinleave")?.onMemberJoin!(member, { serverVars: vedbot.serverVars });
+  vedbot.modules.get("guildjoinleave")?.onMemberJoin!(member);
 });
 
 client.on("guildMemberRemove", (member) => {
-  vedbot.modules.collection.get("guildjoinleave")?.onMemberLeave!(member as GuildMember, {
-    serverVars: vedbot.serverVars,
-  });
+  vedbot.modules.get("guildjoinleave")?.onMemberLeave!(member as GuildMember);
 });
 
 client.on("messageReactionAdd", (reaction, user) => {
-  vedbot.modules.collection.get("dhreactrolepicker")?.onReactionAdd!(reaction, user as User, {
-    serverVars: vedbot.serverVars,
-  });
+  vedbot.modules.get("dhreactrolepicker")?.onReactionAdd!(reaction, user as User);
 });
 
 client.on("messageReactionRemove", (reaction, user) => {
-  vedbot.modules.collection.get("dhreactrolepicker")?.onReactionRemove!(reaction, user as User, {
-    serverVars: vedbot.serverVars,
-  });
+  vedbot.modules.get("dhreactrolepicker")?.onReactionRemove!(reaction, user as User);
 });
 
 client.login(cfg.token);
 
-export { BotCommand, BotModule, vedbot };
+export { BotCommand, BotModule, vedbot, client, cfg };

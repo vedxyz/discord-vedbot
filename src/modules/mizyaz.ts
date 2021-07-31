@@ -1,6 +1,5 @@
 import { MessageEmbed } from "discord.js";
-import cfg from "../config.json";
-import { BotModule } from "../vedbot";
+import { BotModule, cfg } from "../vedbot";
 
 const mizyaz = "644968168040955904";
 

@@ -10,8 +10,6 @@ export default {
   permissions: ["ADMINISTRATOR"],
   // eslint-disable-next-line no-unused-vars
   execute(message, args) {
-    
-    // TODO 
-    
-  }
+    // TODO
+  },
 } as BotCommand;
