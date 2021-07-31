@@ -15,18 +15,15 @@ export class BotFileCollection<T extends BotCommand | BotModule> extends Discord
 }
 
 const loadBotFiles = (...botFileCollection: BotFileCollection<BotCommand | BotModule>[]): void => {
-  botFileCollection.forEach(async (collection) => {
-    (
-      await Promise.all(
-        fs
-          .readdirSync(collection.rootdir)
-          .filter((file) => file.endsWith(".js"))
-          .map((file) => require(path.join(__dirname, collection.rootdir, file)))
-      )
-    ).forEach((fileImport: BotCommand | BotModule) => {
-      collection.set(fileImport.name, fileImport);
-      console.log(`Loaded BotFile: ${fileImport.name}`);
-    });
+  console.log("Loading BotFiles...");
+  botFileCollection.forEach((collection) => {
+    fs.readdirSync(path.join(__dirname, collection.rootdir))
+      .filter((file) => file.endsWith(".js"))
+      .map((file) => require(path.join(__dirname, collection.rootdir, file)))
+      .forEach((fileImport: BotCommand | BotModule) => {
+        collection.set(fileImport.name, fileImport);
+        console.log(`Loaded BotFile: ${fileImport.name}`);
+      });
   });
 };
 
