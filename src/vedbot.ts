@@ -47,7 +47,7 @@ client.once("ready", async () => {
 
   // Grab required channels
 
-  utils.fetchConfigChannels(
+  await utils.fetchConfigChannels(
     client,
     [cfg.servers.dh.channels, vedbot.guilds.dh.channels],
     [cfg.servers.cr.channels, vedbot.guilds.cr.channels],

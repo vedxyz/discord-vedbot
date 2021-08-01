@@ -6,6 +6,8 @@ import Discord, { Client, Snowflake, TextChannel } from "discord.js";
 import path from "path";
 import { BotCommand, BotConfig, BotModule } from "./interface";
 
+const configPath = path.join(__dirname, "..", "config.json");
+
 export class BotFileCollection<T extends BotCommand | BotModule> extends Discord.Collection<string, T> {
   rootdir: string;
 
@@ -37,10 +39,10 @@ const reloadBotFile = (collection: BotFileCollection<BotCommand | BotModule>, fi
   console.log(`Reloaded BotFile: ${reloadedFile.name}`);
 };
 
-const fetchConfigChannels = (
+const fetchConfigChannels = async (
   client: Client,
   ...serverTuples: [{ [key: string]: Snowflake }, Map<string, TextChannel>][]
-): void => {
+): Promise<void> => {
   serverTuples.forEach(([cfgChannels, channelMap]) => {
     Object.entries(cfgChannels).forEach(async ([channelName, channelID]) => {
       channelMap.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
@@ -48,10 +50,10 @@ const fetchConfigChannels = (
   });
 };
 
-const loadConfig = (): BotConfig => JSON.parse(fs.readFileSync(path.join(__dirname, "config.json"), "utf8"));
+const loadConfig = (): BotConfig => JSON.parse(fs.readFileSync(configPath, "utf8"));
 
 const saveConfig = async (config: BotConfig): Promise<void> => {
-  await fs.promises.writeFile(path.join(__dirname, "config.json"), JSON.stringify(config, null, 2));
+  await fs.promises.writeFile(configPath, JSON.stringify(config, null, 2));
   console.log("Saved config.json");
 };
 
