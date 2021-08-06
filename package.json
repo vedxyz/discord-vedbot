@@ -5,14 +5,14 @@
   "main": "vedbot.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ./build/vedbot.js",
-    "persist": "pm2 start ./build/vedbot.js",
+    "start": "[[ $(node -v) == \"v16.\"* ]] && node ./build/vedbot.js",
+    "persist": "pm2 start ./build/vedbot.js --interpreter=$NVM_DIR/versions/node/v16.6.1/bin/node",
     "prettier": "npx prettier --write ./src"
   },
   "author": "Ved",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^13.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.4.2",
