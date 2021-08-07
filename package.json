@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "[[ $(node -v) == \"v16.\"* ]] && node ./build/vedbot.js",
-    "persist": "pm2 start ./build/vedbot.js --interpreter=$NVM_DIR/versions/node/v16.6.1/bin/node",
+    "persist": "pm2 start ./build/vedbot.js --interpreter=node@16.6.1",
     "prettier": "npx prettier --write ./src"
   },
   "author": "Ved",
