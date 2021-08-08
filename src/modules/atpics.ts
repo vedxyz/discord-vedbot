@@ -7,7 +7,7 @@ export default {
   guilds: ["cr"],
   onMsg(message) {
     if (
-      message.channel.type === "dm" ||
+      message.channel.type === "DM" ||
       !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
       !this.state
     )
@@ -22,11 +22,6 @@ export default {
       }
     });
 
-    if (atPics.length !== 0) {
-      message.reply({ files: atPics });
-
-      // eslint-disable-next-line consistent-return
-      return false;
-    }
+    if (atPics.length !== 0) message.reply({ files: atPics });
   },
 } as BotModule;

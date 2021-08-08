@@ -12,7 +12,7 @@ export default {
     )
       return;
 
-    if (oldState.member?.id === cfg.servers.cr.musicbot_id && newState.channelID === null) {
+    if (oldState.member?.id === cfg.servers.cr.musicbot_id && newState.channelId === null) {
       const image =
         Math.random() > 0.1
           ? "https://cdn.discordapp.com/attachments/795054934470557728/814976435021283429/5kuavjmbnhz11.png"

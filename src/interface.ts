@@ -18,7 +18,7 @@ export interface BotModule {
   description: string;
   state: boolean;
   guilds: string[];
-  onMsg?: (message: Message) => unknown;
+  onMsg?: (message: Message) => void;
   onVoiceUpdate?: (oldState: VoiceState, newState: VoiceState) => unknown;
   onMemberJoin?: (member: GuildMember) => unknown;
   onMemberLeave?: (member: GuildMember) => unknown;

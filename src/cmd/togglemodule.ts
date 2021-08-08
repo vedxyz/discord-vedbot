@@ -19,35 +19,35 @@ export default {
     );
 
     if (!args.length) {
-      return message.reply(
-        new MessageEmbed()
-          .setTitle("VedBot Flexible Modules")
-          .setDescription("Lists modules available for this server. Commands not included.")
-          .setTimestamp()
-          .setFooter(`${vedbot.modules.size - 1} modules loaded in total.`)
-          .setColor("RED")
-          .setThumbnail(message.client.user?.avatarURL() || "")
-          .addFields(
-            availableModules.map((module) => ({
-              name: `${module.name} | ${module.state ? "ENABLED" : "DISABLED"}`,
-              value: module.description || "No description added.",
-              inline: false,
-            }))
-          )
-      );
+      message.reply({
+        embeds: [
+          new MessageEmbed()
+            .setTitle("VedBot Flexible Modules")
+            .setDescription("Lists modules available for this server. Commands not included.")
+            .setTimestamp()
+            .setFooter(`${vedbot.modules.size - 1} modules loaded in total.`)
+            .setColor("RED")
+            .setThumbnail(message.client.user?.avatarURL() || "")
+            .addFields(
+              availableModules.map((module) => ({
+                name: `${module.name} | ${module.state ? "ENABLED" : "DISABLED"}`,
+                value: module.description || "No description added.",
+                inline: false,
+              }))
+            ),
+        ],
+      });
+    } else {
+      args.forEach((arg) => {
+        const module = availableModules.find((_module) => _module.name === arg);
+
+        if (module) {
+          module.state = !module.state;
+          message.channel.send(`"${arg}" module is now **${module.state ? "ENABLED" : "DISABLED"}**.`);
+        } else {
+          message.channel.send(`"${arg}" module is not available.`);
+        }
+      });
     }
-
-    args.forEach((arg) => {
-      const module = availableModules.find((_module) => _module.name === arg);
-
-      if (module) {
-        module.state = !module.state;
-        message.channel.send(`"${arg}" module is now **${module.state ? "ENABLED" : "DISABLED"}**.`);
-      } else {
-        message.channel.send(`"${arg}" module is not available.`);
-      }
-    });
-
-    return "";
   },
 } as BotCommand;

@@ -35,12 +35,10 @@ export default {
         .setColor("#F1672D")
         .setThumbnail("https://forum.donanimhaber.com/static/forum/img/dh-forum-logo.png")
         .setTimestamp()
-        .setAuthor(message.member?.displayName, message.author.avatarURL() || undefined)
+        .setAuthor(message.member?.displayName ?? "Member", message.author.avatarURL() ?? undefined)
         .addFields(DHLinks.map((link, i) => ({ name: `Link #${i + 1}`, value: link, inline: false })));
 
-      message.reply(linksEmbed);
-      // eslint-disable-next-line consistent-return
-      return false;
+      message.reply({ embeds: [linksEmbed] });
     }
   },
 } as BotModule;

@@ -1,19 +1,23 @@
 // https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=bot
+// The bot is not set to public on the Developer Portal, and as such is open to invitation solely by me.
 
-import Discord, { GuildMember, Message, TextChannel, User } from "discord.js";
+import Discord, { GuildMember, Message, MessageReaction, TextChannel, User } from "discord.js";
 import { BotCommand, BotModule } from "./interface";
 import utils, { BotFileCollection } from "./utils";
 
 const cfg = utils.loadConfig();
 
 const client = new Discord.Client({
+  intents: ["GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "DIRECT_MESSAGES"],
+  partials: ["CHANNEL"],
   presence: {
     status: "online",
-    activity: {
-      name: `for prefix ' ${cfg.prefix} '`,
-      type: "WATCHING",
-      url: "https://vedat.xyz",
-    },
+    activities: [
+      {
+        name: `for prefix ' ${cfg.prefix} '`,
+        type: "WATCHING",
+      },
+    ],
   },
 });
 
@@ -34,7 +38,7 @@ const vedbot = {
     },
   },
 };
-const dh = vedbot.guilds.dh;
+const { dh } = vedbot.guilds;
 
 // Grab and register commands & modules
 
@@ -65,92 +69,36 @@ client.once("ready", async () => {
 });
 
 client.on("voiceStateUpdate", (oldState, newState) => {
-  vedbot.modules.get("michelle")?.onVoiceUpdate!(oldState, newState);
+  vedbot.modules.get("michelle")?.onVoiceUpdate?.(oldState, newState);
 });
 
-client.on("message", (message) => {
+client.on("messageCreate", (message) => {
   if (message.author.id === client.user?.id) return;
 
-  // Commands
-
-  if (message.content.startsWith(cfg.prefix)) {
-    if (message.channel.type === "dm") {
-      return message.reply("I can't execute that command inside DMs! Try it again in a server perhaps?");
-    }
-
-    const args = message.content.slice(cfg.prefix.length).trim().split(/ +/);
-    const commandName = args.shift() || "";
-
-    const command =
-      vedbot.commands.get(commandName) || vedbot.commands.find((cmd) => cmd.aliases.includes(commandName));
-
-    if (!command) {
-      return message.reply("There is no such command.");
-    }
-
-    if (
-      command.guilds.length !== 0 &&
-      !command.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id)
-    ) {
-      return message.reply("This command isn't available on this server.");
-    }
-
-    if (message.channel.type === "text") {
-      const authorPerms = message.channel.permissionsFor(message.author);
-
-      const hasPermission =
-        (command.permissions.length === 0 && !command.allowedUser) || // is command publicly available?
-        (command.permissions.length !== 0 && command.permissions.every((perm) => authorPerms?.has(perm))) || // does user have permission to use command?
-        command.allowedUser?.includes(message.author.id); // is user explicitly allowed to use command?
-
-      if (!hasPermission) return message.reply("You do not have the permissions to use this command.");
-    }
-
-    if (command.args && !args.length) {
-      return message.reply(
-        "This command requires argument(s)." + `\nUsage: \`${cfg.prefix}${commandName} ${command.usage}\``
-      );
-    }
-
-    try {
-      command.execute(message, args);
-    } catch (error) {
-      console.error(error);
-      message.reply("There was a technical error trying to execute that command!");
-    }
-
-    return;
-  }
-
   // Modules
-
-  let moduleResult: any[] = [];
-
   try {
-    moduleResult = ["mizyaz", "dhlink", "gayetiyi", "harunabi", "atpics"]
-      .map((module) => vedbot.modules.get(module)?.onMsg!(message))
-      .filter((e) => e);
+    ["mizyaz", "dhlink", "gayetiyi", "harunabi", "atpics"].forEach((module) =>
+      vedbot.modules.get(module)?.onMsg?.(message)
+    );
   } catch (error) {
     console.error(error);
   }
-
-  return moduleResult.length && message.reply(moduleResult.join("\n===\n"));
 });
 
 client.on("guildMemberAdd", (member) => {
-  vedbot.modules.get("guildjoinleave")?.onMemberJoin!(member);
+  vedbot.modules.get("guildjoinleave")?.onMemberJoin?.(member);
 });
 
 client.on("guildMemberRemove", (member) => {
-  vedbot.modules.get("guildjoinleave")?.onMemberLeave!(member as GuildMember);
+  vedbot.modules.get("guildjoinleave")?.onMemberLeave?.(member as GuildMember);
 });
 
 client.on("messageReactionAdd", (reaction, user) => {
-  vedbot.modules.get("dhreactrolepicker")?.onReactionAdd!(reaction, user as User);
+  vedbot.modules.get("dhreactrolepicker")?.onReactionAdd?.(reaction as MessageReaction, user as User);
 });
 
 client.on("messageReactionRemove", (reaction, user) => {
-  vedbot.modules.get("dhreactrolepicker")?.onReactionRemove!(reaction, user as User);
+  vedbot.modules.get("dhreactrolepicker")?.onReactionRemove?.(reaction as MessageReaction, user as User);
 });
 
 client.login(cfg.token);

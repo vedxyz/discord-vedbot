@@ -10,7 +10,7 @@ export default {
   guilds: ["dh"],
   onMsg(message) {
     if (
-      message.channel.type === "dm" ||
+      message.channel.type === "DM" ||
       !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
       message.member === null ||
       !this.state
@@ -34,10 +34,10 @@ export default {
         .setTimestamp()
         .setColor(message.member.displayHexColor);
 
-      message.channel.send(`<@${mizyaz}>`, [mizyazEmbed, ...message.attachments.values()]);
-
-      // eslint-disable-next-line consistent-return
-      return false;
+      message.channel.send({
+        content: `<@${mizyaz}>`,
+        embeds: [mizyazEmbed, ...message.attachments.values()],
+      });
     }
   },
 } as BotModule;

@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import { BotModule, cfg } from "../vedbot";
 
 export default {
@@ -20,7 +19,7 @@ export default {
       cfg.servers.dh.gayetiyikeywords.every((wordlist: string[]) => wordlist.some((word) => msg.indexOf(word) !== -1))
     ) {
       const localResponse = message.channel.id !== cfg.servers.dh.channels.english ? "gayet iyi" : "very well";
-      return `**${localResponse}** <:afro:744923369279062156>`;
+      message.reply(`**${localResponse}** <:afro:744923369279062156>`);
     }
   },
 } as BotModule;

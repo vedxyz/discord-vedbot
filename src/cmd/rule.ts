@@ -26,15 +26,17 @@ export default {
         .map((rule: string, idx: number) => (rule.length ? { index: idx + 1, content: rule } : false))
         .filter((e: unknown) => e);
 
-      message.channel.send(
-        ruleEmbed.addFields(
-          ruleStack.map((rule: { index: number; content: string }) => ({
-            name: `Kural #${rule.index}`,
-            value: rule.content,
-            inline: false,
-          }))
-        )
-      );
+      message.channel.send({
+        embeds: [
+          ruleEmbed.addFields(
+            ruleStack.map((rule: { index: number; content: string }) => ({
+              name: `Kural #${rule.index}`,
+              value: rule.content,
+              inline: false,
+            }))
+          ),
+        ],
+      });
     } else if (ruleID < 1 || ruleID > cfg.servers.dh.rules.length) {
       message.reply(
         `Usage: \`${cfg.prefix}${this.name} ${this.usage}\`\n` +
@@ -43,7 +45,9 @@ export default {
     } else if (!cfg.servers.dh.rules[ruleID - 1].length) {
       message.reply(`Rule #${ruleID} is blank.`);
     } else {
-      message.channel.send(ruleEmbed.addField(`Kural #${ruleID}`, cfg.servers.dh.rules[ruleID - 1], false));
+      message.channel.send({
+        embeds: [ruleEmbed.addField(`Kural #${ruleID}`, cfg.servers.dh.rules[ruleID - 1], false)],
+      });
     }
   },
 } as BotCommand;
