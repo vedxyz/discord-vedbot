@@ -12,7 +12,7 @@
   "author": "Ved",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^13.0.0"
+    "discord.js": "^13.0.1"
   },
   "devDependencies": {
     "@types/node": "^16.4.2",
