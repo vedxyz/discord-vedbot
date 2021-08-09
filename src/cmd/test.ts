@@ -10,7 +10,7 @@ const command: BotCommand = {
   permissions: [utils.permissions.getOwner(cfg)],
   guilds: ["dh"],
   execute(interaction) {
-    interaction.reply({ content: "https://tenor.com/view/thomas-shelby-peaky-blinders-gif-19044952" });
+    interaction.reply({ files: ["https://tenor.com/view/thomas-shelby-peaky-blinders-gif-19044952"] });
   },
 };
 
