@@ -21,6 +21,11 @@ const command: BotCommand = {
       type: "USER",
       permission: true,
     },
+    {
+      id: "790669535735840789",
+      type: "ROLE",
+      permission: true,
+    }
   ],
   guilds: ["dh", "cr", "cs"],
   execute(interaction) {

@@ -15,6 +15,7 @@ All of the configuration is contained within this one file, and it is naturally 
 ## Usage
 
 The project can be used with the scripts included under the `package.json` file.
+
 I handle the deployment using [PM2](https://pm2.keymetrics.io/) personally, which is configured in the `ecosystem.config.js` file.
 
 > Note: Node.js version >= 16.6.0 is required for the discord.js module.
