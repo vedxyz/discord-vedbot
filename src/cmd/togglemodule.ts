@@ -1,4 +1,5 @@
 import { MessageEmbed } from "discord.js";
+import utils from "../utils";
 import { BotCommand, vedbot, cfg } from "../vedbot";
 
 const command: BotCommand = {
@@ -16,21 +17,8 @@ const command: BotCommand = {
     ],
   },
   permissions: [
-    {
-      id: cfg.ownerId,
-      type: "USER",
-      permission: true,
-    },
-    {
-      id: "790669535735840789", // CS server admin role
-      type: "ROLE",
-      permission: true,
-    },
-    {
-      id: "732129804517900379", // DH server admin role
-      type: "ROLE",
-      permission: true,
-    }
+    utils.permissions.getOwner(cfg),
+    ...utils.permissions.getAdmins(cfg),
   ],
   guilds: ["dh", "cr", "cs"],
   execute(interaction) {

@@ -21,8 +21,6 @@ const command: BotCommand = {
     const ruleID = interaction.options.getInteger("id");
 
     const ruleEmbed = utils.getRuleEmbedBase(interaction);
-
-    console.log(`guild: ${interaction.guild}`);
     
     if (ruleID === null) {
       const ruleStack = cfg.servers.dh.rules

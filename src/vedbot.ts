@@ -5,7 +5,7 @@ import Discord, { GuildMember, Message, MessageReaction, TextChannel, User } fro
 import { BotCommand, BotModule } from "./interface";
 import utils, { BotFileCollection } from "./utils";
 
-const cfg = utils.loadConfig();
+const cfg = utils.config.load();
 const { canExecuteModule } = utils;
 
 const client = new Discord.Client({
@@ -43,7 +43,7 @@ const { dh } = vedbot.guilds;
 
 // Load and store commands & modules
 
-utils.loadBotFiles(vedbot.modules, vedbot.commands);
+utils.botfiles.loadAll(vedbot.modules, vedbot.commands);
 
 client.once("ready", async () => {
   console.log(">> Ready!");

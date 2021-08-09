@@ -13,17 +13,13 @@ const command: BotCommand = {
         type: "STRING",
         required: true,
         choices: utils
-          .getAllBotFileNames(vedbot.commands, vedbot.modules)
+          .botfiles.getAllFileNames(vedbot.commands, vedbot.modules)
           .map((filename) => ({ name: filename, value: filename.slice(0, -3) })),
       },
     ],
   },
   permissions: [
-    {
-      id: cfg.ownerId,
-      type: "USER",
-      permission: true,
-    },
+    utils.permissions.getOwner(cfg)
   ],
   guilds: ["dh", "cs", "cr"],
   execute(interaction) {
@@ -44,7 +40,7 @@ const command: BotCommand = {
       interaction.reply(`There is no loaded file with name \`${filename}\`!`);
     } else {
       try {
-        utils.reloadBotFile(fileCollection, filename);
+        utils.botfiles.reload(fileCollection, filename);
 
         interaction.reply(`File \`${filename}.js\` was reloaded!`);
       } catch (error) {

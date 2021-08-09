@@ -22,6 +22,10 @@ const command: BotCommand = {
       },
     ],
   },
+  permissions: [
+    utils.permissions.getOwner(cfg),
+    ...utils.permissions.getAdmins(cfg),
+  ],
   guilds: ["dh"],
   execute(interaction) {
     const ruleID = interaction.options.getInteger("id", true);
@@ -31,7 +35,7 @@ const command: BotCommand = {
     cfg.servers.dh.rules[ruleID - 1] = ruleContent;
 
     utils
-      .saveConfig(cfg)
+      .config.save(cfg)
       .then(() => {
         interaction.reply({
           embeds: [

@@ -1,3 +1,4 @@
+import utils from "../utils";
 import { BotCommand, cfg } from "../vedbot";
 
 const command: BotCommand = {
@@ -7,11 +8,7 @@ const command: BotCommand = {
     defaultPermission: false,
   },
   permissions: [
-    {
-      id: cfg.ownerId,
-      type: "USER",
-      permission: true,
-    },
+    utils.permissions.getOwner(cfg),
   ],
   guilds: ["dh", "cs", "cr"],
   execute(interaction) {
