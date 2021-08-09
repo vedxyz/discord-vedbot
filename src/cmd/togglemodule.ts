@@ -22,7 +22,12 @@ const command: BotCommand = {
       permission: true,
     },
     {
-      id: "790669535735840789",
+      id: "790669535735840789", // CS server admin role
+      type: "ROLE",
+      permission: true,
+    },
+    {
+      id: "732129804517900379", // DH server admin role
       type: "ROLE",
       permission: true,
     }
