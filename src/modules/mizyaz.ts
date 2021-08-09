@@ -1,17 +1,18 @@
 import { MessageEmbed, MessageOptions } from "discord.js";
-import { BotModule } from "../vedbot";
+import { BotModule, cfg } from "../vedbot";
 
-const mizyazId = "644968168040955904";
+const mizyazId: string = cfg.servers.dh.mizyaz.id;
+const mizyazRegExp = new RegExp(cfg.servers.dh.mizyaz.regexp, "i");
 
 export default {
   name: "mizyaz",
-  description: "",
+  description: "Tags a certain friend when a message is implicitly directed to that friend.",
   state: true,
   guilds: ["dh"],
   onMessage(message) {
     if (message.member === null) return;
 
-    const mizyazFlag = message.content.match(/[i|İ]slo+[ş|s]\S*/i);
+    const mizyazFlag = message.content.match(mizyazRegExp);
 
     if (
       mizyazFlag !== null &&

@@ -28,5 +28,5 @@ I handle the deployment using [PM2](https://pm2.keymetrics.io/) personally, whic
 - [x] Mizyaz module needs to be less destructive with its handling of messages
 - [ ] The reaction role picker needs an overhaul
 - [ ] atpics module needs a command to self-set pics, and also should support non-discord-cdn links if possible
-- [ ] guildjoinleave module should tag relevant users without sending them a mention?
+- [x] guildjoinleave module should tag relevant users without sending them a mention?
 - [x] Add readme and license files

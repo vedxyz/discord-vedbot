@@ -2,7 +2,7 @@ import { BotModule, cfg } from "../vedbot";
 
 export default {
   name: "atpics",
-  description: "",
+  description: "Replies with a self selected picture when a person is mentioned.",
   state: true,
   guilds: ["cr"],
   onMessage(message) {

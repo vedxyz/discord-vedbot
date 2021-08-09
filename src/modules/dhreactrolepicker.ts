@@ -49,7 +49,7 @@ function roleSwitchSafety(
 
 export default {
   name: "dhreactrolepicker",
-  description: "",
+  description: "Provides ability to select roles through reactions.",
   state: true,
   guilds: ["dh"],
   onReactionAdd(reaction, user) {
