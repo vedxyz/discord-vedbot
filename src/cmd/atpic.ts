@@ -54,8 +54,7 @@ const command: BotCommand = {
       utils.config.save(cfg);
       interaction.reply({
         ephemeral: true,
-        content: "Your @ picture has been set:",
-        files: [cfg.servers.cr.at_pics[interaction.user.id]],
+        content: "Your @ picture has been set.",
       });
     } else if (subcommand === "remove") {
       delete cfg.servers.cr.at_pics[interaction.user.id];
