@@ -19,7 +19,7 @@ const command: BotCommand = {
         description: "New content of rule",
         type: "STRING",
         required: false,
-      }
+      },
     ],
   },
   guilds: ["dh"],
@@ -34,7 +34,11 @@ const command: BotCommand = {
       .saveConfig(cfg)
       .then(() => {
         interaction.reply({
-          embeds: [utils.getRuleEmbedBase(interaction).addField(`Kural #${ruleID}`, ruleContent, false)],
+          embeds: [
+            utils
+              .getRuleEmbedBase(interaction)
+              .addField(`Kural #${ruleID}`, ruleContent || "*This rule has been cleared*", false),
+          ],
         });
       })
       .catch((error) => {

@@ -77,6 +77,7 @@ client.once("ready", async () => {
 
     guildCommands.forEach(async (command) => {
       const guildCommand = await guildCommandManager?.create(command.data);
+      console.log(`Created command "${guildCommand?.name}" for guild "${server}"`);
       if (Array.isArray(command.permissions)) await guildCommand?.permissions.set({ permissions: command.permissions });
     });
   });
