@@ -49,7 +49,6 @@ utils.loadBotFiles(vedbot.modules, vedbot.commands);
 
 client.once("ready", async () => {
   console.log(">> Ready!");
-  cfg.ownerId = (await client.application?.fetch())?.owner?.id || "";
 
   // Grab required channels
 
