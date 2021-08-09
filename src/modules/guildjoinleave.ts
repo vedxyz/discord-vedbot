@@ -51,16 +51,14 @@ export default {
       (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
     ) as keyof typeof vedbot.guilds;
 
-    vedbot.guilds[serverKey].channels
-      .get("log")
-      ?.send({
-        embeds: [
-          new MessageEmbed()
-            .setTitle(":o: | Left the server:")
-            .setDescription(`<@${member.id}>`)
-            .setColor("RED")
-            .setTimestamp(),
-        ],
-      });
+    vedbot.guilds[serverKey].channels.get("log")?.send({
+      embeds: [
+        new MessageEmbed()
+          .setTitle(":o: | Left the server:")
+          .setDescription(`<@${member.id}>`)
+          .setColor("RED")
+          .setTimestamp(),
+      ],
+    });
   },
 } as BotModule;
