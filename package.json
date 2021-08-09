@@ -4,7 +4,7 @@
   "description": "Private Discord bot",
   "main": "vedbot.js",
   "scripts": {
-    "build": "tsc --clean",
+    "build": "rm -rf ./build && tsc",
     "start": "[[ $(node -v) == \"v16.\"* ]] && node ./build/vedbot.js",
     "persist": "pm2 start ./build/vedbot.js --interpreter=node@16.6.1",
     "prettier": "npx prettier --write ./src"
