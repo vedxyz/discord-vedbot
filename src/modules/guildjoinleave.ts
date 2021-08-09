@@ -6,9 +6,6 @@ export default {
   state: true,
   guilds: ["cs", "dh"],
   onMemberJoin(member) {
-    if (!this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id) || !this.state)
-      return;
-
     const serverKey = this.guilds.find(
       (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
     ) as keyof typeof vedbot.guilds;
@@ -31,9 +28,6 @@ export default {
     }
   },
   onMemberLeave(member) {
-    if (!this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id) || !this.state)
-      return;
-
     const serverKey = this.guilds.find(
       (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
     ) as keyof typeof vedbot.guilds;

@@ -2,7 +2,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 import fs from "fs";
-import Discord, { Client, Snowflake, TextChannel } from "discord.js";
+import Discord, { Client, CommandInteraction, MessageEmbed, Snowflake, TextChannel } from "discord.js";
 import path from "path";
 import { BotCommand, BotConfig, BotModule } from "./interface";
 
@@ -22,10 +22,13 @@ const loadBotFiles = (...botFileCollection: BotFileCollection<BotCommand | BotMo
   botFileCollection.forEach((collection) => {
     fs.readdirSync(path.join(__dirname, collection.rootdir))
       .filter((file) => file.endsWith(".js"))
-      .map((file) => require(path.join(__dirname, collection.rootdir, file)).default)
-      .forEach((fileImport: BotCommand | BotModule) => {
-        collection.set(fileImport.name, fileImport);
-        console.log(`Loaded BotFile: ${fileImport.name}`);
+      .map(
+        (file) =>
+          [file, require(path.join(__dirname, collection.rootdir, file)).default] as [string, BotCommand | BotModule]
+      )
+      .forEach(([filename, fileImport]) => {
+        collection.set(filename.slice(0, -3), fileImport);
+        console.log(`Loaded BotFile: ${filename}`);
       });
   });
 };
@@ -35,8 +38,18 @@ const reloadBotFile = (collection: BotFileCollection<BotCommand | BotModule>, fi
 
   delete require.cache[require.resolve(filePath)];
   const reloadedFile: BotCommand | BotModule = require(filePath).default;
-  collection.set(reloadedFile.name, reloadedFile);
-  console.log(`Reloaded BotFile: ${reloadedFile.name}`);
+  collection.set(filename, reloadedFile);
+  console.log(`Reloaded BotFile: ${filename}.js`);
+};
+
+const getAllBotFileNames = (...botFileCollection: BotFileCollection<BotCommand | BotModule>[]): string[] => {
+  const filenames: string[] = [];
+  botFileCollection.forEach(async (collection) => {
+    filenames.push(
+      ...(await fs.promises.readdir(path.join(__dirname, collection.rootdir))).filter((file) => file.endsWith(".js"))
+    );
+  });
+  return filenames;
 };
 
 const fetchConfigChannels = async (
@@ -57,10 +70,30 @@ const saveConfig = async (config: BotConfig): Promise<void> => {
   console.log("Saved config.json");
 };
 
+const canExecuteModule = (
+  cfg: BotConfig,
+  module: BotModule | undefined,
+  eventGuildId: Snowflake | undefined
+): boolean =>
+  !!eventGuildId &&
+  !!module?.state &&
+  module.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === eventGuildId);
+
+const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
+  new MessageEmbed()
+    .setTitle(`${interaction.guild?.name} Kurallar`)
+    .setTimestamp()
+    .setFooter(`Teşekkürler.`)
+    .setColor("ORANGE")
+    .setThumbnail(interaction.guild?.iconURL() || "");
+
 export default {
   loadBotFiles,
   reloadBotFile,
+  getAllBotFileNames,
   fetchConfigChannels,
   loadConfig,
   saveConfig,
+  canExecuteModule,
+  getRuleEmbedBase,
 };

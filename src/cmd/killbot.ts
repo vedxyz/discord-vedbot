@@ -1,15 +1,22 @@
-import { BotCommand } from "../vedbot";
+import { BotCommand, cfg } from "../vedbot";
 
-export default {
-  name: "killbot",
-  aliases: ["botkill", "stopbot"],
-  description: "Kills the bot.",
-  args: false,
-  usage: "",
-  guilds: [],
-  permissions: [],
-  allowedUser: ["123867745191198720"],
-  execute(message) {
-    message.channel.send("```=> Killing the bot.```").then(() => process.exit());
+const command: BotCommand = {
+  data: {
+    name: "killbot",
+    description: "Kills the bot.",
+    defaultPermission: false,
   },
-} as BotCommand;
+  permissions: [
+    {
+      id: cfg.ownerId,
+      type: "USER",
+      permission: true,
+    },
+  ],
+  guilds: ["dh", "cs", "cr"],
+  execute(interaction) {
+    interaction.reply("```=> Killing the bot.```").then(() => process.exit());
+  },
+};
+
+export default command;

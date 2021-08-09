@@ -5,14 +5,7 @@ export default {
   description: "",
   state: true,
   guilds: ["cr"],
-  onMsg(message) {
-    if (
-      message.channel.type === "DM" ||
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
-      !this.state
-    )
-      return;
-
+  onMessage(message) {
     const atPics: string[] = [];
 
     message.mentions.users.each((user) => {

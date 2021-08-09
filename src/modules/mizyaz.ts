@@ -1,5 +1,5 @@
 import { MessageEmbed } from "discord.js";
-import { BotModule, cfg } from "../vedbot";
+import { BotModule } from "../vedbot";
 
 const mizyaz = "644968168040955904";
 
@@ -8,14 +8,8 @@ export default {
   description: "",
   state: true,
   guilds: ["dh"],
-  onMsg(message) {
-    if (
-      message.channel.type === "DM" ||
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
-      message.member === null ||
-      !this.state
-    )
-      return;
+  onMessage(message) {
+    if (message.member === null) return;
 
     // Mizyaz module
     const mizyazFlag = message.content.match(/[i|İ]slo+[ş|s]\S*/i);

@@ -1,21 +1,14 @@
 import { MessageEmbed } from "discord.js";
-import { BotModule, cfg } from "../vedbot";
+import { BotModule } from "../vedbot";
 
 export default {
   name: "dhlink",
   description: "Convert mobile/desktop DonanimHaber links to their counterparts.",
   state: true,
   guilds: ["dh", "cs"],
-  onMsg(message) {
-    if (
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
-      !this.state
-    )
-      return;
-
+  onMessage(message) {
     const msg = message.content.toLowerCase().split(/\s/);
 
-    // Mobile-desktop forum link helper
     const DHLinks: string[] = [];
 
     msg

@@ -1,18 +1,11 @@
-import { BotModule, cfg } from "../vedbot";
+import { BotModule } from "../vedbot";
 
 export default {
   name: "harunabi",
   description: "",
   state: true,
   guilds: ["dh"],
-  onMsg(message) {
-    if (
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
-      !this.state
-    )
-      return;
-
-    // Harun abi module
+  onMessage(message) {
     const harunabiFlag = message.content.match(/\bharun abi\S*/i);
 
     if (harunabiFlag !== null && harunabiFlag.length > 0)

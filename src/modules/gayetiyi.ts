@@ -5,14 +5,7 @@ export default {
   description: "",
   state: true,
   guilds: ["dh"],
-  onMsg(message) {
-    if (
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id) ||
-      !this.state
-    )
-      return;
-
-    // Gayet iyi module
+  onMessage(message) {
     const msg = message.content.toLowerCase().split(/\s/);
 
     if (

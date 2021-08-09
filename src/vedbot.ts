@@ -6,15 +6,16 @@ import { BotCommand, BotModule } from "./interface";
 import utils, { BotFileCollection } from "./utils";
 
 const cfg = utils.loadConfig();
+const { canExecuteModule } = utils;
 
 const client = new Discord.Client({
   intents: ["GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "DIRECT_MESSAGES"],
-  partials: ["CHANNEL"],
+  // partials: ["CHANNEL"], // Apparently required in order to receive DMs
   presence: {
     status: "online",
     activities: [
       {
-        name: `for prefix ' ${cfg.prefix} '`,
+        name: "for slash commands",
         type: "WATCHING",
       },
     ],
@@ -40,7 +41,7 @@ const vedbot = {
 };
 const { dh } = vedbot.guilds;
 
-// Grab and register commands & modules
+// Grab and store commands & modules
 
 utils.loadBotFiles(vedbot.modules, vedbot.commands);
 
@@ -48,6 +49,7 @@ utils.loadBotFiles(vedbot.modules, vedbot.commands);
 
 client.once("ready", async () => {
   console.log(">> Ready!");
+  cfg.ownerId = client.application?.owner?.id || "";
 
   // Grab required channels
 
@@ -65,40 +67,79 @@ client.once("ready", async () => {
   dh.messages.set("rules_p2", await dh.channels.get("rules")?.messages.fetch(cfg.servers.dh.messages.rules_p2));
   dh.messages.set("roles", await dh.channels.get("rolepick")?.messages.fetch(cfg.servers.dh.messages.roles));
 
+  // Register slash commands along with their permissions
+
+  Object.keys(cfg.servers).forEach(async (server) => {
+    const guildCommandManager = client.guilds.cache.get(cfg.servers[server].id)?.commands;
+    const guildCommands = vedbot.commands.filter((command) => command.guilds.includes(server));
+
+    await guildCommandManager?.set([]);
+
+    guildCommands.forEach(async (command) => {
+      const guildCommand = await guildCommandManager?.create(command.data);
+      if (Array.isArray(command.permissions)) await guildCommand?.permissions.set({ permissions: command.permissions });
+    });
+  });
+
   // [/*cs,*/ dh].forEach(srv => srv.channels.log.send("```=> VedBot is running.```"));
 });
 
-client.on("voiceStateUpdate", (oldState, newState) => {
-  vedbot.modules.get("michelle")?.onVoiceUpdate?.(oldState, newState);
+client.on("interactionCreate", (interaction) => {
+  if (interaction.isCommand() && interaction.inGuild()) {
+    try {
+      vedbot.commands.get(interaction.commandName)?.execute(interaction);
+    } catch (error) {
+      console.error(error);
+      interaction.reply("**Error**: Unable to execute this command due to some kind of incompetence.");
+    }
+  }
 });
 
 client.on("messageCreate", (message) => {
-  if (message.author.id === client.user?.id) return;
+  if (message.author.id === client.user?.id || message.channel.type === "DM") return;
 
   // Modules
   try {
-    ["mizyaz", "dhlink", "gayetiyi", "harunabi", "atpics"].forEach((module) =>
-      vedbot.modules.get(module)?.onMsg?.(message)
-    );
+    ["mizyaz", "dhlink", "gayetiyi", "harunabi", "atpics"].forEach((moduleName) => {
+      const module = vedbot.modules.get(moduleName);
+
+      if (canExecuteModule(cfg, module, message.guild?.id)) module?.onMessage?.(message);
+    });
   } catch (error) {
     console.error(error);
   }
 });
 
+client.on("voiceStateUpdate", (oldState, newState) => {
+  const michelle = vedbot.modules.get("michelle");
+
+  if (canExecuteModule(cfg, michelle, oldState.guild.id)) michelle?.onVoiceUpdate?.(oldState, newState);
+});
+
 client.on("guildMemberAdd", (member) => {
-  vedbot.modules.get("guildjoinleave")?.onMemberJoin?.(member);
+  const guildjoinleave = vedbot.modules.get("guildjoinleave");
+
+  if (canExecuteModule(cfg, guildjoinleave, member.guild.id)) guildjoinleave?.onMemberJoin?.(member);
 });
 
 client.on("guildMemberRemove", (member) => {
-  vedbot.modules.get("guildjoinleave")?.onMemberLeave?.(member as GuildMember);
+  const guildjoinleave = vedbot.modules.get("guildjoinleave");
+
+  if (canExecuteModule(cfg, guildjoinleave, member.guild.id)) guildjoinleave?.onMemberLeave?.(member as GuildMember);
 });
 
 client.on("messageReactionAdd", (reaction, user) => {
-  vedbot.modules.get("dhreactrolepicker")?.onReactionAdd?.(reaction as MessageReaction, user as User);
+  const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
+
+  if (canExecuteModule(cfg, dhreactrolepicker, reaction.message.guild?.id))
+    dhreactrolepicker?.onReactionAdd?.(reaction as MessageReaction, user as User);
 });
 
 client.on("messageReactionRemove", (reaction, user) => {
-  vedbot.modules.get("dhreactrolepicker")?.onReactionRemove?.(reaction as MessageReaction, user as User);
+  const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
+
+  if (canExecuteModule(cfg, dhreactrolepicker, reaction.message.guild?.id))
+    dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
 });
 
 client.login(cfg.token);

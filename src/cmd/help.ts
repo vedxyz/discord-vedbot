@@ -1,14 +1,15 @@
 import { BotCommand } from "../vedbot";
 
-export default {
-  name: "help",
-  aliases: ["h"],
-  description: "",
-  args: false,
-  usage: "",
-  guilds: ["dh", "cs", "cr"],
-  permissions: ["ADMINISTRATOR"],
-  execute(message) {
-    message.reply("This command still has not been implemented...");
+const command: BotCommand = {
+  data: {
+    name: "help",
+    description: "",
+    defaultPermission: true,
   },
-} as BotCommand;
+  guilds: ["dh", "cs", "cr"],
+  execute(interaction) {
+    interaction.reply("This command still has not been implemented...");
+  },
+};
+
+export default command;

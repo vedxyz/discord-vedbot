@@ -1,18 +1,19 @@
 import { BotCommand, cfg } from "../vedbot";
 
-export default {
-  name: "gayetiyikeywords",
-  aliases: ["gikeywords"],
-  description: "",
-  args: false,
-  usage: "",
+const command: BotCommand = {
+  data: {
+    name: "gayetiyikeywords",
+    description: "",
+    defaultPermission: true,
+  },
   guilds: ["dh"],
-  permissions: [],
-  execute(message) {
-    message.channel.send(
+  execute(interaction) {
+    interaction.reply(
       `Use at least one word from each category to make a very well message <:afro:744923369279062156>:\n\n${cfg.servers.dh.gayetiyikeywords
         .map((e: string[]) => e.join(", "))
         .join("\n---\n")}`
     );
   },
-} as BotCommand;
+};
+
+export default command;

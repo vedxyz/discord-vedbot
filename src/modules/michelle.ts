@@ -6,12 +6,6 @@ export default {
   state: true,
   guilds: ["cr"],
   onVoiceUpdate(oldState, newState) {
-    if (
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === oldState.guild.id) ||
-      !this.state
-    )
-      return;
-
     if (oldState.member?.id === cfg.servers.cr.musicbot_id && newState.channelId === null) {
       const image =
         Math.random() > 0.1

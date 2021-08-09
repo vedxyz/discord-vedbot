@@ -1,25 +1,37 @@
 import { MessageEmbed } from "discord.js";
 import { BotCommand, vedbot, cfg } from "../vedbot";
 
-const ved = "123867745191198720";
-
-export default {
-  name: "togglemodule",
-  aliases: ["tmod"],
-  description: "",
-  args: false,
-  usage: "[module name]...",
+const command: BotCommand = {
+  data: {
+    name: "togglemodule",
+    description: "",
+    defaultPermission: false,
+    options: [
+      {
+        name: "module",
+        description: "Module to be toggled",
+        type: "STRING",
+        required: false,
+      },
+    ],
+  },
+  permissions: [
+    {
+      id: cfg.ownerId,
+      type: "USER",
+      permission: true,
+    },
+  ],
   guilds: ["dh", "cr", "cs"],
-  permissions: ["ADMINISTRATOR", ved],
-  execute(message, args) {
-    const availableModules = vedbot.modules.filter(
-      (module) =>
-        module.guilds.length !== 0 &&
-        module.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === message.guild?.id)
+  execute(interaction) {
+    const availableModules = vedbot.modules.filter((module) =>
+      module.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === interaction.guild?.id)
     );
 
-    if (!args.length) {
-      message.reply({
+    const moduleName = interaction.options.getString("module");
+
+    if (moduleName === null) {
+      interaction.reply({
         embeds: [
           new MessageEmbed()
             .setTitle("VedBot Flexible Modules")
@@ -27,7 +39,7 @@ export default {
             .setTimestamp()
             .setFooter(`${vedbot.modules.size - 1} modules loaded in total.`)
             .setColor("RED")
-            .setThumbnail(message.client.user?.avatarURL() || "")
+            .setThumbnail(interaction.client.user?.avatarURL() || "")
             .addFields(
               availableModules.map((module) => ({
                 name: `${module.name} | ${module.state ? "ENABLED" : "DISABLED"}`,
@@ -38,16 +50,16 @@ export default {
         ],
       });
     } else {
-      args.forEach((arg) => {
-        const module = availableModules.find((_module) => _module.name === arg);
+      const module = availableModules.find((_module) => _module.name === moduleName);
 
-        if (module) {
-          module.state = !module.state;
-          message.channel.send(`"${arg}" module is now **${module.state ? "ENABLED" : "DISABLED"}**.`);
-        } else {
-          message.channel.send(`"${arg}" module is not available.`);
-        }
-      });
+      if (module) {
+        module.state = !module.state;
+        interaction.reply(`"${moduleName}" module is now **${module.state ? "ENABLED" : "DISABLED"}**.`);
+      } else {
+        interaction.reply(`"${moduleName}" module is not available.`);
+      }
     }
   },
-} as BotCommand;
+};
+
+export default command;
