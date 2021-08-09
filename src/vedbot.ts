@@ -1,4 +1,4 @@
-// https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=bot
+// https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=applications.commands%20bot
 // The bot is not set to public on the Developer Portal, and as such is open to invitation solely by me.
 
 import Discord, { GuildMember, Message, MessageReaction, TextChannel, User } from "discord.js";
