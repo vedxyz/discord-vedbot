@@ -29,7 +29,8 @@ export default {
 
       const messageOptions: MessageOptions = {
         content: `<@${mizyaz}>`,
-        embeds: [mizyazEmbed, ...message.attachments.values()],
+        embeds: [mizyazEmbed],
+        files: [...message.attachments.values()],
       };
 
       if (message.reference?.messageId)
