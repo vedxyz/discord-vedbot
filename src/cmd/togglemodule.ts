@@ -35,7 +35,7 @@ const command: BotCommand = {
             .setTitle("VedBot Flexible Modules")
             .setDescription("Lists modules available for this server. Commands not included.")
             .setTimestamp()
-            .setFooter(`${vedbot.modules.size - 1} modules loaded in total.`)
+            .setFooter(`${vedbot.modules.size} modules loaded in total.`)
             .setColor("RED")
             .setThumbnail(interaction.client.user?.avatarURL() || "")
             .addFields(

@@ -1,6 +1,8 @@
 import utils from "../utils";
 import { BotCommand, cfg, vedbot } from "../vedbot";
 
+console.log(`Filenames (static): ${utils.botfiles.getAllFileNames(vedbot.commands, vedbot.modules)}`);
+
 const command: BotCommand = {
   data: {
     name: "reload",
@@ -28,6 +30,8 @@ const command: BotCommand = {
     let file;
     let fileCollection;
 
+    console.log(`Filenames: ${utils.botfiles.getAllFileNames(vedbot.commands, vedbot.modules)}`);
+    
     if (vedbot.commands.has(filename)) {
       file = vedbot.commands.get(filename);
       fileCollection = vedbot.commands;
