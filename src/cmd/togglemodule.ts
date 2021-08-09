@@ -4,7 +4,7 @@ import { BotCommand, vedbot, cfg } from "../vedbot";
 const command: BotCommand = {
   data: {
     name: "togglemodule",
-    description: "",
+    description: "List or toggle VedBot modules for the current server",
     defaultPermission: false,
     options: [
       {
