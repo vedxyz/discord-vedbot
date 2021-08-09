@@ -11,9 +11,15 @@ const command: BotCommand = {
         name: "id",
         description: "ID of a rule",
         type: "INTEGER",
-        required: false,
+        required: true,
         choices: Array.from({ length: cfg.servers.dh.rules.length }, (_, i) => ({ name: `${i + 1}`, value: i + 1 })),
       },
+      {
+        name: "content",
+        description: "New content of rule",
+        type: "STRING",
+        required: false,
+      }
     ],
   },
   guilds: ["dh"],
