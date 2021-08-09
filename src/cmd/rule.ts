@@ -21,7 +21,7 @@ const command: BotCommand = {
     const ruleID = interaction.options.getInteger("id");
 
     const ruleEmbed = utils.getRuleEmbedBase(interaction);
-    
+
     if (ruleID === null) {
       const ruleStack = cfg.servers.dh.rules
         .map((rule: string, idx: number) => (rule.length ? { index: idx + 1, content: rule } : false))

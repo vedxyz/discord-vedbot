@@ -16,10 +16,7 @@ const command: BotCommand = {
       },
     ],
   },
-  permissions: [
-    utils.permissions.getOwner(cfg),
-    ...utils.permissions.getAdmins(cfg),
-  ],
+  permissions: [utils.permissions.getOwner(cfg), ...utils.permissions.getAdmins(cfg)],
   guilds: ["dh", "cr", "cs"],
   execute(interaction) {
     const availableModules = vedbot.modules.filter((module) =>

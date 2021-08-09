@@ -12,22 +12,20 @@ const command: BotCommand = {
         description: "BotFile to be reloaded",
         type: "STRING",
         required: true,
-        choices: utils
-          .botfiles.getAllFileNamesSync(vedbot.commands, vedbot.modules)
+        choices: utils.botfiles
+          .getAllFileNamesSync(vedbot.commands, vedbot.modules)
           .map((filename) => ({ name: filename, value: filename.slice(0, -3) })),
       },
     ],
   },
-  permissions: [
-    utils.permissions.getOwner(cfg)
-  ],
+  permissions: [utils.permissions.getOwner(cfg)],
   guilds: ["dh", "cs", "cr"],
   execute(interaction) {
     const filename = interaction.options.getString("filename", true);
 
     let file;
     let fileCollection;
-    
+
     if (vedbot.commands.has(filename)) {
       file = vedbot.commands.get(filename);
       fileCollection = vedbot.commands;

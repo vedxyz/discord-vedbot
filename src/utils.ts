@@ -51,13 +51,16 @@ const botfiles = {
   getAllFileNamesSync: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): string[] =>
     botFileCollections
       .map((collection) => fs.readdirSync(path.join(__dirname, collection.rootdir)))
-      .reduce((acc, curr) => acc.concat(curr), []),
+      .reduce((acc, curr) => acc.concat(curr), [])
+      .filter((filename) => filename.endsWith(".js")),
   getAllFileNames: async (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): Promise<string[]> =>
     (
       await Promise.all(
         botFileCollections.map((collection) => fs.promises.readdir(path.join(__dirname, collection.rootdir)))
       )
-    ).reduce((acc, curr) => acc.concat(curr), []),
+    )
+      .reduce((acc, curr) => acc.concat(curr), [])
+      .filter((filename) => filename.endsWith(".js")),
 };
 
 const fetchConfigChannels = async (
