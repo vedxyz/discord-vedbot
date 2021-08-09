@@ -44,9 +44,11 @@ const botfiles = {
   getAllFileNames: (...botFileCollection: BotFileCollection<BotCommand | BotModule>[]): string[] => {
     const filenames: string[] = [];
     botFileCollection.forEach(async (collection) => {
+      const testvar = (await fs.promises.readdir(path.join(__dirname, collection.rootdir))).filter((file) => file.endsWith(".js"));
       filenames.push(
-        ...(await fs.promises.readdir(path.join(__dirname, collection.rootdir))).filter((file) => file.endsWith(".js"))
+        ...testvar
       );
+      console.log(`testvar: ${testvar}`);
     });
     return filenames;
   },
