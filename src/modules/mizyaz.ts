@@ -11,7 +11,6 @@ export default {
   onMessage(message) {
     if (message.member === null) return;
 
-    // Mizyaz module
     const mizyazFlag = message.content.match(/[i|İ]slo+[ş|s]\S*/i);
 
     if (

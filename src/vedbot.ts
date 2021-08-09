@@ -41,16 +41,14 @@ const vedbot = {
 };
 const { dh } = vedbot.guilds;
 
-// Grab and store commands & modules
+// Load and store commands & modules
 
 utils.loadBotFiles(vedbot.modules, vedbot.commands);
-
-// Begin here
 
 client.once("ready", async () => {
   console.log(">> Ready!");
 
-  // Grab required channels
+  // Fetch required channels
 
   await utils.fetchConfigChannels(
     client,
@@ -76,12 +74,9 @@ client.once("ready", async () => {
 
     guildCommands.forEach(async (command) => {
       const guildCommand = await guildCommandManager?.create(command.data);
-      console.log(`Created command "${guildCommand?.name}" for guild "${server}"`);
       if (Array.isArray(command.permissions)) await guildCommand?.permissions.set({ permissions: command.permissions });
     });
   });
-
-  // [/*cs,*/ dh].forEach(srv => srv.channels.log.send("```=> VedBot is running.```"));
 });
 
 client.on("interactionCreate", (interaction) => {
@@ -90,7 +85,7 @@ client.on("interactionCreate", (interaction) => {
       vedbot.commands.get(interaction.commandName)?.execute(interaction);
     } catch (error) {
       console.error(error);
-      interaction.reply("**Error**: Unable to execute this command due to some kind of incompetence.");
+      interaction.reply("**Error**: Unable to execute this command due to some kind of incompetence on my behalf.");
     }
   }
 });
@@ -98,9 +93,8 @@ client.on("interactionCreate", (interaction) => {
 client.on("messageCreate", (message) => {
   if (message.author.id === client.user?.id || message.channel.type === "DM") return;
 
-  // Modules
   try {
-    ["mizyaz", "dhlink", "gayetiyi", "harunabi", "atpics"].forEach((moduleName) => {
+    ["mizyaz", "dhlink", "harunabi", "atpics"].forEach((moduleName) => {
       const module = vedbot.modules.get(moduleName);
 
       if (canExecuteModule(cfg, module, message.guild?.id)) module?.onMessage?.(message);
