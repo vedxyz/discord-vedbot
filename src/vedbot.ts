@@ -9,7 +9,7 @@ const cfg = utils.loadConfig();
 const { canExecuteModule } = utils;
 
 const client = new Discord.Client({
-  intents: ["GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "DIRECT_MESSAGES"],
+  intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "DIRECT_MESSAGES"],
   // partials: ["CHANNEL"], // Apparently required in order to receive DMs
   presence: {
     status: "online",
