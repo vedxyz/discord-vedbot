@@ -34,8 +34,15 @@ const command: BotCommand = {
 
     if (subcommand === "set") {
       const url = interaction.options.getString("url") ?? "";
-
-      if (!(await fetch(url)).headers.get("content-type")?.startsWith("image/")) {
+      
+      let isUrlValidImg: boolean | undefined;
+      try {
+        isUrlValidImg = (await fetch(url)).headers.get("content-type")?.startsWith("image/");
+      } catch (error) {
+        isUrlValidImg = false;
+      }
+      
+      if (!isUrlValidImg) {
         interaction.reply({
           ephemeral: true,
           content: "Your @ picture URL doesn't appear to be a valid image.",
@@ -48,7 +55,7 @@ const command: BotCommand = {
       interaction.reply({
         ephemeral: true,
         content: "Your @ picture has been set:",
-        files: cfg.servers.cr.at_pics[interaction.user.id],
+        files: [cfg.servers.cr.at_pics[interaction.user.id]],
       });
     } else if (subcommand === "remove") {
       delete cfg.servers.cr.at_pics[interaction.user.id];
