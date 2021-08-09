@@ -1,8 +1,6 @@
 import utils from "../utils";
 import { BotCommand, cfg, vedbot } from "../vedbot";
 
-console.log(`Filenames (static): ${utils.botfiles.getAllFileNames(vedbot.commands, vedbot.modules)}`);
-
 const command: BotCommand = {
   data: {
     name: "reload",
@@ -15,7 +13,7 @@ const command: BotCommand = {
         type: "STRING",
         required: true,
         choices: utils
-          .botfiles.getAllFileNames(vedbot.commands, vedbot.modules)
+          .botfiles.getAllFileNamesSync(vedbot.commands, vedbot.modules)
           .map((filename) => ({ name: filename, value: filename.slice(0, -3) })),
       },
     ],
@@ -29,8 +27,6 @@ const command: BotCommand = {
 
     let file;
     let fileCollection;
-
-    console.log(`Filenames: ${utils.botfiles.getAllFileNames(vedbot.commands, vedbot.modules)}`);
     
     if (vedbot.commands.has(filename)) {
       file = vedbot.commands.get(filename);

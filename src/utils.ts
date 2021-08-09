@@ -2,7 +2,14 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 import fs from "fs";
-import Discord, { ApplicationCommandPermissionData, Client, CommandInteraction, MessageEmbed, Snowflake, TextChannel } from "discord.js";
+import Discord, {
+  ApplicationCommandPermissionData,
+  Client,
+  CommandInteraction,
+  MessageEmbed,
+  Snowflake,
+  TextChannel,
+} from "discord.js";
 import path from "path";
 import { BotCommand, BotConfig, BotModule } from "./interface";
 
@@ -18,9 +25,9 @@ export class BotFileCollection<T extends BotCommand | BotModule> extends Discord
 }
 
 const botfiles = {
-  loadAll: (...botFileCollection: BotFileCollection<BotCommand | BotModule>[]): void => {
+  loadAll: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): void => {
     console.log("Loading BotFiles...");
-    botFileCollection.forEach((collection) => {
+    botFileCollections.forEach((collection) => {
       fs.readdirSync(path.join(__dirname, collection.rootdir))
         .filter((file) => file.endsWith(".js"))
         .map(
@@ -35,23 +42,22 @@ const botfiles = {
   },
   reload: (collection: BotFileCollection<BotCommand | BotModule>, filename: string): void => {
     const filePath = path.join(__dirname, collection.rootdir, `${filename}.js`);
-  
+
     delete require.cache[require.resolve(filePath)];
     const reloadedFile: BotCommand | BotModule = require(filePath).default;
     collection.set(filename, reloadedFile);
     console.log(`Reloaded BotFile: ${filename}.js`);
   },
-  getAllFileNames: (...botFileCollection: BotFileCollection<BotCommand | BotModule>[]): string[] => {
-    const filenames: string[] = [];
-    botFileCollection.forEach(async (collection) => {
-      const testvar = (await fs.promises.readdir(path.join(__dirname, collection.rootdir))).filter((file) => file.endsWith(".js"));
-      filenames.push(
-        ...testvar
-      );
-      console.log(`testvar: ${testvar}`);
-    });
-    return filenames;
-  },
+  getAllFileNamesSync: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): string[] =>
+    botFileCollections
+      .map((collection) => fs.readdirSync(path.join(__dirname, collection.rootdir)))
+      .reduce((acc, curr) => acc.concat(curr), []),
+  getAllFileNames: async (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): Promise<string[]> =>
+    (
+      await Promise.all(
+        botFileCollections.map((collection) => fs.promises.readdir(path.join(__dirname, collection.rootdir)))
+      )
+    ).reduce((acc, curr) => acc.concat(curr), []),
 };
 
 const fetchConfigChannels = async (
@@ -106,7 +112,7 @@ const permissions = {
       id: cfg.servers.dh.roles.admin,
       type: "ROLE",
       permission: true,
-    }
+    },
   ],
 };
 
