@@ -1,7 +1,7 @@
 import { MessageEmbed, MessageOptions } from "discord.js";
 import { BotModule } from "../vedbot";
 
-const mizyaz = "644968168040955904";
+const mizyazId = "644968168040955904";
 
 export default {
   name: "mizyaz",
@@ -17,7 +17,7 @@ export default {
       mizyazFlag !== null &&
       mizyazFlag.length > 0 &&
       !message.content.endsWith(".") &&
-      message.author.id !== mizyaz
+      message.author.id !== mizyazId
     ) {
       message.delete();
 
@@ -28,13 +28,22 @@ export default {
         .setColor(message.member.displayHexColor);
 
       const messageOptions: MessageOptions = {
-        content: `<@${mizyaz}>`,
-        embeds: [mizyazEmbed],
+        content: `<@${mizyazId}>`,
+        embeds: [mizyazEmbed, ...message.embeds],
         files: [...message.attachments.values()],
       };
 
-      if (message.reference?.messageId)
-        messageOptions.reply = { messageReference: message.reference?.messageId, failIfNotExists: false };
+      if (message.mentions.members)
+        messageOptions.content += `, ${message.mentions.members
+          .filter((member) => member.id !== mizyazId)
+          .map((member) => `<@${member.id}>`)
+          .join(", ")}`;
+
+      if (message.reference?.messageId) {
+        messageOptions.reply = { messageReference: message.reference.messageId, failIfNotExists: false };
+
+        messageOptions.allowedMentions = { repliedUser: message.mentions.has(message.mentions.repliedUser ?? "") };
+      }
 
       message.channel.send(messageOptions);
     }
