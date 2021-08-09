@@ -12,10 +12,12 @@
   "author": "Ved",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^13.0.1"
+    "discord.js": "^13.0.1",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@types/node": "^16.4.2",
+    "@types/node-fetch": "^2.5.12",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "eslint": "^7.31.0",
