@@ -5,7 +5,7 @@ const command: BotCommand = {
   data: {
     name: "setrule",
     description: "Set rules for the DH server.",
-    defaultPermission: true,
+    defaultPermission: false,
     options: [
       {
         name: "id",
