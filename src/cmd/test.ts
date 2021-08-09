@@ -10,7 +10,7 @@ const command: BotCommand = {
   permissions: [utils.permissions.getOwner(cfg)],
   guilds: ["dh"],
   execute(interaction) {
-    interaction.reply({ files: ["https://media.tenor.co/videos/09c31ea48352ac890d1b69bd6126c002/mp4"] });
+    interaction.reply({ files: ["https://c.tenor.com/2VLFsrPYr8AAAAPo/peaky-blinders.mp4"] });
   },
 };
 
