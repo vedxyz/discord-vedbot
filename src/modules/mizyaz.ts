@@ -1,4 +1,4 @@
-import { MessageEmbed } from "discord.js";
+import { MessageEmbed, MessageOptions } from "discord.js";
 import { BotModule } from "../vedbot";
 
 const mizyaz = "644968168040955904";
@@ -27,10 +27,15 @@ export default {
         .setTimestamp()
         .setColor(message.member.displayHexColor);
 
-      message.channel.send({
+      const messageOptions: MessageOptions = {
         content: `<@${mizyaz}>`,
         embeds: [mizyazEmbed, ...message.attachments.values()],
-      });
+      };
+
+      if (message.reference?.messageId)
+        messageOptions.reply = { messageReference: message.reference?.messageId, failIfNotExists: false };
+
+      message.channel.send(messageOptions);
     }
   },
 } as BotModule;
