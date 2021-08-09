@@ -10,7 +10,7 @@ const command: BotCommand = {
   permissions: [utils.permissions.getOwner(cfg)],
   guilds: ["dh"],
   execute(interaction) {
-    interaction.reply({ files: ["https://static.tumblr.com/58d9c77e9619492c680de2a9772bcb51/txjgy5i/2HNoujzqj/tumblr_static_tumblr_static__focused_v3.gif"] });
+    interaction.reply({ files: ["https://media.tenor.co/videos/09c31ea48352ac890d1b69bd6126c002/mp4"] });
   },
 };
 
