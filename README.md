@@ -4,9 +4,9 @@ VedBot is a private Discord bot developed to cover the needs of a few servers I 
 
 The project had started out as a single-file JavaScript project built using the discord.js library, but has gone through quite a bit of refactoring since then. Namely;
 
-1- The code was split into proper "modules" and "commands" rather than being contained in a single gigantic file.
-2- Later on, the project was migrated over to TypeScript. The migration, initially being more of a pain than imagined, has made the codebase much more reliable thanks to the excruciating work put into it.
-3- And at last, the project was upgraded to take advantage of Discord API v9 with the release of discord.js v13.
+1. The code was split into proper "modules" and "commands" rather than being contained in a single gigantic file.
+2. Later on, the project was migrated over to TypeScript. The migration, initially being more of a pain than imagined, has made the codebase much more reliable thanks to the excruciating work put into it.
+3. And at last, the project was upgraded to take advantage of Discord API v9 with the release of discord.js v13.
 
 ## `config.json`
 
