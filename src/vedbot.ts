@@ -94,7 +94,7 @@ client.on("messageCreate", (message) => {
   if (message.author.id === client.user?.id || message.channel.type === "DM") return;
 
   try {
-    ["mizyaz", "dhlink", "harunabi", "atpics"].forEach((moduleName) => {
+    ["mizyaz", "dhlink", "atpics"].forEach((moduleName) => {
       const module = vedbot.modules.get(moduleName);
 
       if (canExecuteModule(cfg, module, message.guild?.id)) module?.onMessage?.(message);
