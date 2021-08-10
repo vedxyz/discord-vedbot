@@ -14,7 +14,7 @@ export default {
     vedbot.guilds[serverKey].channels.get("log")?.send({
       embeds: [
         new MessageEmbed()
-          .setTitle(":o: | Joined the server:")
+          .setTitle(":o: - Joined the server:")
           .setDescription(`<@${member.id}>`)
           .setColor("GREEN")
           .setTimestamp(),
@@ -54,7 +54,7 @@ export default {
     vedbot.guilds[serverKey].channels.get("log")?.send({
       embeds: [
         new MessageEmbed()
-          .setTitle(":o: | Left the server:")
+          .setTitle(":x: - Left the server:")
           .setDescription(`<@${member.id}>`)
           .setColor("RED")
           .setTimestamp(),
