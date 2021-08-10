@@ -49,16 +49,10 @@ function roleSwitchSafety(
 
 export default {
   name: "dhreactrolepicker",
-  description: "",
+  description: "Provides ability to select roles through reactions.",
   state: true,
   guilds: ["dh"],
   onReactionAdd(reaction, user) {
-    if (
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === reaction.message.guild?.id) ||
-      !this.state
-    )
-      return;
-
     if (
       reaction.message.id === cfg.servers.dh.messages.rules_c ||
       reaction.message.id === cfg.servers.dh.messages.roles
@@ -223,15 +217,6 @@ export default {
     }
   },
   onReactionRemove(reaction, user) {
-    if (reaction.message.guild === null) return;
-
-    // console.log(vedbot.guilds.dh.reactionQueue);
-    if (
-      !this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === reaction.message.guild?.id) ||
-      !this.state
-    )
-      return;
-
     if (vedbot.guilds.dh.reactionQueue.has(`${user.id}A`)) return vedbot.guilds.dh.reactionQueue.delete(`${user.id}A`);
     if (vedbot.guilds.dh.reactionQueue.has(`${user.id}B`)) return vedbot.guilds.dh.reactionQueue.delete(`${user.id}B`);
     if (vedbot.guilds.dh.reactionQueue.has(`${user.id}C`)) return vedbot.guilds.dh.reactionQueue.delete(`${user.id}C`);
@@ -247,7 +232,7 @@ export default {
     if (vedbot.guilds.dh.reactionQueue.has(`${user.id}TM`))
       return vedbot.guilds.dh.reactionQueue.delete(`${user.id}TM`);
 
-    const guildmember = reaction.message.guild.members.cache.get(user.id);
+    const guildmember = reaction.message.guild?.members.cache.get(user.id);
     if (!guildmember) return;
 
     if (

@@ -1,7 +1,17 @@
-import { GuildMember, Message, MessageReaction, PermissionString, Snowflake, User, VoiceState } from "discord.js";
+import {
+  ApplicationCommandData,
+  ApplicationCommandPermissionData,
+  CommandInteraction,
+  GuildMember,
+  Message,
+  MessageReaction,
+  Snowflake,
+  User,
+  VoiceState,
+} from "discord.js";
 
 export interface BotConfig {
-  prefix: string;
+  ownerId: Snowflake;
   token: string;
   servers: {
     [key: string]: {
@@ -13,12 +23,11 @@ export interface BotConfig {
 }
 
 export interface BotModule {
-  rootdir?: string;
   name: string;
   description: string;
   state: boolean;
   guilds: string[];
-  onMsg?: (message: Message) => unknown;
+  onMessage?: (message: Message) => void;
   onVoiceUpdate?: (oldState: VoiceState, newState: VoiceState) => unknown;
   onMemberJoin?: (member: GuildMember) => unknown;
   onMemberLeave?: (member: GuildMember) => unknown;
@@ -27,14 +36,8 @@ export interface BotModule {
 }
 
 export interface BotCommand {
-  rootdir?: string;
-  name: string;
-  aliases: string[];
-  description: string;
-  args: boolean;
-  usage: string;
+  data: ApplicationCommandData;
+  permissions?: ApplicationCommandPermissionData[];
   guilds: string[];
-  permissions: PermissionString[];
-  allowedUser?: string[];
-  execute: (message: Message, args: string[]) => unknown;
+  execute: (interaction: CommandInteraction) => unknown;
 }

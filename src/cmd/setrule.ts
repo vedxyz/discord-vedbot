@@ -1,37 +1,52 @@
 import utils from "../utils";
-import { BotCommand, vedbot, cfg } from "../vedbot";
+import { BotCommand, cfg } from "../vedbot";
 
-export default {
-  name: "setrule",
-  aliases: [],
-  description: "Set rules for the DH server.",
-  args: true,
-  usage: "[ID] [rule content]",
-  guilds: ["dh"],
-  permissions: ["ADMINISTRATOR"],
-  execute(message, args) {
-    const ruleID = parseInt(args.shift() || "", 10);
-    const ruleContent = args.join(" ");
-
-    if (Number.isNaN(ruleID) || ruleID < 1 || ruleID > cfg.servers.dh.rules.length) {
-      message.reply(
-        `Usage: \`${cfg.prefix}${this.name} ${this.usage}\`
-Example: \`${cfg.prefix}${this.name} 7 The content of the rule to be set.\`
-Note: Max rule ID is ${cfg.servers.dh.rules.length}.`
-      );
-    } else {
-      console.log(`Writing rule to ${ruleID}: ${ruleContent}`);
-      cfg.servers.dh.rules[ruleID - 1] = ruleContent;
-
-      utils
-        .saveConfig(cfg)
-        .then(() => {
-          vedbot.commands.get("rule")?.execute(message, [ruleID.toString()]);
-        })
-        .catch((err) => {
-          console.error(err);
-          message.reply("There was a problem saving the rule.");
-        });
-    }
+const command: BotCommand = {
+  data: {
+    name: "setrule",
+    description: "Set rules for the DH server.",
+    defaultPermission: false,
+    options: [
+      {
+        name: "id",
+        description: "ID of a rule",
+        type: "INTEGER",
+        required: true,
+        choices: Array.from({ length: cfg.servers.dh.rules.length }, (_, i) => ({ name: `${i + 1}`, value: i + 1 })),
+      },
+      {
+        name: "content",
+        description: "New content of rule",
+        type: "STRING",
+        required: false,
+      },
+    ],
   },
-} as BotCommand;
+  permissions: [utils.permissions.getOwner(cfg), ...utils.permissions.getAdmins(cfg)],
+  guilds: ["dh"],
+  execute(interaction) {
+    const ruleID = interaction.options.getInteger("id", true);
+    const ruleContent = interaction.options.getString("content") ?? "";
+
+    console.log(`Writing rule to #${ruleID}: ${ruleContent.substring(0, 50)}${ruleContent.length > 50 ? "..." : ""}`);
+    cfg.servers.dh.rules[ruleID - 1] = ruleContent;
+
+    utils.config
+      .save(cfg)
+      .then(() => {
+        interaction.reply({
+          embeds: [
+            utils
+              .getRuleEmbedBase(interaction)
+              .addField(`Kural #${ruleID}`, ruleContent || "*This rule has been cleared*", false),
+          ],
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        interaction.reply("There was a problem saving the rule.");
+      });
+  },
+};
+
+export default command;

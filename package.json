@@ -1,21 +1,23 @@
 {
-  "name": "discord-bot",
-  "version": "2.0.0",
-  "description": "",
+  "name": "discord-vedbot",
+  "version": "3.0.0",
+  "description": "Private Discord bot",
   "main": "vedbot.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node ./build/vedbot.js",
-    "persist": "pm2 start ./build/vedbot.js",
+    "build": "rm -rf ./build && tsc",
+    "start": "[[ $(node -v) == \"v16.\"* ]] && node ./build/vedbot.js",
+    "persist": "pm2 start ./build/vedbot.js --interpreter=node@16.6.1",
     "prettier": "npx prettier --write ./src"
   },
   "author": "Ved",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^13.0.1",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@types/node": "^16.4.2",
+    "@types/node-fetch": "^2.5.12",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "eslint": "^7.31.0",

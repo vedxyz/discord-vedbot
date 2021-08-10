@@ -28,6 +28,7 @@
               "tsx": "never"
             }
          ],
-         "no-console": "off"
+         "no-console": "off",
+         "no-plusplus": "off"
     }
 }

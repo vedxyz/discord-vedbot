@@ -1,46 +1,64 @@
+import { MessageEmbed } from "discord.js";
 import { BotModule, cfg, vedbot } from "../vedbot";
 
 export default {
   name: "guildjoinleave",
-  description: "",
+  description: "Notifies, in a predefined log channel, of members leaving/joining.",
   state: true,
   guilds: ["cs", "dh"],
   onMemberJoin(member) {
-    if (!this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id) || !this.state)
-      return;
-
     const serverKey = this.guilds.find(
-      (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
+      (srv) => cfg.servers[srv].id === member.guild.id
     ) as keyof typeof vedbot.guilds;
-    if (!serverKey) return;
 
-    vedbot.guilds[serverKey].channels
-      .get("log")
-      ?.send(`:o: -> Joined the server: **${member.displayName}**#${member.user.discriminator}`);
+    vedbot.guilds[serverKey].channels.get("log")?.send({
+      embeds: [
+        new MessageEmbed()
+          .setTitle(":o: - Joined the server:")
+          .setDescription(`<@${member.id}>`)
+          .setColor("GREEN")
+          .setTimestamp(),
+      ],
+    });
 
     if (member.guild.id === cfg.servers.dh.id) {
-      vedbot.guilds.dh.channels
-        .get("newbie")
-        ?.send(
-          `Merhaba <@${member.id}> :),\n` +
-            `Sunucunun tamamına erişmek için;\n` +
-            `1- <#${cfg.servers.dh.channels.rules}>'ı onaylamanız\n` +
-            `2- <#${cfg.servers.dh.channels.rolepick}> kanalından bölüm ve sınıf seçmeniz\n` +
-            `gerekmekte.`
-        );
+      vedbot.guilds.dh.channels.get("newbie")?.send({
+        content: `<@${member.id}>`,
+        embeds: [
+          new MessageEmbed()
+            .setTitle(`Merhaba, ${member.displayName} :)`)
+            .setDescription("Sunucunun tamamına erişmek için lütfen;")
+            .addFields([
+              {
+                name: "#1",
+                value: `<#${cfg.servers.dh.channels.rules}>'ı onaylayınız`,
+              },
+              {
+                name: "#2",
+                value: `<#${cfg.servers.dh.channels.rolepick}> kanalından bölüm ve sınıf seçiniz`,
+              },
+            ])
+            .setTimestamp()
+            .setFooter(`Teşekkürler.`)
+            .setColor("RANDOM")
+            .setThumbnail(member.guild.iconURL() || ""),
+        ],
+      });
     }
   },
   onMemberLeave(member) {
-    if (!this.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id) || !this.state)
-      return;
-
     const serverKey = this.guilds.find(
-      (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
+      (srv) => cfg.servers[srv].id === member.guild.id
     ) as keyof typeof vedbot.guilds;
-    if (!serverKey) return;
 
-    vedbot.guilds[serverKey].channels
-      .get("log")
-      ?.send(`:x: -> Left the server: **${member.displayName}**#${member.user.discriminator}`);
+    vedbot.guilds[serverKey].channels.get("log")?.send({
+      embeds: [
+        new MessageEmbed()
+          .setTitle(":x: - Left the server:")
+          .setDescription(`<@${member.id}>`)
+          .setColor("RED")
+          .setTimestamp(),
+      ],
+    });
   },
 } as BotModule;

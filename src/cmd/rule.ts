@@ -1,49 +1,51 @@
-import { MessageEmbed } from "discord.js";
+import utils from "../utils";
 import { BotCommand, cfg } from "../vedbot";
 
-export default {
-  name: "rule",
-  aliases: ["getrule"],
-  description: "Get rule(s) for the DH server.",
-  args: false,
-  usage: "[ID]",
+const command: BotCommand = {
+  data: {
+    name: "rule",
+    description: "Get rule(s) for the DH server.",
+    defaultPermission: true,
+    options: [
+      {
+        name: "id",
+        description: "ID of a rule",
+        type: "INTEGER",
+        required: false,
+        choices: Array.from({ length: cfg.servers.dh.rules.length }, (_, i) => ({ name: `${i + 1}`, value: i + 1 })),
+      },
+    ],
+  },
   guilds: ["dh"],
-  permissions: [],
-  execute(message, args) {
-    if (!message.guild) return;
+  execute(interaction) {
+    const ruleID = interaction.options.getInteger("id");
 
-    const ruleID = parseInt(args[0], 10);
+    const ruleEmbed = utils.getRuleEmbedBase(interaction);
 
-    const ruleEmbed = new MessageEmbed()
-      .setTitle(`${message.guild.name} Kurallar`)
-      .setTimestamp()
-      .setFooter(`Teşekkürler.`)
-      .setColor("ORANGE")
-      .setThumbnail(message.guild.iconURL() || "");
-
-    if (Number.isNaN(ruleID)) {
+    if (ruleID === null) {
       const ruleStack = cfg.servers.dh.rules
         .map((rule: string, idx: number) => (rule.length ? { index: idx + 1, content: rule } : false))
         .filter((e: unknown) => e);
 
-      message.channel.send(
-        ruleEmbed.addFields(
-          ruleStack.map((rule: { index: number; content: string }) => ({
-            name: `Kural #${rule.index}`,
-            value: rule.content,
-            inline: false,
-          }))
-        )
-      );
-    } else if (ruleID < 1 || ruleID > cfg.servers.dh.rules.length) {
-      message.reply(
-        `Usage: \`${cfg.prefix}${this.name} ${this.usage}\`\n` +
-          `Note: Leave ID argument blank to list all rules. There are ${cfg.servers.dh.rules.length} rules.`
-      );
+      interaction.reply({
+        embeds: [
+          ruleEmbed.addFields(
+            ruleStack.map((rule: { index: number; content: string }) => ({
+              name: `Kural #${rule.index}`,
+              value: rule.content,
+              inline: false,
+            }))
+          ),
+        ],
+      });
     } else if (!cfg.servers.dh.rules[ruleID - 1].length) {
-      message.reply(`Rule #${ruleID} is blank.`);
+      interaction.reply({ content: `Rule #${ruleID} is blank.`, ephemeral: true });
     } else {
-      message.channel.send(ruleEmbed.addField(`Kural #${ruleID}`, cfg.servers.dh.rules[ruleID - 1], false));
+      interaction.reply({
+        embeds: [ruleEmbed.addField(`Kural #${ruleID}`, cfg.servers.dh.rules[ruleID - 1], false)],
+      });
     }
   },
-} as BotCommand;
+};
+
+export default command;
