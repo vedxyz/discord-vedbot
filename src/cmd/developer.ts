@@ -42,7 +42,7 @@ const subcommands = {
   },
   togglemodule: (interaction: CommandInteraction) => {
     const availableModules = vedbot.modules.filter((module) =>
-      module.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === interaction.guild?.id)
+      module.guilds.some((srv) => cfg.servers[srv].id === interaction.guild?.id)
     );
 
     const moduleName = interaction.options.getString("module");

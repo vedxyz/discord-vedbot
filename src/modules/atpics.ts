@@ -10,8 +10,7 @@ export default {
 
     message.mentions.users.each((user) => {
       if (Object.prototype.hasOwnProperty.call(cfg.servers.cr.at_pics, user.id) && atPics.length < 10) {
-        // eslint-disable-next-line camelcase
-        atPics.push(cfg.servers.cr.at_pics[user.id as keyof typeof cfg.servers.cr.at_pics]);
+        atPics.push(cfg.servers.cr.at_pics[user.id]);
       }
     });
 

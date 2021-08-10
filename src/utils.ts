@@ -89,7 +89,7 @@ const canExecuteModule = (
 ): boolean =>
   !!eventGuildId &&
   !!module?.state &&
-  module.guilds.some((srv) => cfg.servers[srv as keyof typeof cfg.servers].id === eventGuildId);
+  module.guilds.some((srv) => cfg.servers[srv].id === eventGuildId);
 
 const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
   new MessageEmbed()

@@ -8,7 +8,7 @@ export default {
   guilds: ["cs", "dh"],
   onMemberJoin(member) {
     const serverKey = this.guilds.find(
-      (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
+      (srv) => cfg.servers[srv].id === member.guild.id
     ) as keyof typeof vedbot.guilds;
 
     vedbot.guilds[serverKey].channels.get("log")?.send({
@@ -48,7 +48,7 @@ export default {
   },
   onMemberLeave(member) {
     const serverKey = this.guilds.find(
-      (srv) => cfg.servers[srv as keyof typeof cfg.servers].id === member.guild.id
+      (srv) => cfg.servers[srv].id === member.guild.id
     ) as keyof typeof vedbot.guilds;
 
     vedbot.guilds[serverKey].channels.get("log")?.send({
