@@ -1,0 +1,1385 @@
+[
+  {
+    "courseCode": "ENG 101",
+    "courseName": "English and Composition I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "216"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "360"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "31",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "168"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "42",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "120"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "51",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "192"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "63",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-155)"
+          }
+        ]
+      },
+      {
+        "section": "64",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-209)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-209)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "65",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      },
+      {
+        "section": "69",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "216"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "81",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "168"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "92",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "168"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "103",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "216"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "116",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(RE-202)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(RE-202)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-202)"
+          }
+        ]
+      },
+      {
+        "section": "117",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-202)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(RE-202)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(RE-202)"
+          }
+        ]
+      },
+      {
+        "section": "118",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(RE-202)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-202)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(RE-202)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ENG 102",
+    "courseName": "English and Composition II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "17",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "25",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "33",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "41",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "50",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-254)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-254)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-254)"
+          }
+        ]
+      },
+      {
+        "section": "54",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "63",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "69",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(RE-203)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(RE-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-203)"
+          }
+        ]
+      },
+      {
+        "section": "70",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-203)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(RE-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(RE-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ENG 117",
+    "courseName": "Advanced English Grammar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-206)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-135)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-135)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-153)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-153)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-B07)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-B07)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-232)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-232)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ENG 206",
+    "courseName": "Business Communications",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ENG 401",
+    "courseName": "Technical Report Writing and Presentation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-Z07)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-102)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-102)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-B07)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-154)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-155)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-155)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-B36)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-B36)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B07)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-B07)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B36)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-B36)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-Z38)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-Z38)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-Z10)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-Z10)"
+          }
+        ]
+      },
+      {
+        "section": "12",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-Z07)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "13",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-Z37)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-Z37)"
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-110)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-110)"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2433 @@
+[
+  {
+    "courseCode": "LAW 102",
+    "courseName": "Roman Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Talya Şans Deibel",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Talya Şans Deibel",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 103",
+    "courseName": "Constitutional Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erdal Onar",
+        "quota": {
+          "indifferent": true,
+          "total": "75"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Erdal Onar",
+        "quota": {
+          "indifferent": true,
+          "total": "75"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Ece Göztepe Çelebi",
+        "quota": {
+          "indifferent": true,
+          "total": "75"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Zülfiye Yılmaz",
+        "quota": {
+          "indifferent": true,
+          "total": "58"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 105",
+    "courseName": "Civil Law: Introductory Provisions and Natural Persons",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Osman B. Gürzumar",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Osman B. Gürzumar",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Mehmet Ali Erten",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 201",
+    "courseName": "Law of Obligations I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Ali Erten",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Vedat Buz",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Hüseyin Can Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 203",
+    "courseName": "Criminal Law I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sami Selçuk",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Haluk Toroslu",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Haluk Toroslu",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Fatma Umay Genç",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 205",
+    "courseName": "Administrative Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Turgut Tan",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ali Dursun Ulusoy",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Elvin Evrim Dalkılıç",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 206",
+    "courseName": "Administrative Judiciary",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Elvin Evrim Dalkılıç",
+        "quota": {
+          "indifferent": true,
+          "total": "58"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 210",
+    "courseName": "Basic Concepts of Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Şemsi Barış Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-302)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-302)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Suat Cem Abanazır",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-301)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-301)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Nazlı Nilay Dayanç Kuzeyli",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-302)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-302)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 211",
+    "courseName": "Basic Concepts of Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşe Dicle Ergin",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z25)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z25)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 217",
+    "courseName": "Legal English",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nazan Begüm Uğurluoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "34"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-207)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 301",
+    "courseName": "Civil Procedure I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ejder Yılmaz",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ejder Yılmaz",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 303",
+    "courseName": "Public International Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Danai Angeli",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Danai Angeli",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 304",
+    "courseName": "Private International Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilgin Tiryakioğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "64"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-112)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-112)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Gülüm Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Fatma Aslı Bayata Canyaş",
+        "quota": {
+          "indifferent": true,
+          "total": "58"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 305",
+    "courseName": "Law of Property I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Şemsi Barış Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Şemsi Barış Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Arif Barış Özbilen",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 306",
+    "courseName": "Law of Property II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Arif Barış Özbilen",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 307",
+    "courseName": "Commercial Enterprise Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Süleyman Zühtü Aytaç",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Aslı Elif Gürbüz Usluel",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Aslı Elif Gürbüz Usluel",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 308",
+    "courseName": "Company Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hamdi Pınar",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 309",
+    "courseName": "Law of Obligations Special Provisions",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Ali Erten",
+        "quota": {
+          "indifferent": true,
+          "total": "58"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Pınar Altınok Ormancı",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Pınar Altınok Ormancı",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 313",
+    "courseName": "Business Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sami Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "19:30",
+              "end": "22:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Nazlı Nilay Dayanç Kuzeyli",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Serdar Hızır",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 315",
+    "courseName": "Administrative Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yeliz Şanlı Atay",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 361",
+    "courseName": "Legal Ethics and Judiciary Ethics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 371",
+    "courseName": "International Criminal Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Elif Gökşen Köstem",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 377",
+    "courseName": "Current Issues in Law of Technology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işıl Selen Denemeç",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 379",
+    "courseName": "Comparative European and Turkish Data Protection Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Can Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 383",
+    "courseName": "Introduction to Law and Economics of Competition and Regulatory Policies",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Halil Baha Karabudak",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 395",
+    "courseName": "World Trade Organization Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Müslüm Yılmaz",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Thu",
+            "time": {
+              "start": "19:30",
+              "end": "22:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 396",
+    "courseName": "Equality Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Zülfiye Yılmaz",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 401",
+    "courseName": "Law of Negotiable Instruments",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Çağlar Manavgat",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Hamdi Pınar",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 403",
+    "courseName": "Inheritance Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Pınar Çağlayan Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Pınar Çağlayan Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "80"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 405",
+    "courseName": "International Human Rights Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşe Dicle Ergin",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 406",
+    "courseName": "International Commercial Arbitration",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ziya Akıncı",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "19:30",
+              "end": "21:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 407",
+    "courseName": "Tax Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mustafa Akkaya",
+        "quota": {
+          "indifferent": true,
+          "total": "75"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 411",
+    "courseName": "Criminal Procedure ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sami Selçuk",
+        "quota": {
+          "indifferent": true,
+          "total": "70"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Devrim Güngör",
+        "quota": {
+          "indifferent": true,
+          "total": "70"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Devrim Güngör",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-104)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-104)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 412",
+    "courseName": "Labor Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Levent Akın",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Levent Akın",
+        "quota": {
+          "indifferent": true,
+          "total": "100"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 413",
+    "courseName": "European Union Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Gülüm Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-305)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-305)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 420",
+    "courseName": "Turkish International Arbitration Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilgin Tiryakioğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 421",
+    "courseName": "Internet Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ceren Ünal",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-113)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 427",
+    "courseName": "Citizenship and Foreigners Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatma Aslı Bayata Canyaş",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-201)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-201)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 441",
+    "courseName": "Monetary Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Osman Remzi Günver",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-104)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 447",
+    "courseName": "Moot Court I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 450",
+    "courseName": "Introduction to Economic Analysis of Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Halil Baha Karabudak",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(H-132)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(H-132)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 473",
+    "courseName": "Mergers and Acquisitions",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İsmail Gökhan Esin",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "19:30",
+              "end": "22:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 507",
+    "courseName": "Public Economic Law ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Turgut Tan",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-207)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 550",
+    "courseName": "Fundamentals of Legal Thought",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ece Göztepe Çelebi",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-105)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 561",
+    "courseName": "New Developments in Non-Performance Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Vedat Buz",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-105)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 571",
+    "courseName": "Law Applicable to Contractual Obligations",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilgin Tiryakioğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-114)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-114)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 590",
+    "courseName": "Pre-Thesis Seminar",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Can Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 605",
+    "courseName": "Constitutional Judiciary",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erdal Onar",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-105)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 634",
+    "courseName": "Methodology of Law ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hamdi Pınar",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 635",
+    "courseName": "Corporate Governance Issues of Joint Stock Companies",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Çağlar Manavgat",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-105)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 680",
+    "courseName": "Current Issues on Private Law",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Süleyman Zühtü Aytaç",
+        "quota": {
+          "indifferent": true,
+          "total": "24"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-105)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 689",
+    "courseName": "Pre-Thesis Seminar",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Can Aksoy",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "LAW 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

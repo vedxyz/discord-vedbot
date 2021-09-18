@@ -1,0 +1,1408 @@
+[
+  {
+    "courseCode": "IE 102",
+    "courseName": "A Process Outlook for Industrial Engineering",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşe Selin Kocaman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Milad Malekipirbazari",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Milad Malekipirbazari",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 202",
+    "courseName": "Introduction to Modeling and Optimization",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Oya Karaşan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-201)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Oya Karaşan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-201)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 272",
+    "courseName": "Manufacturing Processes and Operations Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yiğit Karpat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "70",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-303)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Yiğit Karpat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "70",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-303)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 299",
+    "courseName": "Summer Training I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nil Şahin",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 303",
+    "courseName": "Modeling and Methods in Optimization",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mustafa Çelebi Pınar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "62",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mustafa Çelebi Pınar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "62",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 324",
+    "courseName": "Simulation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emre Uzun",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-303)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Emre Uzun",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-303)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 325",
+    "courseName": "Stochastic Models",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Firdevs Ulus",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Özlem Çavuş İyigün",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Ülkü Gürler",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 342",
+    "courseName": "Engineering Economic Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Arnab Basu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Arnab Basu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 375",
+    "courseName": "Production Planning",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nesim Kohen Erkip",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Emre Nadar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 376",
+    "courseName": "Production Information Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Selim Aktürk",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Alper Şen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 399",
+    "courseName": "Summer Training II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bahar Yetiş",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 400",
+    "courseName": "Principles of Engineering Management",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tagi Hanalioğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Tagi Hanalioğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "47",
+          "elective": "8"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Özlem Karsu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "47",
+          "elective": "8"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 432",
+    "courseName": "Quantitative Risk Management",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özlem Çavuş İyigün",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 440",
+    "courseName": "Introduction to Financial Engineering",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Çağın Ararat",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 443",
+    "courseName": "Multi-Objective Decision Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özlem Karsu",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 448",
+    "courseName": "Financial Issues in Engineering Projects",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hasan Semih Ergür",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "18:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Hasan Semih Ergür",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "18:20"
+            },
+            "place": "(EB-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 451",
+    "courseName": "Applied Data Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Savaş Dayanık",
+        "quota": {
+          "indifferent": true,
+          "total": "54"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-211)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-211)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 457",
+    "courseName": "Sustainable Operations",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emre Nadar",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 463",
+    "courseName": "Operations Scheduling",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Selim Aktürk",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 468",
+    "courseName": "Pricing and Revenue Optimization ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alper Şen",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 469",
+    "courseName": "Industrial Applications of Operations Research",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emre Uzun",
+        "quota": {
+          "indifferent": true,
+          "total": "54"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-211)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-303)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 477",
+    "courseName": "Production Systems Design-Synthesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nesim Kohen Erkip",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(MCORUH)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Savaş Dayanık",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(MCORUH)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Emre Uzun",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(MCORUH)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 482",
+    "courseName": "Humanitarian Logistics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bahar Yetiş",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 490",
+    "courseName": "Introduction to Research in IE and OR",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşe Selin Kocaman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "0",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 491",
+    "courseName": "Introduction to Research in IE and OR II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşe Selin Kocaman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "0",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 500",
+    "courseName": "Mathematics of Operations Research",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nil Şahin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-302)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-302)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 505",
+    "courseName": "Mathematical Programming ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Firdevs Ulus",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-302)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-302)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 523",
+    "courseName": "Probabilistic Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Çağın Ararat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 536",
+    "courseName": "Modeling and Optimization of Energy Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşe Selin Kocaman",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-302)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-302)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 590",
+    "courseName": "Research Topics in IE and OR",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emre Nadar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 690",
+    "courseName": "Advanced Research Topics in IE&OR",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emre Nadar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "IE 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

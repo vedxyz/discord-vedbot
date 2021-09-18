@@ -1,0 +1,2251 @@
+[
+  {
+    "courseCode": "EEE 102",
+    "courseName": "Introduction to Digital Circuit Design",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Cem Tekin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "27",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Cem Tekin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "27",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Süleyman Serdar Kozat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "27",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Süleyman Serdar Kozat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "27",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Cem Tekin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "27",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Cem Tekin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "27",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 202",
+    "courseName": "Circuit Theory",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ergin Atalar",
+        "quota": {
+          "indifferent": true,
+          "total": "23"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Sat",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-211)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ergin Atalar",
+        "quota": {
+          "indifferent": true,
+          "total": "23"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Sun",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-211)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Ergin Atalar",
+        "quota": {
+          "indifferent": true,
+          "total": "23"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-211)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 211",
+    "courseName": "Analog Electronics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erdinç Tatar",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Erdinç Tatar",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Emine Ülkü Sarıtaş",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Emine Ülkü Sarıtaş",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Erdinç Tatar",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB101)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Erdinç Tatar",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 212",
+    "courseName": "Microprocessors",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burçin Çakır",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Burçin Çakır",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB103)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Burçin Çakır",
+        "quota": {
+          "indifferent": true,
+          "total": "33"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 299",
+    "courseName": "Summer Training I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 313",
+    "courseName": "Electronic Circuit Design",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yusuf Ziya İder",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Yusuf Ziya İder",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Yusuf Ziya İder",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Yusuf Ziya İder",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB101)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Yusuf Ziya İder",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Sat",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB101)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Yusuf Ziya İder",
+        "quota": {
+          "indifferent": true,
+          "total": "27"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Sat",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EE-LAB101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 321",
+    "courseName": "Signals and Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Levent Onural",
+        "quota": {
+          "indifferent": true,
+          "total": "32"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-211)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Levent Onural",
+        "quota": {
+          "indifferent": true,
+          "total": "32"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-211)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Levent Onural",
+        "quota": {
+          "indifferent": true,
+          "total": "32"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-211)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Levent Onural",
+        "quota": {
+          "indifferent": true,
+          "total": "32"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-211)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 342",
+    "courseName": "Feedback Control Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hitay Özbay",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ömer Morgül",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 351",
+    "courseName": "Engineering Electromagnetics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Vakur Behçet Ertürk",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Manouchehr Takrimi",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Vakur Behçet Ertürk",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 391",
+    "courseName": "Basics of Signals and Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Haldun Özaktaş",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Haldun Özaktaş",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 392",
+    "courseName": "Individual Research Study",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 399",
+    "courseName": "Summer Training II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 415",
+    "courseName": "Analog CMOS Integrated Circuits",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Abdullah Atalar",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 424",
+    "courseName": "Digital Signal Processing",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Aykut Koç",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 428",
+    "courseName": "Optics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Orhan Aytür",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 431",
+    "courseName": "Telecommunications I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sinan Gezici",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Sinan Gezici",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 440",
+    "courseName": "Advanced Mathematics for Signals, Systems, Control and Communications",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Muhammed Ömer Sayın",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 442",
+    "courseName": "Nonlinear Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ömer Morgül",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 443",
+    "courseName": "Neural Networks",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tolga Çukur",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 447",
+    "courseName": "Introduction to Robotics ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Billur Barshan",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 455",
+    "courseName": "Power System Analysis and Design",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayhan Altıntaş",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 473",
+    "courseName": "Medical Imaging",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emine Ülkü Sarıtaş",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 485",
+    "courseName": "Statistical Learning and Data Analytics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Süleyman Serdar Kozat",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 491",
+    "courseName": "Electrical and Electronics Engineering Design I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İsmail Enis Ungan",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Sun",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 492",
+    "courseName": "Senior Project",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "0",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 493",
+    "courseName": "Industrial Design Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Alper Kutay",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "17:30",
+              "end": "19:20"
+            },
+            "place": "(EE-LAB102)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mehmet Alper Kutay",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "17:30",
+              "end": "19:20"
+            },
+            "place": "(EE-LAB102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 495",
+    "courseName": "Electrical and Electronics Engineering Design II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Alper Kutay",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Sat",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EE-LAB103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 501",
+    "courseName": "Linear System Theory",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Arif Bülent Özgüler",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 515",
+    "courseName": "Analog CMOS Integrated Circuits",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Abdullah Atalar",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 528",
+    "courseName": "Optics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Orhan Aytür",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 533",
+    "courseName": "Random Processes",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nail Akar",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 534",
+    "courseName": "Wireless Communications",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ali Taha Koç",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 540",
+    "courseName": "Advanced Mathematics for Signals, Systems, Control and Communications",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Muhammed Ömer Sayın",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 542",
+    "courseName": "Nonlinear Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ömer Morgül",
+        "quota": {
+          "indifferent": true,
+          "total": "10"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 543",
+    "courseName": "Neural Networks",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tolga Çukur",
+        "quota": {
+          "indifferent": true,
+          "total": "10"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 547",
+    "courseName": "Introduction to Robotics ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Billur Barshan",
+        "quota": {
+          "indifferent": true,
+          "total": "10"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 560",
+    "courseName": "Nanoengineering and Nanodevices",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ekmel Özbay",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 573",
+    "courseName": "Medical Imaging",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emine Ülkü Sarıtaş",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 585",
+    "courseName": "Statistical Learning and Data Analytics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Süleyman Serdar Kozat",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 591",
+    "courseName": "Graduate Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erdinç Tatar",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 592",
+    "courseName": "Graduate Seminar II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erdinç Tatar",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-517)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 633",
+    "courseName": "Coding Theory",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tolga Mete Duman",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "EEE 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

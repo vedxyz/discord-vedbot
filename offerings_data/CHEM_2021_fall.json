@@ -1,0 +1,884 @@
+[
+  {
+    "courseCode": "CHEM 101",
+    "courseName": "Principles of Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ulrike Salzner",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Bilge Baytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-113)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 120",
+    "courseName": "Orientation for Chemistry Majors ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "14:20"
+            },
+            "place": "(SA-Z19)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 201",
+    "courseName": "Materials Science and Technology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ferdi Karadaş",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Bilge Baytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23D)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Halil İbrahim Okur",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z20)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z20)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 211",
+    "courseName": "Analytical Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burak Ülgüt",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-201)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-201)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 214",
+    "courseName": "Analytical Chemistry Laboratory II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burak Ülgüt",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 231",
+    "courseName": "Organic Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yunus Emre Türkmen",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z20)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z20)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 233",
+    "courseName": "Principles of Organic Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Dönüş Tuncel",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SU-01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SU-01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 235",
+    "courseName": "Organic Chemistry Laboratory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yunus Emre Türkmen",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 320",
+    "courseName": "Physical Chemistry Laboratory ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Şefik Süzer",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 323",
+    "courseName": "Physical Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Şefik Süzer",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 327",
+    "courseName": "Quantum Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Zeki Cemal Kuruoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 341",
+    "courseName": "Inorganic Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ömer Dağ",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 399",
+    "courseName": "Summer Practice",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilge Baytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 450",
+    "courseName": "Applied Quantum Chemistry",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ulrike Salzner",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 461",
+    "courseName": "Fundamentals of Biochemistry",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yunus Emre Türkmen",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 470",
+    "courseName": "Polymer Chemistry",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Dönüş Tuncel",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 491",
+    "courseName": "Senior Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 492",
+    "courseName": "Senior Project II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 493",
+    "courseName": "Capstone Project",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 504",
+    "courseName": "Group Theory and its Chemical Applications",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ömer Dağ",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z10)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z10)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 515",
+    "courseName": "Molecular Spectroscopy",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Şefik Süzer",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z10)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z10)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 541",
+    "courseName": "Advanced Inorganic Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ferdi Karadaş",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z10)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z10)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 551",
+    "courseName": "Special Topics in Physical Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "3",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 552",
+    "courseName": "Special Topics in Physical Chemistry II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "3",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 573",
+    "courseName": "Polymer Chemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Dönüş Tuncel",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 586",
+    "courseName": "Electrochemistry",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burak Ülgüt",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z11)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z11)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 591",
+    "courseName": "Graduate Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 691",
+    "courseName": "Advanced Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CHEM 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emrah Özensoy",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1228 @@
+[
+  {
+    "courseCode": "PHYS 101",
+    "courseName": "General Physics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FC-Z23D)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ali Ulvi Yılmazer",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FC-Z23B)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Onur Tokel",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23D)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Ekmel Özbay",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Ali Ulvi Yılmazer",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "İbrahim Sarpkaya",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-301)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-301)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Atilla Erçelebi",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Mehmet Özgür Oktel",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "57"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Bilal Tanatar",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      },
+      {
+        "section": "12",
+        "instructor": "Balazs Hetenyi",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "13",
+        "instructor": "Ali Ulvi Yılmazer",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Atilla Erçelebi",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 102",
+    "courseName": "General Physics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ceyhun Bulutay",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23C)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23C)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Salim Çıracı",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23C)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23C)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Salim Çıracı",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23C)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23C)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Şahin Büyükdağlı",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23B)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Şahin Büyükdağlı",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23C)"
+          },
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23C)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 120",
+    "courseName": "Orientation for Physics Majors",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Atilla Erçelebi",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Sat",
+            "time": {
+              "start": "16:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 180",
+    "courseName": "Conceptual Physics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ali Ulvi Yılmazer",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(RE-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-206)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 211",
+    "courseName": "Waves, Optics and Thermodynamics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Onur Tokel",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 252",
+    "courseName": "Introductory Astronomy",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 291",
+    "courseName": "Summer Practice",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Onur Tokel",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 315",
+    "courseName": "Electromagnetic Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilal Tanatar",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 325",
+    "courseName": "Quantum Mechanics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Cemal Yalabık",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 333",
+    "courseName": "Classical Thermodynamics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Zeki Cemal Kuruoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 371",
+    "courseName": "Numerical Methods in Physics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Oğuz Gülseren",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z20)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z20)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 445",
+    "courseName": "Condensed Matter Physics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Özgür Oktel",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 451",
+    "courseName": "Introduction to Many Body Theory",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mehmet Özgür Oktel",
+        "quota": {
+          "indifferent": true,
+          "total": "10"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 453",
+    "courseName": "Nuclear and Particle Physics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Balazs Hetenyi",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z20)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z20)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 478",
+    "courseName": "Nonlinear Dynamics and Chaos",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatih Ömer İlday",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 491",
+    "courseName": "Senior Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Şahin Büyükdağlı",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 541",
+    "courseName": "Electromagnetic Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Cemal Yalabık",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 543",
+    "courseName": "Advanced Quantum Mechanics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ceyhun Bulutay",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z19)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z19)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 578",
+    "courseName": "Nonlinear Dynamics and Chaos",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatih Ömer İlday",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 591",
+    "courseName": "Graduate Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ceyhun Bulutay",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Oğuz Gülseren",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 661",
+    "courseName": "Special Topics in Solid State Physics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ceyhun Bulutay",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PHYS 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Oğuz Gülseren",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3037 @@
+[
+  {
+    "courseCode": "ECON 101",
+    "courseName": "Introduction to Economics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(B-103)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(B-109)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(B-110)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "09:20"
+            },
+            "place": "(B-110)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "09:20"
+            },
+            "place": "(B-104)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            },
+            "place": "(B-110)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            },
+            "place": "(B-104)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "16:20"
+            },
+            "place": "(B-110)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "16:20"
+            },
+            "place": "(B-107)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "16:30",
+              "end": "17:20"
+            },
+            "place": "(B-104)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "14:20"
+            },
+            "place": "(B-103)"
+          }
+        ]
+      },
+      {
+        "section": "12",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "14:20"
+            },
+            "place": "(B-110)"
+          }
+        ]
+      },
+      {
+        "section": "13",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "14:30",
+              "end": "15:20"
+            },
+            "place": "(B-107)"
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Nuh Aygün Dalkıran",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "14:30",
+              "end": "15:20"
+            },
+            "place": "(B-108)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 102",
+    "courseName": "Introduction to Economics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(B-103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(B-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(B-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(B-110)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(B-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(B-109)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(B-110)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Fatma Taşkın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(B-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 103",
+    "courseName": "Principles of Economics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eda Gürel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "40",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(RE-206)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RE-206)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Halil Baha Karabudak",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Halil Baha Karabudak",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Nazende Özkaramete Coşkun",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "40",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(RB-201)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(RB-201)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Ebru Güven",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-B40)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B40)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 107",
+    "courseName": "Principles of Microeconomics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hakan Berument",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Türkan Mine Kara",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Ebru Güven",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Ebru Güven",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 108",
+    "courseName": "Principles of Macroeconomics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilin Neyaptı",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Bahar Onar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Bahar Onar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 203",
+    "courseName": "Microeconomic Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Çağla Ökten",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-Z25)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-Z25)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Şaziye Pelin Akyol",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Kevin Edward Hasker",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-302)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-302)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 204",
+    "courseName": "Microeconomic Theory II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kemal Yıldız",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Emin Karagözoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-201)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-201)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 205",
+    "courseName": "Macroeconomic Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burçin Kısacıkoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(MA-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Burçin Kısacıkoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Burçin Kısacıkoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "14:20"
+            },
+            "place": "(MA-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Burçin Kısacıkoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "14:30",
+              "end": "15:20"
+            },
+            "place": "(MA-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 206",
+    "courseName": "Macroeconomic Theory II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sang Seok Lee",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Sang Seok Lee",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 207",
+    "courseName": "Economic Theory for Engineers",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hakan Berument",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Şaziye Pelin Akyol",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Begüm Güler",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 221",
+    "courseName": "Introduction to Probability and Statistics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(G-B52)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(G-B14)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(G-B53)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(G-B14)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(G-B52)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(G-B15)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(G-B14)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "11:20"
+            },
+            "place": "(G-B52)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(G-B53)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "11:30",
+              "end": "12:20"
+            },
+            "place": "(G-B54)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 222",
+    "courseName": "Introduction to Probability and Statistics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "09:20"
+            },
+            "place": "(G-B14)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            },
+            "place": "(G-B14)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            },
+            "place": "(G-B15)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "09:20"
+            },
+            "place": "(G-B15)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            },
+            "place": "(G-B15)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Mustafa Eray Yücel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            },
+            "place": "(G-B14)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 225",
+    "courseName": "Mathematics for Economists",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tarık Kara",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Serhat Doğan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 301",
+    "courseName": "Econometrics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Cavit Pakel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "16:20"
+            },
+            "place": "(B-305)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mehmet Taner Yiğit",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-230)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-230)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "16:30",
+              "end": "17:20"
+            },
+            "place": "(B-305)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Mehmet Taner Yiğit",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-230)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "14:20"
+            },
+            "place": "(B-305)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-230)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 322",
+    "courseName": "Monetary Economics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ali Hakan Kara",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 331",
+    "courseName": "International Trade",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fitnat Banu Pakel",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 351",
+    "courseName": "Fiscal Economics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burcu Aydın Özüdoğru",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-230)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-230)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 363",
+    "courseName": "History of Economic Thought",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Türkan Mine Kara",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-111)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-111)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Türkan Mine Kara",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-111)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-111)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 399",
+    "courseName": "Summer Training ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 402",
+    "courseName": "Seminar in Macroeconomic Policy ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özer Karagedikli",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Sat",
+            "time": {
+              "start": "08:30",
+              "end": "11:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 409",
+    "courseName": "Contemporary Issues in Turkish Economy I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ali Hakan Kara",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 432",
+    "courseName": "Turkish and World Economy in the 20th Century",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mustafa Ferhat Emil",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "11:20"
+            },
+            "place": "(EB-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 433",
+    "courseName": "Industrial Economics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kevin Edward Hasker",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-Z25)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-Z25)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 439",
+    "courseName": "Game Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emin Karagözoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 453",
+    "courseName": "Theories of Economic Growth and Development I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Çağrı Sağlam",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 455",
+    "courseName": "Institutions and Development",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bilin Neyaptı",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 458",
+    "courseName": "Labor Market Economics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Çağla Ökten",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-305)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 503",
+    "courseName": "Microeconomic Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Emin Karagözoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "09:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 505",
+    "courseName": "Macroeconomic Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Çağrı Sağlam",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "16:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 509",
+    "courseName": "Probability and Statistics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Cavit Pakel",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "16:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 513",
+    "courseName": "Game Theory I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Semih Koray",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-231)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-231)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 515",
+    "courseName": "Mathematics for Economists I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Semih Koray",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-230)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "09:30",
+              "end": "10:20"
+            }
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-230)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 575",
+    "courseName": "Monetary Economics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burçin Kısacıkoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 591",
+    "courseName": "Masters Pre-Thesis Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fitnat Banu Pakel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 595",
+    "courseName": "Research Paper I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fitnat Banu Pakel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 691",
+    "courseName": "Ph.D. Pre-Thesis Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fitnat Banu Pakel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 695",
+    "courseName": "Research Methods in Economics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fitnat Banu Pakel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "ECON 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "20",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]
