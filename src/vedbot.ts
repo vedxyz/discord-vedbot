@@ -21,11 +21,11 @@ const client = new Discord.Client({
   ],
   // partials: ["CHANNEL"], // Apparently required in order to receive DMs
   presence: {
-    status: "online",
+    status: "idle",
     activities: [
       {
-        name: "for slash commands",
         type: "WATCHING",
+        name: "for slash commands",
       },
     ],
   },
