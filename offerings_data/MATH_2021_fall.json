@@ -1,0 +1,2539 @@
+[
+  {
+    "courseCode": "MATH 101",
+    "courseName": "Calculus I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Türker Özsarı",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ali Süleyman Üstünel",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Serge Randriambololona",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Hakkı Turgay Kaptanoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Hakkı Turgay Kaptanoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Mehmet Okan Tekman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Serge Randriambololona",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Mehmet Okan Tekman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "64",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Serge Randriambololona",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23B)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Mehmet Okan Tekman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23D)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23D)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Derya Çıray Randriambololona",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FC-Z23B)"
+          }
+        ]
+      },
+      {
+        "section": "12",
+        "instructor": "Ali Sinan Sertöz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "64",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      },
+      {
+        "section": "13",
+        "instructor": "Türker Özsarı",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "62",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Cihan Okay",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 102",
+    "courseName": "Calculus II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Natalia Zheltukhina",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ahmet Muhtar Güloğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Hamza Yeşilyurt",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Natalia Zheltukhina",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "64",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Hamza Yeşilyurt",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "64",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Natalia Zheltukhina",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 103",
+    "courseName": "Thinking Mathematically I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatma Güliz Bolat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Arzu Sibel İkinci",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Arzu Sibel İkinci",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Fatma Güliz Bolat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z04)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Arzu Sibel İkinci",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(H-233)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(H-233)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Arzu Sibel İkinci",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-105)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-105)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 104",
+    "courseName": "Thinking Mathematically II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatma Güliz Bolat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(H-233)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(H-233)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Fatma Güliz Bolat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 105",
+    "courseName": "Introduction to Calculus I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alexandre Goncharov",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(H-132)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(H-132)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Redi Haderi",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-301)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-301)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Ayşegül Altaban",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "62",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(CD-B01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(CD-B01)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Anargyros Katsampekis",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Anargyros Katsampekis",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Anargyros Katsampekis",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Ayşegül Altaban",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 106",
+    "courseName": "Introduction to Calculus II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yosum Kurtulmaz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Yosum Kurtulmaz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Derya Çıray Randriambololona",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Yosum Kurtulmaz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 123",
+    "courseName": "Abstract Mathematics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bülent Ünal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 132",
+    "courseName": "Discrete and Combinatorial Mathematics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Müfit Sezer",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "8"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Alexander Degtyarev",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Nil Şahin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "8"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 202",
+    "courseName": "Complex Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ali Sinan Sertöz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "40",
+          "elective": "6"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z20)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z20)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 213",
+    "courseName": "Advanced Calculus I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Aurelian  Gheondea",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 220",
+    "courseName": "Linear Algebra",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bülent Ünal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "54",
+          "elective": "4"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Müfit Sezer",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "54",
+          "elective": "4"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 223",
+    "courseName": "Linear Algebra I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ergün Yalçın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 225",
+    "courseName": "Linear Algebra and Differential Equations",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özgün Ünlü",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Metin Gürses",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Yaghoub Heydarzade",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Yaghoub Heydarzade",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Aurelian  Gheondea",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 227",
+    "courseName": "Introduction to Linear Algebra",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Laurence John Barker",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-02)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Laurence John Barker",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "75",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-301)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-301)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 230",
+    "courseName": "Probability and Statistics for Engineers",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Dilek Köksal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "56",
+          "elective": "2"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Dilek Köksal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "62",
+          "elective": "3"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Dilek Köksal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "62",
+          "elective": "3"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Dilek Köksal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "56",
+          "elective": "2"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Dilek Köksal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "56",
+          "elective": "2"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 240",
+    "courseName": "Differential Equations",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fatihcan Atay",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 241",
+    "courseName": "Engineering Mathematics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Orhan Arıkan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Nil Şahin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Nil Şahin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 242",
+    "courseName": "Engineering Mathematics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Arif Bülent Özgüler",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 250",
+    "courseName": "Introduction to Probability",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Azer Kerimov",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Azer Kerimov",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Azer Kerimov",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "58",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 255",
+    "courseName": "Probability and Statistics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erdal Arıkan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Erdal Arıkan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 260",
+    "courseName": "Introduction to Statistics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Gökhan Yıldırım",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "8"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Gökhan Yıldırım",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 264",
+    "courseName": "Statistics for Social Sciences",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İnci Apaydın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-329)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-329)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "İnci Apaydın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "İnci Apaydın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 310",
+    "courseName": "Topology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ergün Yalçın",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z20)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z20)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 323",
+    "courseName": "Algebra I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özgün Ünlü",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 399",
+    "courseName": "Summer Practice",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hamza Yeşilyurt",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 453",
+    "courseName": "Algebraic Number Theory",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ahmet Muhtar Güloğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-207)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 473",
+    "courseName": "Introduction to Financial Mathematics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ali Süleyman Üstünel",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z19)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z19)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 491",
+    "courseName": "Senior Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Aurelian  Gheondea",
+        "quota": {
+          "indifferent": true,
+          "total": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 501",
+    "courseName": "Real Analysis I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alexandre Goncharov",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SB-Z04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SB-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 503",
+    "courseName": "Complex Analysis I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alexander Degtyarev",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-107)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-107)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 544",
+    "courseName": "Methods of Applied Mathematics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Metin Gürses",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 573",
+    "courseName": "Introduction to Financial Mathematics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ali Süleyman Üstünel",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z19)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z19)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 597",
+    "courseName": "Graduate Seminars in Mathematics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Metin Gürses",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 598",
+    "courseName": "Graduate Seminars in Mathematics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Metin Gürses",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Metin Gürses",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 653",
+    "courseName": "Introduction to Analytical Number Theory",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ahmet Muhtar Güloğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-104)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MATH 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Metin Gürses",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

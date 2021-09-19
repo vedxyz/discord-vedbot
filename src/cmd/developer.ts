@@ -34,7 +34,7 @@ const subcommands = {
       } catch (error) {
         console.error(error);
         interaction.reply({
-          content: `There was an error while reloading file \`${filename}.js\`:\n\`${error.message}\``,
+          content: `There was an error while reloading file \`${filename}.js\`:\n\`${error}\``,
           ephemeral: true,
         });
       }

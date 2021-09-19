@@ -1,0 +1,1658 @@
+[
+  {
+    "courseCode": "PSYC 100",
+    "courseName": "Introduction to Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Selin Salman Engin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z25)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z25)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Selin Salman Engin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-Z25)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-Z25)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Selin Salman Engin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Aslıhan Koyuncu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Aslıhan Koyuncu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Ecem Eylül Ardıç",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-111)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-111)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Ecem Eylül Ardıç",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-111)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-111)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Kaan Kerman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-172)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-172)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Kaan Kerman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-172)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-172)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Elif Suna Özbay",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Elif Suna Özbay",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 101",
+    "courseName": "Introduction to Psychology I / Cognitive and Biological",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Michelle Marie Adams",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Burcu Ayşen Ürgen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 102",
+    "courseName": "Introduction to Social Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ezgi Sakman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-125)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-125)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Hasibe İnci Rösch",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Hasibe İnci Rösch",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "35",
+          "elective": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-173)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-173)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Emine Ulaşan Özgüle",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-172)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-172)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Emine Ulaşan Özgüle",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-268)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-268)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 103",
+    "courseName": "Introduction to Psychology II / Social and Developmental",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z25)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z25)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 200",
+    "courseName": "Cognitive Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alba Tuninetti",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Miri Besken",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 203",
+    "courseName": "Statistics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sezer Kadayıfçılar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-331)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-331)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Sezer Kadayıfçılar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-231)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-231)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Sezer Kadayıfçılar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-231)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-231)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 204",
+    "courseName": "Research Methods I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Selin Salman Engin",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Miri Besken",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FC-Z23B)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 205",
+    "courseName": "Statistics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sezer Kadayıfçılar",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-231)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-231)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 206",
+    "courseName": "Research Methods II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Burcu Ayşen Ürgen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-172)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-172)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 220",
+    "courseName": "Brain and Behavior",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ausaf Ahmed Farooqui",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 230",
+    "courseName": "Social Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ezgi Sakman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ezgi Sakman",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 240",
+    "courseName": "Developmental Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hande Ilgaz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-173)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-173)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 310",
+    "courseName": "Perception, Attention, and Action",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Boyacı",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-329)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-329)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 340",
+    "courseName": "Learning, Remembering, and Thinking",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Robert Ian Bowers",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-329)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-329)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 350",
+    "courseName": "Cognitive and Social Development",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hande Ilgaz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-173)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-173)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 360",
+    "courseName": "Individual Differences and Personality",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ezgi Sakman",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(V-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(V-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 391",
+    "courseName": "Directed Research in Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Miri Besken",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 399",
+    "courseName": "Summer Training",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Selin Salman Engin",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 425",
+    "courseName": "Selected Topics in Neurobiological Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kaan Kerman",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(H-233)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(H-233)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 430",
+    "courseName": "Clinical Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nedret Öztan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-272)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-272)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 431",
+    "courseName": "Psychological Testing and Measurement",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Mohini Verma",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-329)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-329)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 433",
+    "courseName": "Abnormal Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Timothea Toulopoulou",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Timothea Toulopoulou",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-329)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-329)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 434",
+    "courseName": "Child and Adolescent Psychopathology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Selin Yalçın",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-229)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-229)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 435",
+    "courseName": "Industrial and Organizational Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Merve Ermemiş",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Merve Ermemiş",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 442",
+    "courseName": "Psychology of Language",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alba Tuninetti",
+        "quota": {
+          "indifferent": true,
+          "total": "55"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z06)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z06)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 482",
+    "courseName": "Mind in Evolution",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kaan Kerman",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(T-173)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(T-173)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 498",
+    "courseName": "Senior Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Miri Besken",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 499",
+    "courseName": "Senior Project II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Miri Besken",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 502",
+    "courseName": "Advanced Developmental Psychology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-330)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-330)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 515",
+    "courseName": "Selected Topics in Psychology I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sirel Karakaş",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-102)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 542",
+    "courseName": "Psychology of Language",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alba Tuninetti",
+        "quota": {
+          "indifferent": true,
+          "total": "10"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-103)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 575",
+    "courseName": "Advanced Training in Psychological Research I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 591",
+    "courseName": "Pro-Thesis Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 599",
+    "courseName": "M.A. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 621",
+    "courseName": "Applied Magnetic Resonance Imaging for Neuroscience",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hüseyin Boyacı",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-B15)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "16:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 673",
+    "courseName": "Advanced Training in Psychological Research II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 691",
+    "courseName": "Pro-Thesis Seminar II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": "20"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "PSYC 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Jedediah Wilfred Papas Allen",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

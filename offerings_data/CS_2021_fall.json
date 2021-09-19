@@ -1,0 +1,2592 @@
+[
+  {
+    "courseCode": "CS 101",
+    "courseName": "Algorithms and Programming I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Uğur Doğrusöz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "67",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(B-201)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Uğur Doğrusöz",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "69",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(B-201)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Özcan Öztürk",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "67",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(B-201)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 102",
+    "courseName": "Algorithms and Programming II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Uğur Güdükbay",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(B-201)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 115",
+    "courseName": "Introduction to Programming in Python",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Lori Rae Russell Dağ",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(G-136)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "İpek Sözen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(G-136)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "İpek Sözen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(G-136)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "İpek Sözen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(G-136)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Lori Rae Russell Dağ",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(G-136)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "İpek Sözen",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(G-136)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Aynur Dayanık",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(G-136)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Aynur Dayanık",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(G-136)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 121",
+    "courseName": "Introduction to Computer Applications and Programming",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Sibel Uğurlubilek",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Sibel Uğurlubilek",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Sibel Uğurlubilek",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Rabia Üşenmez",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Sibel Uğurlubilek",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Rabia Üşenmez",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Rabia Üşenmez",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Ayışığı Başak Sevdik Çallı",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "50",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FF-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FF-207)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 125",
+    "courseName": "Introduction to Data Analysis for Social Sciences",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayışığı Başak Sevdik Çallı",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-202)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-201)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Lori Rae Russell Dağ",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-202)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-201)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Ayışığı Başak Sevdik Çallı",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-211)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Rabia Üşenmez",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-303)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Lori Rae Russell Dağ",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-202)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-201)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Ayışığı Başak Sevdik Çallı",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-201)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 153",
+    "courseName": "Introduction to Computer Graphics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Levent Y. İnce",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(FF-212)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Levent Y. İnce",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(FF-212)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Melih Aydınat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(FF-212)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 155",
+    "courseName": "Interactive Media Design and Development",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Oğuz Akın",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(FF-211)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mustafa Dinç",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(FF-211)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Mustafa Dinç",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(FF-211)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 201",
+    "courseName": "Fundamental Structures of Computer Science I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Abdullah Ercüment Çiçek",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "57",
+          "elective": "1"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Selim Aksoy",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "57",
+          "elective": "1"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Selim Aksoy",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "57",
+          "elective": "1"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 202",
+    "courseName": "Fundamental Structures of Computer Science II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Can Alkan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 223",
+    "courseName": "Digital Design",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Shervin Rahimzadeh Arashloo",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "32",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Shervin Rahimzadeh Arashloo",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "32",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Shervin Rahimzadeh Arashloo",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Shervin Rahimzadeh Arashloo",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Alper Sarıkan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Alper Sarıkan",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "30",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 224",
+    "courseName": "Computer Organization",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Fazlı Can",
+        "quota": {
+          "indifferent": true,
+          "total": "22"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-204)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Fazlı Can",
+        "quota": {
+          "indifferent": true,
+          "total": "22"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-204)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Fazlı Can",
+        "quota": {
+          "indifferent": true,
+          "total": "22"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            },
+            "place": "(EA-Z04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-317)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Fazlı Can",
+        "quota": {
+          "indifferent": true,
+          "total": "22"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-317)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            },
+            "place": "(EA-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 281",
+    "courseName": "Computers and Data Organization",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Semra Güleç",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "68",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-303)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Semra Güleç",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "68",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-303)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 299",
+    "courseName": "Summer Training I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İbrahim Körpeoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 315",
+    "courseName": "Programming Languages",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "H. Altay Güvenir",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Aynur Dayanık",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-03)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Karani Kardaş",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EA-Z01)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EA-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 319",
+    "courseName": "Object-Oriented Software Engineering",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eray Tüzün",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "54",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Eray Tüzün",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "54",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Eray Tüzün",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "54",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-204)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 342",
+    "courseName": "Operating Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İbrahim Körpeoğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "75",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 353",
+    "courseName": "Database Systems ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özgür Ulusoy",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "71",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-05)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 390",
+    "courseName": "Individual Research Study",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 399",
+    "courseName": "Summer Training II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İbrahim Körpeoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 411",
+    "courseName": "Software Architecture Design",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Haluk Altunel",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-204)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Haluk Altunel",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 421",
+    "courseName": "Computer Networks",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ezhan Karaşan",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mehmet Fatih Aktaş",
+        "quota": {
+          "indifferent": true,
+          "total": "60"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 426",
+    "courseName": "Parallel Computing",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özcan Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 429",
+    "courseName": "Dynamic and Social Network Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Miray Kaş",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-104)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 431",
+    "courseName": "Embedded Systems",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Alp Sayın",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-102)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-102)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 464",
+    "courseName": "Introduction to Machine Learning",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Abdullah Ercüment Çiçek",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Ayşegül Dündar",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EE-214)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EE-214)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 465",
+    "courseName": "Computer Graphics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Uğur Güdükbay",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 473",
+    "courseName": "Algorithms I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Cevdet Aykanat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "73",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Cevdet Aykanat",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "73",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 475",
+    "courseName": "Data Privacy",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erman Ayday",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "18:20"
+            },
+            "place": "(EB-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 476",
+    "courseName": "Automata Theory and Formal Languages",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hamdi Dibeklioğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "75",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EE-412)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EE-412)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 481",
+    "courseName": "Bioinformatics Algorithms",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Can Alkan",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 485",
+    "courseName": "Deep Generative Networks",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşegül Dündar",
+        "quota": {
+          "indifferent": true,
+          "total": "40"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 490",
+    "courseName": "Senior Research Project",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 491",
+    "courseName": "Senior Design Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İbrahim Körpeoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MCORUH)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 525",
+    "courseName": "Parallel Computing",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özcan Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 527",
+    "courseName": "Advances in Switching Networks",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Yavuz Oruç",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "18:20"
+            },
+            "place": "(EA-502)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 529",
+    "courseName": "Dynamic and Social Network Analysis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Miray Kaş",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-104)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-104)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 559",
+    "courseName": "Deep Learning",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Hamdi Dibeklioğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-203)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-203)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 577",
+    "courseName": "Data Privacy",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Erman Ayday",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "18:20"
+            },
+            "place": "(EB-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 583",
+    "courseName": "Bioinformatics Algorithms",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Can Alkan",
+        "quota": {
+          "indifferent": true,
+          "total": "10"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-103)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-103)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 585",
+    "courseName": "Deep Generative Networks",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ayşegül Dündar",
+        "quota": {
+          "indifferent": true,
+          "total": "15"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z01)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z01)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 590",
+    "courseName": "Research Seminar I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Abdullah Ercüment Çiçek",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 690",
+    "courseName": "Research Seminar II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eray Tüzün",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "CS 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

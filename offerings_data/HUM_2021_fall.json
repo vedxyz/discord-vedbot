@@ -1,0 +1,1444 @@
+[
+  {
+    "courseCode": "HUM 111",
+    "courseName": "Cultures Civilizations and Ideas I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Buffy Ann Turner",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-134)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-134)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Mustafa Nakeeb",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-232)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-232)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Mihaela P. Harper",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-330)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-228)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Mustafa Nakeeb",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-231)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-231)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Angelina Del Balzo",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-134)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-134)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Rachel Bruzzone",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-206)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Rachel Bruzzone",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-206)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Luuk Otmar De Boer",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-209)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-209)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Rachel Bruzzone",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-134)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-134)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Mihaela P. Harper",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-210)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-210)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Buffy Ann Turner",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-134)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-134)"
+          }
+        ]
+      },
+      {
+        "section": "12",
+        "instructor": "Marjan Mohammadi",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-228)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-228)"
+          }
+        ]
+      },
+      {
+        "section": "13",
+        "instructor": "Aslı Menevşe",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-206)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-206)"
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Buffy Ann Turner",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-135)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-135)"
+          }
+        ]
+      },
+      {
+        "section": "15",
+        "instructor": "Mihaela P. Harper",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-207)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-207)"
+          }
+        ]
+      },
+      {
+        "section": "17",
+        "instructor": "Aslı Menevşe",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-227)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-227)"
+          }
+        ]
+      },
+      {
+        "section": "18",
+        "instructor": "Costantino Costantini",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-134)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-134)"
+          }
+        ]
+      },
+      {
+        "section": "19",
+        "instructor": "Scott Allen Kennedy",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-206)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-206)"
+          }
+        ]
+      },
+      {
+        "section": "20",
+        "instructor": "Costantino Costantini",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-209)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-209)"
+          }
+        ]
+      },
+      {
+        "section": "21",
+        "instructor": "Angelina Del Balzo",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-229)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-229)"
+          }
+        ]
+      },
+      {
+        "section": "22",
+        "instructor": "Scott Allen Kennedy",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-229)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-229)"
+          }
+        ]
+      },
+      {
+        "section": "23",
+        "instructor": "Angelina Del Balzo",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-154)"
+          }
+        ]
+      },
+      {
+        "section": "24",
+        "instructor": "Paul Elliot Kimball",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-154)"
+          }
+        ]
+      },
+      {
+        "section": "25",
+        "instructor": "Paul Elliot Kimball",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-154)"
+          }
+        ]
+      },
+      {
+        "section": "26",
+        "instructor": "Paul Elliot Kimball",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-154)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-154)"
+          }
+        ]
+      },
+      {
+        "section": "27",
+        "instructor": "Paul Elliot Kimball",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "28",
+        "instructor": "Dragan Ilic",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "29",
+        "instructor": "Dragan Ilic",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "30",
+        "instructor": "Dragan Ilic",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "31",
+        "instructor": "Foster Pease Chamberlin",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "32",
+        "instructor": "Luuk Otmar De Boer",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "33",
+        "instructor": "Victor Lenthe",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "34",
+        "instructor": "William Norman Coker",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "35",
+        "instructor": "William Norman Coker",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "36",
+        "instructor": "William Norman Coker",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "37",
+        "instructor": "Nathan Paul Leidholm",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "38",
+        "instructor": "Nathan Paul Leidholm",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "39",
+        "instructor": "Nathan Paul Leidholm",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "40",
+        "instructor": "Matthew Thomas Stoltz",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "41",
+        "instructor": "Matthew Thomas Stoltz",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-131)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-131)"
+          }
+        ]
+      },
+      {
+        "section": "42",
+        "instructor": "Matthew Thomas Stoltz",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      },
+      {
+        "section": "44",
+        "instructor": "Luuk Otmar De Boer",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-106)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-106)"
+          }
+        ]
+      },
+      {
+        "section": "45",
+        "instructor": "Foster Pease Chamberlin",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-106)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-106)"
+          }
+        ]
+      },
+      {
+        "section": "46",
+        "instructor": "Marjan Mohammadi",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-153)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-153)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HUM 112",
+    "courseName": "Cultures Civilizations and Ideas II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Andrew Jonathan Ploeg",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(H-333)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(H-333)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Costantino Costantini",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-210)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-210)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Michael Kurt Ozment",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-210)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-210)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Andrew Jonathan Ploeg",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(H-335)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(H-335)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Patrick Flaherty Fessenbecker",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-227)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-227)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Michael Kurt Ozment",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-231)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-231)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Andrew Jonathan Ploeg",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(H-335)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(H-335)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "Michael Kurt Ozment",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-206)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Michael Kurt Ozment",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(G-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(G-206)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Costantino Costantini",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-228)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-228)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Patrick Flaherty Fessenbecker",
+        "quota": {
+          "indifferent": true,
+          "total": "28"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-152)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-152)"
+          }
+        ]
+      }
+    ]
+  }
+]

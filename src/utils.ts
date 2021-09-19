@@ -11,7 +11,7 @@ import Discord, {
   TextChannel,
 } from "discord.js";
 import path from "path";
-import { BotCommand, BotConfig, BotModule } from "./interface";
+import { BotCommand, BotConfig, BotModule, Offerings, SupportedDepartment } from "./interface";
 
 const configPath = path.join(__dirname, "..", "config.json");
 
@@ -86,10 +86,7 @@ const canExecuteModule = (
   cfg: BotConfig,
   module: BotModule | undefined,
   eventGuildId: Snowflake | undefined
-): boolean =>
-  !!eventGuildId &&
-  !!module?.state &&
-  module.guilds.some((srv) => cfg.servers[srv].id === eventGuildId);
+): boolean => !!eventGuildId && !!module?.state && module.guilds.some((srv) => cfg.servers[srv].id === eventGuildId);
 
 const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
   new MessageEmbed()
@@ -119,6 +116,20 @@ const permissions = {
   ],
 };
 
+const loadOfferings = (): Offerings => {
+  const offerings: Offerings = new Discord.Collection();
+  const offeringsFolder = path.join("__dirname", "..", "offerings_data");
+
+  fs.readdirSync(offeringsFolder).forEach((department) => {
+    offerings.set(
+      department.split("_")[0] as SupportedDepartment,
+      JSON.parse(fs.readFileSync(path.join(offeringsFolder, department), "utf8"))
+    );
+  });
+
+  return offerings;
+};
+
 export default {
   botfiles,
   fetchConfigChannels,
@@ -126,4 +137,5 @@ export default {
   canExecuteModule,
   getRuleEmbedBase,
   permissions,
+  loadOfferings,
 };

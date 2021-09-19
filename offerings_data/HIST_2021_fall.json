@@ -1,0 +1,1281 @@
+[
+  {
+    "courseCode": "HIST 200",
+    "courseName": "History of Turkey ",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "İbrahim Mert Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Abdürrahim Özer",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(FC-Z23B)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(FC-Z23B)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "İbrahim Mert Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Abdürrahim Özer",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-112)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-112)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Mehmet Süha Ünsal",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-Z27)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-Z27)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "İbrahim Mert Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-203)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-203)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Abdürrahim Özer",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z06)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z06)"
+          }
+        ]
+      },
+      {
+        "section": "8",
+        "instructor": "İbrahim Mert Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "9",
+        "instructor": "Hamid İncidelen",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-111)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-111)"
+          }
+        ]
+      },
+      {
+        "section": "10",
+        "instructor": "Oğuz Kaan Çetindağ",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-202)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-202)"
+          }
+        ]
+      },
+      {
+        "section": "11",
+        "instructor": "Mehmet Süha Ünsal",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-127)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-127)"
+          }
+        ]
+      },
+      {
+        "section": "12",
+        "instructor": "Kudret Emiroğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z06)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z06)"
+          }
+        ]
+      },
+      {
+        "section": "13",
+        "instructor": "Ahmet Zeybek",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z07)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z07)"
+          }
+        ]
+      },
+      {
+        "section": "14",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-112)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-112)"
+          }
+        ]
+      },
+      {
+        "section": "15",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z06)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z06)"
+          }
+        ]
+      },
+      {
+        "section": "16",
+        "instructor": "Ahmet Zeybek",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      },
+      {
+        "section": "17",
+        "instructor": "Abdürrahim Özer",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      },
+      {
+        "section": "18",
+        "instructor": "Kudret Emiroğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z06)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z06)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 205",
+    "courseName": "An Introduction to the History of the Ottoman Empire",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nil Tekgül",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(T-268)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(T-268)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 209",
+    "courseName": "History of Turkey",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Esra Ansel",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-112)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-112)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Esra Ansel",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-101)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-101)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 313",
+    "courseName": "Classical Arabic I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Ahmet Beyatlı",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 401",
+    "courseName": "Ottoman Turkish and Paleography I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nil Tekgül",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(EB-204)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(EB-204)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 411",
+    "courseName": "Ottoman History: 1300-1600",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Nil Tekgül",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 413",
+    "courseName": "Byzantine History I: 324-1025",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Luca Zavagno",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 417",
+    "courseName": "Medieval Europe (500-1500)",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "David E. Thornton",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-140)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-140)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 431",
+    "courseName": "History of the United States until the Reconstruction",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Owen Miller",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 481",
+    "courseName": "Latin for Medieval and Early Modern History I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Paul Latimer",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 490",
+    "courseName": "Field Related Seminar",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Paul Latimer",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 501",
+    "courseName": "Ottoman Paleography I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özer Ergenç",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-206)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 507",
+    "courseName": "Methodology in History I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kenneth Weisbrode",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 511",
+    "courseName": "Ottoman Social and Economic History I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özer Ergenç",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-206)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-206)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 527",
+    "courseName": "Feudalism: East and West I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Paul Latimer",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 529",
+    "courseName": "Bulgaria under the Ottoman Rule: History and Sources",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Evgeniy Radoslavov Radushev",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 534",
+    "courseName": "Themes in the History of American Radicalism",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Owen Miller",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 563",
+    "courseName": "Islamic Culture in the Ottoman Balkans, 1400-1600",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Evgeniy Radoslavov Radushev",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 579",
+    "courseName": "Modernization of the Ottoman Empire:1800-1923",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Berke Torunoğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 580",
+    "courseName": "American Foreign Relations from the Early Republic to World War I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kenneth Weisbrode",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 595",
+    "courseName": "Seminar in American History I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Kenneth Weisbrode",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Paul Latimer",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 647",
+    "courseName": "Renaissance Studies",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Levent Yılmaz",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(MA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(MA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 692",
+    "courseName": "Pre-Thesis Seminar",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Paul Latimer",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 693",
+    "courseName": "Pre-Thesis Seminar",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Paul Latimer",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": null
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 708",
+    "courseName": "European Migration to the Ottoman Empire and Early Republican Turkey",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Suavi Aydın",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-227)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-227)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "HIST 5531",
+    "courseName": "''A Great Sea and It's History'' :The Mediterranean  from the Classical Era to the Ottoman Period",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Luca Zavagno",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(A-230)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(A-230)"
+          }
+        ]
+      }
+    ]
+  }
+]

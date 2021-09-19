@@ -1,6 +1,7 @@
 import {
   ApplicationCommandData,
   ApplicationCommandPermissionData,
+  Collection,
   CommandInteraction,
   GuildMember,
   Message,
@@ -41,3 +42,44 @@ export interface BotCommand {
   guilds: string[];
   execute: (interaction: CommandInteraction) => unknown;
 }
+
+export interface Course {
+  courseCode: string;
+  courseName: string;
+  sections: {
+    section: string;
+    instructor: string;
+    quota: {
+      indifferent: boolean;
+      total?: string;
+      mandatory?: string;
+      elective?: string;
+    };
+    schedule: {
+      day: string;
+      time: {
+        start: string;
+        end: string;
+      };
+      place: string;
+    }[];
+  }[];
+}
+
+export type SupportedDepartment =
+  | "CHEM"
+  | "CS"
+  | "ECON"
+  | "EEE"
+  | "ENG"
+  | "HIST"
+  | "HUM"
+  | "IE"
+  | "LAW"
+  | "MATH"
+  | "MBG"
+  | "PHYS"
+  | "PSYC"
+  | "TURK";
+
+export type Offerings = Collection<SupportedDepartment, Course[]>;

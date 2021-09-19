@@ -1,0 +1,880 @@
+[
+  {
+    "courseCode": "MBG 101",
+    "courseName": "Biology I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eda Süer",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "75",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 110",
+    "courseName": "Introduction to Modern Biology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özhan Öçal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "2",
+        "instructor": "Serkan Belkaya",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-206)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-206)"
+          }
+        ]
+      },
+      {
+        "section": "3",
+        "instructor": "Tayfun Özçelik",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(B-Z08)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(B-Z08)"
+          }
+        ]
+      },
+      {
+        "section": "4",
+        "instructor": "Özhan Öçal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "5",
+        "instructor": "Özhan Öçal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "5"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(G-236)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(G-236)"
+          }
+        ]
+      },
+      {
+        "section": "6",
+        "instructor": "Eda Süer",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      },
+      {
+        "section": "7",
+        "instructor": "Özhan Öçal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "55",
+          "elective": "10"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 209",
+    "courseName": "Principles of Genetics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eda Süer",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 210",
+    "courseName": "Genetics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özlen Konu Karakayalı",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "65",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 291",
+    "courseName": "Summer Practice I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özhan Öçal",
+        "quota": {
+          "indifferent": true,
+          "total": "65"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 301",
+    "courseName": "Molecular Biology of the Cell I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Onur Çizmecioğlu",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 311",
+    "courseName": "Biochemistry I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Serkan Belkaya",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z18)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "08:30",
+              "end": "12:20"
+            }
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z18)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 324",
+    "courseName": "Molecular Biology of the Gene",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işık Yuluğ",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SB-Z03)"
+          },
+          {
+            "day": "Tue",
+            "time": {
+              "start": "13:30",
+              "end": "17:20"
+            }
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SB-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 326",
+    "courseName": "Introduction to Bioinformatics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özlen Konu Karakayalı",
+        "quota": {
+          "indifferent": true,
+          "total": "50"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(B-201)"
+          },
+          {
+            "day": "Wed",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 391",
+    "courseName": "Summer Practice II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Özhan Öçal",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "45",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 416",
+    "courseName": "Science and Ethics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Serkan İsmail Göktuna",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "60",
+          "elective": "0"
+        },
+        "schedule": [
+          {
+            "day": "Wed",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 483",
+    "courseName": "Developmental Biology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bahar Değirmenci Uzun",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 488",
+    "courseName": "Introduction to Human Genetics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tayfun Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 489",
+    "courseName": "Genetics and Biology of Cancer",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Serkan İsmail Göktuna",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z03)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 491",
+    "courseName": "Senior Project I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eda Süer",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 492",
+    "courseName": "Senior Project II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Eda Süer",
+        "quota": {
+          "indifferent": true,
+          "total": "45"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 502",
+    "courseName": "Advanced Cellular Biology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Onur Çizmecioğlu",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Mon",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 503",
+    "courseName": "Advanced Molecular Biology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işık Yuluğ",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "08:30",
+              "end": "10:20"
+            },
+            "place": "(SA-Z02)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "13:30",
+              "end": "15:20"
+            },
+            "place": "(SA-Z02)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 509",
+    "courseName": "Special Topics in Molecular Biology I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işık Yuluğ",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 514",
+    "courseName": "Stem Cell Biology",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Bahar Değirmenci Uzun",
+        "quota": {
+          "indifferent": true,
+          "total": "35"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z19)"
+          },
+          {
+            "day": "Thu",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z19)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 599",
+    "courseName": "Master's Thesis",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tayfun Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 601",
+    "courseName": "Human Genetics",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tayfun Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": [
+          {
+            "day": "Tue",
+            "time": {
+              "start": "15:30",
+              "end": "17:20"
+            },
+            "place": "(SA-Z04)"
+          },
+          {
+            "day": "Fri",
+            "time": {
+              "start": "10:30",
+              "end": "12:20"
+            },
+            "place": "(SA-Z04)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 612",
+    "courseName": "Special Topics in Genetics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işık Yuluğ",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 616",
+    "courseName": "Experimental Molecular Biology and Genetics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tayfun Özçelik",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 623",
+    "courseName": "Seminars in Molecular Genetics I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işık Yuluğ",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 624",
+    "courseName": "Seminars in Molecular Genetics II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Işık Yuluğ",
+        "quota": {
+          "indifferent": false,
+          "mandatory": "25",
+          "elective": "0"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "MBG 699",
+    "courseName": "Ph.D. Dissertation",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Tayfun Özçelik",
+        "quota": {
+          "indifferent": true,
+          "total": "30"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]

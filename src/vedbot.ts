@@ -8,6 +8,8 @@ import utils, { BotFileCollection } from "./utils";
 const cfg = utils.config.load();
 const { canExecuteModule } = utils;
 
+const offerings = utils.loadOfferings();
+
 const client = new Discord.Client({
   intents: [
     "GUILDS",
@@ -19,11 +21,11 @@ const client = new Discord.Client({
   ],
   // partials: ["CHANNEL"], // Apparently required in order to receive DMs
   presence: {
-    status: "online",
+    status: "idle",
     activities: [
       {
-        name: "for slash commands",
         type: "WATCHING",
+        name: "for slash commands",
       },
     ],
   },
@@ -145,4 +147,4 @@ client.on("messageReactionRemove", (reaction, user) => {
 
 client.login(cfg.token);
 
-export { BotCommand, BotModule, vedbot, client, cfg };
+export { BotCommand, BotModule, vedbot, client, cfg, offerings };

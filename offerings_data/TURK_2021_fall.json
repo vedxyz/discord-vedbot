@@ -1,0 +1,878 @@
+[
+  {
+    "courseCode": "TURK 101",
+    "courseName": "Turkish I",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Seda Uyanık Tanrıverdi",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "2",
+        "instructor": "Seda Uyanık Tanrıverdi",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "3",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "4",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "5",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "6",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "7",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "8",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "9",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "10",
+        "instructor": "Murat Devrim Dirlikyapan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "11",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "12",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "13",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "14",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "15",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "16",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "17",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "18",
+        "instructor": "Burcu Taşkıran",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "19",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "20",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "21",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "22",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "23",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "24",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "25",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "26",
+        "instructor": "Nefise Abalı",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "27",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "28",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "29",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "30",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "31",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "32",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "33",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "34",
+        "instructor": "Adem Gergöy",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "35",
+        "instructor": "Elvan Aytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "36",
+        "instructor": "Elvan Aytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "37",
+        "instructor": "Elvan Aytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "38",
+        "instructor": "Elvan Aytekin",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "39",
+        "instructor": "Bahar Hazal Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "40",
+        "instructor": "Bahar Hazal Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "41",
+        "instructor": "Bahar Hazal Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "42",
+        "instructor": "Bahar Hazal Öztürk",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "43",
+        "instructor": "Murat İplikçi",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "44",
+        "instructor": "Murat İplikçi",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "45",
+        "instructor": "Murat İplikçi",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "46",
+        "instructor": "Murat İplikçi",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "47",
+        "instructor": "Ayşenur Çenesiz",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "48",
+        "instructor": "Ayşenur Çenesiz",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "49",
+        "instructor": "Ayşenur Çenesiz",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "50",
+        "instructor": "Gamze Altınyaprak",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "51",
+        "instructor": "Gamze Altınyaprak",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "52",
+        "instructor": "Gamze Altınyaprak",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "53",
+        "instructor": "Koray Saçkan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "54",
+        "instructor": "Koray Saçkan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "55",
+        "instructor": "Koray Saçkan",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "56",
+        "instructor": "İsmet Tarık Gölge",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "57",
+        "instructor": "İsmet Tarık Gölge",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "58",
+        "instructor": "İsmet Tarık Gölge",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "59",
+        "instructor": "Ece Çakanel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "60",
+        "instructor": "Ece Çakanel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "61",
+        "instructor": "Ece Çakanel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "62",
+        "instructor": "Deniz Demirel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "63",
+        "instructor": "Deniz Demirel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "64",
+        "instructor": "Deniz Demirel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "65",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "66",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "67",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "68",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "69",
+        "instructor": "Gamze Altınyaprak",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "70",
+        "instructor": "Deniz Demirel",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "71",
+        "instructor": "Aylin Karayiğit",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "72",
+        "instructor": "Ayşenur Mulla",
+        "quota": {
+          "indifferent": true,
+          "total": "26"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  },
+  {
+    "courseCode": "TURK 102",
+    "courseName": "Turkish II",
+    "sections": [
+      {
+        "section": "1",
+        "instructor": "Seda Uyanık Tanrıverdi",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "2",
+        "instructor": "Seda Uyanık Tanrıverdi",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "3",
+        "instructor": "Aslınur Memiş",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "4",
+        "instructor": "Aslınur Memiş",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "5",
+        "instructor": "Aslınur Memiş",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "6",
+        "instructor": "Mert Ekrem Ünver",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "7",
+        "instructor": "Mert Ekrem Ünver",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "8",
+        "instructor": "Mert Ekrem Ünver",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "9",
+        "instructor": "Aylin Karayiğit",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "10",
+        "instructor": "Aylin Karayiğit",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "11",
+        "instructor": "Aylin Karayiğit",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "12",
+        "instructor": "Gülnihal Aydınlı",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "13",
+        "instructor": "Gülnihal Aydınlı",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "14",
+        "instructor": "Gülnihal Aydınlı",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "15",
+        "instructor": "Hazal Saral",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "16",
+        "instructor": "Hazal Saral",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "17",
+        "instructor": "Hazal Saral",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "18",
+        "instructor": "Yeşim Kaya",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "19",
+        "instructor": "Yeşim Kaya",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "20",
+        "instructor": "Yeşim Kaya",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "21",
+        "instructor": "Ayşenur Mulla",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "22",
+        "instructor": "Ayşenur Mulla",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "23",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      },
+      {
+        "section": "24",
+        "instructor": "Staff",
+        "quota": {
+          "indifferent": true,
+          "total": "25"
+        },
+        "schedule": "N/A"
+      }
+    ]
+  }
+]
