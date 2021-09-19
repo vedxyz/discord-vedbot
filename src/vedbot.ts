@@ -8,6 +8,8 @@ import utils, { BotFileCollection } from "./utils";
 const cfg = utils.config.load();
 const { canExecuteModule } = utils;
 
+const offerings = utils.loadOfferings();
+
 const client = new Discord.Client({
   intents: [
     "GUILDS",
@@ -145,4 +147,4 @@ client.on("messageReactionRemove", (reaction, user) => {
 
 client.login(cfg.token);
 
-export { BotCommand, BotModule, vedbot, client, cfg };
+export { BotCommand, BotModule, vedbot, client, cfg, offerings };

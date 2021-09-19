@@ -34,14 +34,14 @@ const command: BotCommand = {
 
     if (subcommand === "set") {
       const url = interaction.options.getString("url") ?? "";
-      
+
       let isUrlValidImg: boolean | undefined;
       try {
         isUrlValidImg = (await fetch(url)).headers.get("content-type")?.startsWith("image/");
       } catch (error) {
         isUrlValidImg = false;
       }
-      
+
       if (!isUrlValidImg) {
         interaction.reply({
           ephemeral: true,
