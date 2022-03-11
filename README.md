@@ -29,7 +29,6 @@ I handle the deployment using [PM2](https://pm2.keymetrics.io/) personally, whic
 - [ ] Integrate CI/CD
 - [ ] Unit testing
 - [ ] Improve PM2 workflow
-- [ ] The reaction role picker needs an overhaul
 - [x] Add role commands for the CS server
 - [x] `mizyaz` module needs to be less destructive with its handling of messages
 - [x] `atpics` module needs a command to self-set pics, and also should support non-discord-cdn links if possible
