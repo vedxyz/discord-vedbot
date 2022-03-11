@@ -113,11 +113,9 @@ client.on("messageCreate", (message) => {
   }
 });
 
-client.on("voiceStateUpdate", (oldState, newState) => {
-  const michelle = vedbot.modules.get("michelle");
-
-  if (canExecuteModule(cfg, michelle, oldState.guild.id)) michelle?.onVoiceUpdate?.(oldState, newState);
-});
+// client.on("voiceStateUpdate", (oldState, newState) => {
+  
+// });
 
 client.on("guildMemberAdd", (member) => {
   const guildjoinleave = vedbot.modules.get("guildjoinleave");
