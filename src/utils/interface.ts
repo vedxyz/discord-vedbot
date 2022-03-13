@@ -15,8 +15,13 @@ export interface BotConfig {
   ownerId: Snowflake;
   token: string;
   servers: {
+    dh: {
+      mizyaz: {
+        id: string;
+        regexp: string;
+      };
+    };
     [key: string]: {
-      id: Snowflake;
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       [key: string]: any;
     };

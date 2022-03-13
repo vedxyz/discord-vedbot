@@ -1,21 +1,21 @@
 import fetch from "node-fetch";
-import utils from "../utils";
-import { BotCommand, cfg } from "../vedbot";
+import { BotCommand } from "../utils/interface";
+import { mentionImages } from "../database/database";
 
 const command: BotCommand = {
   data: {
-    name: "atpic",
-    description: "Set or remove an @ picture for yourself.",
+    name: "mentionimg",
+    description: "Set or remove a mention image for yourself.",
     defaultPermission: true,
     options: [
       {
         name: "set",
-        description: "Set an @ picture for yourself.",
+        description: "Set a mention image for yourself.",
         type: "SUB_COMMAND",
         options: [
           {
             name: "url",
-            description: "The URL to the @ picture you want",
+            description: "The URL to the mention image you want",
             type: "STRING",
             required: true,
           },
@@ -23,7 +23,7 @@ const command: BotCommand = {
       },
       {
         name: "remove",
-        description: "Remove the current @ picture for yourself.",
+        description: "Remove the current mention image for yourself.",
         type: "SUB_COMMAND",
       },
     ],
@@ -45,21 +45,21 @@ const command: BotCommand = {
       if (!isUrlValidImg) {
         interaction.reply({
           ephemeral: true,
-          content: "Your @ picture URL doesn't appear to be a valid image.",
+          content: "Your mention image URL doesn't appear to be a valid image.",
         });
         return;
       }
 
-      cfg.servers.cr.at_pics[interaction.user.id] = url;
-      utils.config.save(cfg);
+      await mentionImages.set(interaction.guildId!, interaction.user.id, url);
+
       interaction.reply({
         ephemeral: true,
-        content: "Your @ picture has been set.",
+        content: "Your mention image has been set.",
       });
     } else if (subcommand === "remove") {
-      delete cfg.servers.cr.at_pics[interaction.user.id];
-      utils.config.save(cfg);
-      interaction.reply({ ephemeral: true, content: "Your @ picture has been removed." });
+      await mentionImages.delete(interaction.guildId!, interaction.user.id);
+
+      interaction.reply({ ephemeral: true, content: "Your mention image has been removed." });
     }
   },
 };

@@ -1,5 +1,5 @@
-import { SupportedDepartment } from "../interface";
-import { BotCommand, offerings } from "../vedbot";
+import { SupportedDepartment, BotCommand } from "../utils/interface";
+import { offerings } from "../vedbot";
 
 const command: BotCommand = {
   data: {

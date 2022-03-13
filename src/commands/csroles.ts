@@ -1,5 +1,6 @@
 import { GuildMember, MessageActionRow, MessageButton, MessageEmbed, MessageSelectMenu } from "discord.js";
-import { BotCommand, offerings } from "../vedbot";
+import { offerings } from "../vedbot";
+import { BotCommand } from "../utils/interface";
 
 const command: BotCommand = {
   data: {

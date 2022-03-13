@@ -1,14 +1,15 @@
 // https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=applications.commands%20bot
 // The bot is not set to public on the Developer Portal, and as such is open to invitation solely by me.
 
-import Discord, { GuildMember, Message, MessageReaction, TextChannel, User } from "discord.js";
-import { BotCommand, BotModule } from "./interface";
-import utils, { BotFileCollection } from "./utils";
+import Discord, { GuildMember, MessageReaction, User } from "discord.js";
+import { BotCommand, BotModule } from "./utils/interface";
+import utils, { BotFileCollection } from "./utils/utils";
+import fsutils from "./utils/fsutils";
 
-const cfg = utils.config.load();
+const cfg = fsutils.config.load();
 const { canExecuteModule } = utils;
 
-const offerings = utils.loadOfferings();
+const offerings = fsutils.loadOfferings();
 
 const client = new Discord.Client({
   intents: [
@@ -32,46 +33,16 @@ const client = new Discord.Client({
 });
 
 const vedbot = {
-  commands: new BotFileCollection<BotCommand>("cmd"),
+  commands: new BotFileCollection<BotCommand>("commands"),
   modules: new BotFileCollection<BotModule>("modules"),
-  guilds: {
-    dh: {
-      channels: new Map<string, TextChannel>(),
-      messages: new Map<string, Message | undefined>(),
-      reactionQueue: new Set<string>(),
-    },
-    cr: {
-      channels: new Map<string, TextChannel>(),
-    },
-    cs: {
-      channels: new Map<string, TextChannel>(),
-    },
-  },
 };
-const { dh } = vedbot.guilds;
 
 // Load and store commands & modules
 
-utils.botfiles.loadAll(vedbot.modules, vedbot.commands);
+fsutils.botfiles.loadAll(vedbot.modules, vedbot.commands);
 
 client.once("ready", async () => {
   console.log(">> Ready!");
-
-  // Fetch required channels
-
-  await utils.fetchConfigChannels(
-    client,
-    [cfg.servers.dh.channels, vedbot.guilds.dh.channels],
-    [cfg.servers.cr.channels, vedbot.guilds.cr.channels],
-    [cfg.servers.cs.channels, vedbot.guilds.cs.channels]
-  );
-
-  // Fetch required messages
-
-  dh.messages.set("rules_c", await dh.channels.get("rules")?.messages.fetch(cfg.servers.dh.messages.rules_c));
-  dh.messages.set("rules_p1", await dh.channels.get("rules")?.messages.fetch(cfg.servers.dh.messages.rules_p1));
-  dh.messages.set("rules_p2", await dh.channels.get("rules")?.messages.fetch(cfg.servers.dh.messages.rules_p2));
-  dh.messages.set("roles", await dh.channels.get("rolepick")?.messages.fetch(cfg.servers.dh.messages.roles));
 
   // Register slash commands along with their permissions
 
@@ -113,9 +84,7 @@ client.on("messageCreate", (message) => {
   }
 });
 
-// client.on("voiceStateUpdate", (oldState, newState) => {
-  
-// });
+// client.on("voiceStateUpdate", (oldState, newState) => {});
 
 client.on("guildMemberAdd", (member) => {
   const guildjoinleave = vedbot.modules.get("guildjoinleave");
@@ -143,6 +112,6 @@ client.on("messageReactionRemove", (reaction, user) => {
     dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
 });
 
-client.login(cfg.token);
+// client.login(cfg.token);
 
-export { BotCommand, BotModule, vedbot, client, cfg, offerings };
+export { vedbot, client, cfg, offerings };
