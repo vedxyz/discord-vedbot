@@ -5,7 +5,9 @@ services:
       - dbpostgres
     environment:
       - RUNNING_IN_CONTAINER=true
+      - PGHOST=dbpostgres
       - PGUSER=postgres
+      - PGDATABASE=vedbotdevel
 
   dbpostgres:
     image: postgres
