@@ -3,13 +3,20 @@ import { Snowflake } from "discord.js";
 
 const pgpool = new Pool();
 
+pgpool.on("error", (err) => {
+  console.error("Database error:\n", err);
+});
+
 interface RuleRow {
   index: number;
   content: string;
 }
 
 const ruleExists = async (serverId: Snowflake, ruleIndex: number): Promise<boolean> => {
-  const result = await pgpool.query("SELECT EXISTS(SELECT 1 FROM rules WHERE server_id = $1 AND rule_index = $2) AS exists", [serverId, ruleIndex]);
+  const result = await pgpool.query(
+    "SELECT EXISTS(SELECT 1 FROM rules WHERE server_id = $1 AND rule_index = $2) AS exists",
+    [serverId, ruleIndex]
+  );
   return result.rows[0].exists;
 };
 
@@ -56,9 +63,24 @@ export const rules = {
   set: setRule,
 };
 
+interface ServerRow {
+  id: Snowflake;
+  nickname: string;
+}
+
 const getServerId = async (nickname: string): Promise<Snowflake> => {
   const result = await pgpool.query("SELECT server_id FROM servers WHERE server_nickname = $1", [nickname]);
   return result.rows[0].server_id;
+};
+
+const getAllServerIds = async (): Promise<Snowflake[]> => {
+  const result = await pgpool.query("SELECT server_id FROM servers");
+  return result.rows.map((row) => row.server_id);
+};
+
+const getAllServers = async (): Promise<ServerRow[]> => {
+  const result = await pgpool.query("SELECT * FROM servers");
+  return result.rows.map((row) => ({ id: row.server_id, nickname: row.server_nickname }));
 };
 
 const getChannelId = async (serverId: Snowflake, channelType: string): Promise<Snowflake> => {
@@ -77,14 +99,25 @@ const getRoleId = async (serverId: Snowflake, roleType: string): Promise<Snowfla
   return result.rows[0].role_id;
 };
 
+const getAllRoleIdsOfType = async (roleType: string): Promise<Snowflake[]> => {
+  const result = await pgpool.query("SELECT role_id FROM roles WHERE role_type = $1", [roleType]);
+  return result.rows.map((row) => row.role_id);
+};
+
 export const ids = {
   getServerId,
+  getAllServerIds,
+  getAllServers,
   getChannelId,
   getRoleId,
+  getAllRoleIdsOfType,
 };
 
 const hasMentionImageUrl = async (serverId: Snowflake, userId: Snowflake): Promise<boolean> => {
-  const result = await pgpool.query("SELECT EXISTS(SELECT 1 FROM mention_images WHERE server_id = $1 AND user_id = $2) AS exists", [serverId, userId]);
+  const result = await pgpool.query(
+    "SELECT EXISTS(SELECT 1 FROM mention_images WHERE server_id = $1 AND user_id = $2) AS exists",
+    [serverId, userId]
+  );
   return result.rows[0].exists;
 };
 
@@ -103,7 +136,10 @@ const setMentionImageUrl = async (serverId: Snowflake, userId: Snowflake, imageU
   ]);
 
   if (existing.rowCount) {
-    await pgpool.query("UPDATE mention_images SET image_url = $1 WHERE image_id = $2", [imageUrl, existing.rows[0].image_id]);
+    await pgpool.query("UPDATE mention_images SET image_url = $1 WHERE image_id = $2", [
+      imageUrl,
+      existing.rows[0].image_id,
+    ]);
   } else {
     await pgpool.query("INSERT INTO mention_images(user_id, server_id, image_url) VALUES($1, $2, $3)", [
       userId,
@@ -122,4 +158,8 @@ export const mentionImages = {
   get: getMentionImageUrl,
   set: setMentionImageUrl,
   delete: deleteMentionImageUrl,
+};
+
+export const endDatabaseConnection = async (): Promise<void> => {
+  await pgpool.end();
 };
