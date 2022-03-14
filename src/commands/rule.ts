@@ -1,5 +1,4 @@
 import utils from "../utils/utils";
-import { cfg } from "../vedbot";
 import { BotCommand } from "../utils/interface";
 import { rules } from "../database/database";
 
@@ -24,7 +23,7 @@ const command: BotCommand = {
     const ruleEmbed = utils.getRuleEmbedBase(interaction);
 
     if (ruleID === null) {
-      const allRules = await rules.getAll(interaction.guildId!);
+      const allRules = await rules.getAll(interaction.guildId);
 
       interaction.reply({
         embeds: [
@@ -37,11 +36,11 @@ const command: BotCommand = {
           ),
         ],
       });
-    } else if (await rules.exists(interaction.guildId!, ruleID)) {
+    } else if (await rules.exists(interaction.guildId, ruleID)) {
       interaction.reply({ content: `Rule #${ruleID} doesn't exist.`, ephemeral: true });
     } else {
       interaction.reply({
-        embeds: [ruleEmbed.addField(`Rule #${ruleID}`, (await rules.get(interaction.guildId!, ruleID)).content, false)],
+        embeds: [ruleEmbed.addField(`Rule #${ruleID}`, (await rules.get(interaction.guildId, ruleID)).content, false)],
       });
     }
   },

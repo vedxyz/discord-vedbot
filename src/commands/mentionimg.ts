@@ -50,14 +50,14 @@ const command: BotCommand = {
         return;
       }
 
-      await mentionImages.set(interaction.guildId!, interaction.user.id, url);
+      await mentionImages.set(interaction.guildId, interaction.user.id, url);
 
       interaction.reply({
         ephemeral: true,
         content: "Your mention image has been set.",
       });
     } else if (subcommand === "remove") {
-      await mentionImages.delete(interaction.guildId!, interaction.user.id);
+      await mentionImages.delete(interaction.guildId, interaction.user.id);
 
       interaction.reply({ ephemeral: true, content: "Your mention image has been removed." });
     }
