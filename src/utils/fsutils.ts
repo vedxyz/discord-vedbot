@@ -5,27 +5,18 @@ import fs from "fs";
 import Discord from "discord.js";
 import path from "path";
 import { BotCommand, BotConfig, BotModule, Offerings, SupportedDepartment } from "./interface";
-
-const configPath = path.join(__dirname, "..", "config.json");
-
-export class BotFileCollection<T extends BotCommand | BotModule> extends Discord.Collection<string, T> {
-  rootdir: string;
-
-  constructor(rootdir: string) {
-    super();
-    this.rootdir = rootdir;
-  }
-}
+import { srcrootdir, projrootdir } from "../rootdirname"
+import BotFileCollection from "./botfilecollection";
 
 const botfiles = {
   loadAll: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): void => {
     console.log("Loading BotFiles...");
     botFileCollections.forEach((collection) => {
-      fs.readdirSync(path.join(__dirname, collection.rootdir))
+      fs.readdirSync(path.join(srcrootdir, collection.rootdir))
         .filter((file) => file.endsWith(".js"))
         .map(
           (file) =>
-            [file, require(path.join(__dirname, collection.rootdir, file)).default] as [string, BotCommand | BotModule]
+            [file, require(path.join(srcrootdir, collection.rootdir, file)).default] as [string, BotCommand | BotModule]
         )
         .forEach(([filename, fileImport]) => {
           collection.set(filename.slice(0, -3), fileImport);
@@ -34,7 +25,7 @@ const botfiles = {
     });
   },
   reload: (collection: BotFileCollection<BotCommand | BotModule>, filename: string): void => {
-    const filePath = path.join(__dirname, collection.rootdir, `${filename}.js`);
+    const filePath = path.join(srcrootdir, collection.rootdir, `${filename}.js`);
 
     delete require.cache[require.resolve(filePath)];
     const reloadedFile: BotCommand | BotModule = require(filePath).default;
@@ -43,19 +34,20 @@ const botfiles = {
   },
   getAllFileNamesSync: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): string[] =>
     botFileCollections
-      .map((collection) => fs.readdirSync(path.join(__dirname, collection.rootdir)))
+      .map((collection) => fs.readdirSync(path.join(srcrootdir, collection.rootdir)))
       .reduce((acc, curr) => acc.concat(curr), [])
       .filter((filename) => filename.endsWith(".js")),
   getAllFileNames: async (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): Promise<string[]> =>
     (
       await Promise.all(
-        botFileCollections.map((collection) => fs.promises.readdir(path.join(__dirname, collection.rootdir)))
+        botFileCollections.map((collection) => fs.promises.readdir(path.join(srcrootdir, collection.rootdir)))
       )
     )
       .reduce((acc, curr) => acc.concat(curr), [])
       .filter((filename) => filename.endsWith(".js")),
 };
 
+const configPath = path.join(projrootdir, "config.json");
 const config = {
   load: (): BotConfig => JSON.parse(fs.readFileSync(configPath, "utf8")),
   save: async (cfg: BotConfig): Promise<void> => {
@@ -66,7 +58,7 @@ const config = {
 
 const loadOfferings = (): Offerings => {
   const offerings: Offerings = new Discord.Collection();
-  const offeringsFolder = path.join("__dirname", "..", "offerings_data");
+  const offeringsFolder = path.join(projrootdir, "offerings_data");
 
   fs.readdirSync(offeringsFolder).forEach((department) => {
     offerings.set(

@@ -1,7 +1,11 @@
 import utils from "../utils/utils";
-import { cfg } from "../vedbot";
 import { BotCommand } from "../utils/interface";
 import { rules } from "../database/database";
+
+let adminPermissions: BotCommand["permissions"];
+utils.permissions.getAdmins().then((permissions) => {
+  adminPermissions = permissions;
+});
 
 const command: BotCommand = {
   data: {
@@ -23,7 +27,7 @@ const command: BotCommand = {
       },
     ],
   },
-  permissions: [utils.permissions.getOwner(cfg), /* ...utils.permissions.getAdmins(cfg) */], // TODO
+  permissions: [utils.permissions.getOwner(), ...(typeof adminPermissions !== "undefined" ? adminPermissions : [])],
   guilds: ["dh"],
   async execute(interaction) {
     const ruleID = interaction.options.getInteger("id", true);
@@ -32,7 +36,7 @@ const command: BotCommand = {
     console.log(`Writing rule to #${ruleID}: ${ruleContent.substring(0, 50)}${ruleContent.length > 50 ? "..." : ""}`);
 
     try {
-      await rules.set(interaction.guildId!, { index: ruleID, content: ruleContent });
+      await rules.set(interaction.guildId, { index: ruleID, content: ruleContent });
     } catch (error) {
       console.error(error);
       interaction.reply("There was a problem saving the rule.");

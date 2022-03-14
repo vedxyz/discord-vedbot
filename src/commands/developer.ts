@@ -1,14 +1,13 @@
 import { CommandInteraction, MessageEmbed } from "discord.js";
 import utils from "../utils/utils";
 import fsutils from "../utils/fsutils";
-import { cfg, vedbot } from "../vedbot";
 import { BotCommand } from "../utils/interface";
 import { ids } from "../database/database";
+import { vedbot } from "../settings";
 
 const subcommands = {
   killbot: (interaction: CommandInteraction) => {
-    interaction.reply("```=> Killing the bot.```");
-    // .then(() => exec(`pm2 stop ${path.join(__dirname, "..", "..", "pm2.config.js")}`));
+    interaction.reply("```=> Killing the bot.```").then(() => utils.exitBot());
   },
   reload: (interaction: CommandInteraction) => {
     const filename = interaction.options.getString("filename", true);
@@ -121,7 +120,7 @@ const command: BotCommand = {
       },
     ],
   },
-  permissions: [utils.permissions.getOwner(cfg)],
+  permissions: [utils.permissions.getOwner()],
   guilds: ["dh", "cs", "cr"],
   execute(interaction) {
     const subcommand = interaction.options.getSubcommand() as keyof typeof subcommands;

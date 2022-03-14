@@ -5,7 +5,7 @@ import { promisify } from "util";
 import { exec } from "child_process";
 import dayjs, { Dayjs } from "dayjs";
 import path from "path";
-import { rootdir } from "../settings";
+import { projrootdir } from "../rootdirname";
 
 dayjs.Ls.en.weekStart = 1;
 const execAsync = promisify(exec);
@@ -129,7 +129,7 @@ const cacheMealList = async (writeJson = false): Promise<void> => {
 
   await parseMealPDF(await response.buffer(), mealList);
   if (writeJson)
-    await fs.promises.writeFile(path.join(rootdir, "..", "meallist.json"), JSON.stringify(mealList, null, 2));
+    await fs.promises.writeFile(path.join(projrootdir, "meallist.json"), JSON.stringify(mealList, null, 2));
 
   mealListCache = mealList;
 };

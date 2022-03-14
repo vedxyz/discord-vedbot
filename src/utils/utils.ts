@@ -1,41 +1,34 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
-import Discord, {
+import {
+  // Client,
+  // TextChannel,
   ApplicationCommandPermissionData,
-  Client,
   CommandInteraction,
   MessageEmbed,
   Snowflake,
-  TextChannel,
 } from "discord.js";
-import { BotCommand, BotConfig, BotModule, } from "./interface";
+import { endDatabaseConnection, ids } from "../database/database";
+import { cfg } from "../settings";
+import { BotModule } from "./interface";
 
-export class BotFileCollection<T extends BotCommand | BotModule> extends Discord.Collection<string, T> {
-  rootdir: string;
+// const fetchConfigChannels = async (
+//   client: Client,
+//   ...serverTuples: [{ [key: string]: Snowflake }, Map<string, TextChannel>][]
+// ): Promise<void> => {
+//   serverTuples.forEach(([cfgChannels, channelMap]) => {
+//     Object.entries(cfgChannels).forEach(async ([channelName, channelID]) => {
+//       channelMap.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
+//     });
+//   });
+// };
 
-  constructor(rootdir: string) {
-    super();
-    this.rootdir = rootdir;
-  }
-}
-
-const fetchConfigChannels = async (
-  client: Client,
-  ...serverTuples: [{ [key: string]: Snowflake }, Map<string, TextChannel>][]
-): Promise<void> => {
-  serverTuples.forEach(([cfgChannels, channelMap]) => {
-    Object.entries(cfgChannels).forEach(async ([channelName, channelID]) => {
-      channelMap.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
-    });
-  });
-};
-
-const canExecuteModule = (
-  cfg: BotConfig,
-  module: BotModule | undefined,
-  eventGuildId: Snowflake | undefined
-): boolean => !!eventGuildId && !!module?.state && module.guilds.some((srv) => cfg.servers[srv].id === eventGuildId);
+const canExecuteModule = (module: BotModule, eventGuildId: Snowflake | undefined): boolean =>
+  module.state &&
+  (module.anyguild ||
+    (eventGuildId !== undefined &&
+      module.guilds.some(async (allowedServer) => (await ids.getServerId(allowedServer)) === eventGuildId)));
 
 const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
   new MessageEmbed()
@@ -46,28 +39,25 @@ const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
     .setThumbnail(interaction.guild?.iconURL() || "");
 
 const permissions = {
-  getOwner: (cfg: BotConfig): ApplicationCommandPermissionData => ({
+  getOwner: (): ApplicationCommandPermissionData => ({
     id: cfg.ownerId,
     type: "USER",
     permission: true,
   }),
-  getAdmins: (cfg: BotConfig): ApplicationCommandPermissionData[] => [
-    {
-      id: cfg.servers.cs.roles.admin,
-      type: "ROLE",
-      permission: true,
-    },
-    {
-      id: cfg.servers.dh.roles.admin,
-      type: "ROLE",
-      permission: true,
-    },
-  ],
+  getAdmins: async (): Promise<ApplicationCommandPermissionData[]> =>
+    (await ids.getAllRoleIdsOfType("admin")).map((roleId) => ({ id: roleId, type: "ROLE", permission: true })),
+};
+
+const exitBot = async (): Promise<void> => {
+  console.log("Exitting gracefully...");
+  await endDatabaseConnection();
+  process.exit();
 };
 
 export default {
-  fetchConfigChannels,
+  // fetchConfigChannels,
   canExecuteModule,
   getRuleEmbedBase,
   permissions,
+  exitBot,
 };

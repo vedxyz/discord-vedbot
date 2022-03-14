@@ -1,5 +1,5 @@
 import { MessageEmbed, MessageOptions } from "discord.js";
-import { cfg } from "../vedbot";
+import { cfg } from "../settings";
 import { BotModule } from "../utils/interface";
 
 const mizyazId = cfg.servers.dh.mizyaz.id;

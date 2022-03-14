@@ -1,5 +1,5 @@
 import { MessageEmbed, TextChannel } from "discord.js";
-import { cfg, client, vedbot } from "../vedbot";
+import client from "../vedbot";
 import { BotModule } from "../utils/interface";
 import { ids } from "../database/database";
 
@@ -9,8 +9,7 @@ export default {
   state: true,
   guilds: ["cs", "dh"],
   async onMemberJoin(member) {
-    const serverKey = this.guilds.find(async (srv) => await ids.getServerId(srv) === member.guild.id);
-    const logChannel = await client.channels.fetch(await ids.getChannelId(serverKey!, "log")) as TextChannel;
+    const logChannel = await client.channels.fetch(await ids.getChannelId(member.guild.id, "log")) as TextChannel;
 
     logChannel?.send({
       embeds: [
@@ -48,8 +47,7 @@ export default {
     // }
   },
   async onMemberLeave(member) {
-    const serverKey = this.guilds.find(async (srv) => await ids.getServerId(srv) === member.guild.id);
-    const logChannel = await client.channels.fetch(await ids.getChannelId(serverKey!, "log")) as TextChannel;
+    const logChannel = await client.channels.fetch(await ids.getChannelId(member.guild.id, "log")) as TextChannel;
 
     logChannel?.send({
       embeds: [

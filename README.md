@@ -24,13 +24,13 @@ I handle the deployment using [PM2](https://pm2.keymetrics.io/) personally, whic
 
 ## To do
 
-- [ ] Switch to PostgreSQL for dynamic data, keep static in config.json
+- [x] Switch to PostgreSQL for dynamic data, keep static in config.json
 - [ ] Add meal menu commands through `xpdf`'s `pdftotext`
 - [ ] Integrate CI/CD
 - [ ] Unit testing
 - [ ] Improve PM2 workflow
 - [x] Add role commands for the CS server
 - [x] `mizyaz` module needs to be less destructive with its handling of messages
-- [x] `atpics` module needs a command to self-set pics, and also should support non-discord-cdn links if possible
+- [x] `mentionimg` module needs a command to self-set pics, and also should support non-discord-cdn links if possible
 - [x] `guildjoinleave` module should tag relevant users without sending them a mention?
 - [x] Add readme and license files
