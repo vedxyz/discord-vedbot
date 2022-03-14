@@ -5,6 +5,7 @@ services:
       - dbpostgres
     environment:
       - RUNNING_IN_CONTAINER=true
+      - NODE_ENV=development
       - PGHOST=dbpostgres
       - PGUSER=postgres
       - PGDATABASE=vedbotdevel
