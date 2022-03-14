@@ -40,7 +40,7 @@ export interface BotModule {
    * Actions will only be executed on guilds listed here by *server nickname*
    */
   guilds: string[];
-  onMessage?: (message: Message<true>) => void;
+  onMessage?: (message: Message<true>) => unknown;
   onVoiceUpdate?: (oldState: VoiceState, newState: VoiceState) => unknown;
   onMemberJoin?: (member: GuildMember) => unknown;
   onMemberLeave?: (member: GuildMember) => unknown;

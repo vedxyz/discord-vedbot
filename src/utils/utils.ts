@@ -49,7 +49,7 @@ const permissions = {
 };
 
 const exitBot = async (): Promise<void> => {
-  console.log("Exitting gracefully...");
+  console.log("Exiting gracefully...");
   await endDatabaseConnection();
   process.exit();
 };

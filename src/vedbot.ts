@@ -1,7 +1,7 @@
 // https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=applications.commands%20bot
 // The bot is not set to public on the Developer Portal, and as such is open to invitation solely by me.
 
-import Discord, { GuildMember, MessageReaction, User } from "discord.js";
+import Discord, { GuildMember } from "discord.js";
 import { cfg, vedbot } from "./settings";
 import { ids } from "./database/database";
 import utils from "./utils/utils";
@@ -48,10 +48,10 @@ client.once("ready", async () => {
   });
 });
 
-client.on("interactionCreate", (interaction) => {
+client.on("interactionCreate", async (interaction) => {
   if (interaction.isCommand() && interaction.inGuild()) {
     try {
-      vedbot.commands.get(interaction.commandName).execute(interaction);
+      await vedbot.commands.get(interaction.commandName).execute(interaction);
     } catch (error) {
       console.error(error);
       interaction.reply("**Error**: Unable to execute this command due to some kind of incompetence on my behalf.");
@@ -62,15 +62,15 @@ client.on("interactionCreate", (interaction) => {
 client.on("messageCreate", (message) => {
   if (message.author.id === client.user?.id || !message.inGuild()) return;
 
-  try {
-    ["mizyaz", "dhlink", "mentionimg"].forEach((moduleName) => {
-      const module = vedbot.modules.get(moduleName);
+  ["mizyaz", "dhlink", "mentionimg"].forEach(async (moduleName) => {
+    const module = vedbot.modules.get(moduleName);
 
-      if (canExecuteModule(module, message.guild.id)) module.onMessage?.(message);
-    });
-  } catch (error) {
-    console.error(error);
-  }
+    try {
+      if (canExecuteModule(module, message.guild.id)) await module.onMessage?.(message);
+    } catch (error) {
+      console.error(error);
+    }
+  });
 });
 
 // client.on("voiceStateUpdate", (oldState, newState) => {});
@@ -87,19 +87,19 @@ client.on("guildMemberRemove", (member) => {
   if (canExecuteModule(guildjoinleave, member.guild.id)) guildjoinleave?.onMemberLeave?.(member as GuildMember);
 });
 
-client.on("messageReactionAdd", (reaction, user) => {
-  const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
+// client.on("messageReactionAdd", (reaction, user) => {
+//   const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
 
-  if (canExecuteModule(dhreactrolepicker, reaction.message.guild?.id))
-    dhreactrolepicker?.onReactionAdd?.(reaction as MessageReaction, user as User);
-});
+//   if (canExecuteModule(dhreactrolepicker, reaction.message.guild?.id))
+//     dhreactrolepicker?.onReactionAdd?.(reaction as MessageReaction, user as User);
+// });
 
-client.on("messageReactionRemove", (reaction, user) => {
-  const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
+// client.on("messageReactionRemove", (reaction, user) => {
+//   const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
 
-  if (canExecuteModule(dhreactrolepicker, reaction.message.guild?.id))
-    dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
-});
+//   if (canExecuteModule(dhreactrolepicker, reaction.message.guild?.id))
+//     dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
+// });
 
 client.login(cfg.token);
 

@@ -33,7 +33,11 @@ const command: BotCommand = {
     const ruleID = interaction.options.getInteger("id", true);
     const ruleContent = interaction.options.getString("content") ?? "";
 
-    console.log(`Writing rule to #${ruleID}: ${ruleContent.substring(0, 50)}${ruleContent.length > 50 ? "..." : ""}`);
+    if (ruleContent.length === 0) {
+      interaction.reply({ content: "You can't have zero-length rules.", ephemeral: true });
+    }
+
+    // console.log(`Writing rule to #${ruleID}: ${ruleContent.substring(0, 50)}${ruleContent.length > 50 ? "..." : ""}`);
 
     try {
       await rules.set(interaction.guildId, { index: ruleID, content: ruleContent });

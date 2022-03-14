@@ -30,7 +30,7 @@ const getRules = async (serverId: Snowflake): Promise<RuleRow[]> => {
 
 const getRule = async (serverId: Snowflake, ruleIndex: number): Promise<RuleRow> => {
   const result = await pgpool.query(
-    "SELECT rule_index, rule_content FROM rules WHERE server_id = $1 AND rule_index $2",
+    "SELECT rule_index, rule_content FROM rules WHERE server_id = $1 AND rule_index = $2",
     [serverId, ruleIndex]
   );
   return { index: result.rows[0].rule_index, content: result.rows[0].rule_content };
@@ -122,7 +122,7 @@ const hasMentionImageUrl = async (serverId: Snowflake, userId: Snowflake): Promi
 };
 
 const getMentionImageUrl = async (serverId: Snowflake, userId: Snowflake): Promise<string> => {
-  const result = await pgpool.query("SELECT img_url FROM mention_images WHERE server_id = $1 AND user_id = $2", [
+  const result = await pgpool.query("SELECT image_url FROM mention_images WHERE server_id = $1 AND user_id = $2", [
     serverId,
     userId,
   ]);
