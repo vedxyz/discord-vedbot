@@ -1,5 +1,7 @@
-import { SupportedDepartment, BotCommand } from "../utils/interface";
-import { offerings } from "../vedbot";
+import { Collection } from "discord.js";
+import { SupportedDepartment, BotCommand, Offerings } from "../utils/interface";
+
+const offerings: Offerings = new Collection; // This is a temporary mock
 
 const command: BotCommand = {
   data: {
