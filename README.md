@@ -24,11 +24,13 @@ I handle the deployment using [PM2](https://pm2.keymetrics.io/) personally, whic
 
 ## To do
 
-- [x] Switch to PostgreSQL for dynamic data, keep static in config.json
 - [ ] Add meal menu commands through `xpdf`'s `pdftotext`
+- [ ] Add Bilkent offerings utilities
 - [ ] Integrate CI/CD
 - [ ] Unit testing
-- [ ] Improve PM2 workflow
+- [ ] Migrate away from PM2 deployment? Use PM2 or Docker to run the production build, but do it with SSH/scripts?
+  Get rid of the development build on the server, no need.
+- [x] Switch to PostgreSQL for dynamic data, keep static in config.json
 - [x] Add role commands for the CS server
 - [x] `mizyaz` module needs to be less destructive with its handling of messages
 - [x] `mentionimg` module needs a command to self-set pics, and also should support non-discord-cdn links if possible
