@@ -6,30 +6,28 @@ The project had started out as a single-file JavaScript project built using the 
 
 1. The code was split into proper "modules" and "commands" rather than being contained in a single gigantic file.
 2. Later on, the project was migrated over to TypeScript. The migration, initially being more of a pain than imagined, has made the codebase much more reliable thanks to the excruciating work put into it.
-3. And at last, the project was upgraded to take advantage of Discord API v9 with the release of discord.js v13.
+3. Later on, the project was upgraded to take advantage of Discord API v9 with the release of discord.js v13.
+4. At last, the project was finally refactored to use PostgreSQL instead of a JSON file as its data store.
 
 ## `config.json`
 
-All of the configuration is contained within this one file, and it is naturally quite vital to the function of the bot. However, due to its privacy-sensitive contents, it is not publicly available.
+All of the static configuration is contained within this one file, and it is naturally quite vital to the function of the bot. However, due to the contents being sensitive, it is not publicly available.
+It is supposed to be placed one level above the `build` folder, which is considered the project root.
 
 ## Usage
 
 The project can be used with the scripts included under the `package.json` file.
 
-I handle the deployment using [PM2](https://pm2.keymetrics.io/) personally, which is configured in the `pm2.config.js` file.
-
-> Note: Node.js version >= 16.6.0 is required for the discord.js module.
-
 ---
 
 ## To do
 
-- [ ] Add meal menu commands through `xpdf`'s `pdftotext`
 - [ ] Add Bilkent offerings utilities
-- [ ] Integrate CI/CD
-- [ ] Unit testing
 - [ ] Migrate away from PM2 deployment? Use PM2 or Docker to run the production build, but do it with SSH/scripts?
   Get rid of the development build on the server, no need.
+- [ ] Integrate CI/CD
+- [ ] Automated testing to an extent?
+- [x] Add meal menu commands through `xpdf`'s `pdftotext`
 - [x] Switch to PostgreSQL for dynamic data, keep static in config.json
 - [x] Add role commands for the CS server
 - [x] `mizyaz` module needs to be less destructive with its handling of messages
