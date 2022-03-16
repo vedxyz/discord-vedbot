@@ -1,5 +1,7 @@
 FROM node:16.14.0
 
+RUN apt-get update && apt-get install -y --no-install-recommends poppler-utils
+
 WORKDIR /app
 
 COPY package*.json ./
