@@ -9,7 +9,7 @@ export default {
   state: true,
   guilds: ["cs", "dh"],
   async onMemberJoin(member) {
-    const logChannel = await client.channels.fetch(await ids.getChannelId(member.guild.id, "log")) as TextChannel;
+    const logChannel = (await client.channels.fetch(await ids.getChannelId(member.guild.id, "log"))) as TextChannel;
 
     logChannel?.send({
       embeds: [
@@ -47,7 +47,7 @@ export default {
     // }
   },
   async onMemberLeave(member) {
-    const logChannel = await client.channels.fetch(await ids.getChannelId(member.guild.id, "log")) as TextChannel;
+    const logChannel = (await client.channels.fetch(await ids.getChannelId(member.guild.id, "log"))) as TextChannel;
 
     logChannel?.send({
       embeds: [

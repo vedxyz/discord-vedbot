@@ -5,7 +5,7 @@ import fs from "fs";
 import Discord from "discord.js";
 import path from "path";
 import { BotCommand, BotConfig, BotModule, Offerings, SupportedDepartment } from "./interface";
-import { srcrootdir, projrootdir } from "../rootdirname"
+import { srcrootdir, projrootdir } from "../rootdirname";
 import BotFileCollection from "./botfilecollection";
 
 const botfiles = {

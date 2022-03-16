@@ -36,7 +36,7 @@ const command: BotCommand = {
           ),
         ],
       });
-    } else if (!await rules.exists(interaction.guildId, ruleID)) {
+    } else if (!(await rules.exists(interaction.guildId, ruleID))) {
       interaction.reply({ content: `Rule #${ruleID} doesn't exist.`, ephemeral: true });
     } else {
       interaction.reply({

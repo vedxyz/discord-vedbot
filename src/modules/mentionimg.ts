@@ -10,7 +10,7 @@ export default {
     const matchedImages: string[] = [];
 
     message.mentions.users.each(async (user) => {
-      if (await mentionImages.has(message.guild.id, user.id) && matchedImages.length < 10) {
+      if ((await mentionImages.has(message.guild.id, user.id)) && matchedImages.length < 10) {
         matchedImages.push(await mentionImages.get(message.guild.id, user.id));
       }
     });

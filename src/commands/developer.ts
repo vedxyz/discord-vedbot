@@ -41,7 +41,7 @@ const subcommands = {
   },
   togglemodule: (interaction: CommandInteraction) => {
     const availableModules = vedbot.modules.filter((module) =>
-      module.guilds.some(async (srv) => await ids.getServerId(srv) === interaction.guild?.id)
+      module.guilds.some(async (srv) => (await ids.getServerId(srv)) === interaction.guild?.id)
     );
 
     const moduleName = interaction.options.getString("module");

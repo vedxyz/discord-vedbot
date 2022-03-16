@@ -10,8 +10,8 @@ class BotFileCollection<T extends BotCommand | BotModule> extends Discord.Collec
   }
 
   get(key: string): T {
-      if (!super.has(key)) throw new Error("Attempted to retrieve botfile with invalid key");
-      return super.get(key) as T;
+    if (!super.has(key)) throw new Error("Attempted to retrieve botfile with invalid key");
+    return super.get(key) as T;
   }
 }
 export default BotFileCollection;
