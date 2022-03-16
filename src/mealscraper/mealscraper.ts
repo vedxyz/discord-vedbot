@@ -7,7 +7,7 @@ import dayjs, { Dayjs } from "dayjs";
 import path from "path";
 import { projrootdir } from "../rootdirname";
 
-dayjs.Ls.en.weekStart = 1;
+// dayjs.Ls.en.weekStart = 1; // May not be needed with IsoWeek plugin
 const execAsync = promisify(exec);
 
 const menuUrl = "http://kafemud.bilkent.edu.tr/kumanya_menusu.pdf";
@@ -17,7 +17,7 @@ interface MealName {
   eng: string;
 }
 
-interface Meal {
+export interface Meal {
   plates: MealName[];
   vegetarianPlate: MealName;
   calories: {
@@ -37,8 +37,11 @@ export interface MealList {
   days: MealDay[];
 }
 
-const getMonday = (): Dayjs => dayjs().startOf("week").add(3, "hour");
-export const getMealDateFormatted = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
+const trTime = (): Dayjs => dayjs().add(3, "hour");
+const getMonday = (): Dayjs => trTime().startOf("isoWeek");
+export const getMealDateFormattedDay = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
+export const getMealDateFormatted = (mealDay: MealDay): string => mealDay.date.format("DD/MM/YYYY");
+export const getDayOfWeekIndex = (): number => trTime().isoWeekday() - 1;
 
 const getEntityTag = (res: Response) => res.headers.get("ETag")?.replace(/^"|"$/g, "");
 

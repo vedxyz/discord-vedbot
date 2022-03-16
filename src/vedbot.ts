@@ -2,9 +2,13 @@
 // The bot is not set to public on the Developer Portal, and as such is open to invitation solely by me.
 
 import Discord, { GuildMember } from "discord.js";
+import dayjs from "dayjs";
+import isoWeek from "dayjs/plugin/isoWeek";
 import { cfg, vedbot } from "./settings";
 import { ids } from "./database/database";
 import utils from "./utils/utils";
+
+dayjs.extend(isoWeek);
 
 const { canExecuteModule } = utils;
 

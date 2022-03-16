@@ -2,6 +2,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 import {
+  ApplicationCommandOptionChoice,
   // Client,
   // TextChannel,
   ApplicationCommandPermissionData,
@@ -10,6 +11,7 @@ import {
   Snowflake,
 } from "discord.js";
 import { endDatabaseConnection, ids } from "../database/database";
+import { Meal } from "../mealscraper/mealscraper";
 import { cfg } from "../settings";
 import { BotModule } from "./interface";
 
@@ -24,6 +26,8 @@ import { BotModule } from "./interface";
 //   });
 // };
 
+const capitalizeWord = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1);
+
 const canExecuteModule = (module: BotModule, eventGuildId: Snowflake | undefined): boolean =>
   module.state &&
   (module.anyguild ||
@@ -37,6 +41,26 @@ const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
     .setFooter({ text: "Teşekkürler" })
     .setColor("ORANGE")
     .setThumbnail(interaction.guild?.iconURL() || "");
+
+const populateMealEmbed = (embed: MessageEmbed, meal: Meal, language: keyof Meal["vegetarianPlate"] = "tr"): void => {
+  embed.addFields([
+    { name: "Standard Plates", value: meal.plates.map((plate) => `- ${plate[language]}`).join("\n") },
+    { name: "Vegetarian Plate", value: `- ${meal.vegetarianPlate[language]}` },
+    {
+      name: "Standard Calories",
+      value: meal.calories.standard,
+      inline: true,
+    },
+    {
+      name: "Vegetarian Calories",
+      value: meal.calories.vegetarian,
+      inline: true,
+    },
+  ]);
+};
+
+const objectifyChoiceArray = (choices: string[]): ApplicationCommandOptionChoice[] =>
+  choices.map((choice) => ({ name: choice, value: choice }));
 
 const permissions = {
   getOwner: (): ApplicationCommandPermissionData => ({
@@ -56,8 +80,11 @@ const exitBot = async (): Promise<void> => {
 
 export default {
   // fetchConfigChannels,
+  capitalizeWord,
   canExecuteModule,
   getRuleEmbedBase,
+  populateMealEmbed,
+  objectifyChoiceArray,
   permissions,
   exitBot,
 };
