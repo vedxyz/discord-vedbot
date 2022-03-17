@@ -1,14 +1,9 @@
 import { ApplicationCommandChoicesData, Collection, MessageEmbed } from "discord.js";
-import {
-  getDayOfWeekIndex,
-  getMealDateFormatted,
-  getMealDateFormattedDay,
-  getMealList,
-  MealList,
-} from "../mealscraper/mealscraper";
+import { getMealList } from "bilkent-scraper";
 import { SupportedDepartment, BotCommand, Offerings } from "../utils/interface";
 import utils from "../utils/utils";
 
+const { getDayOfWeekIndex, getMealDateFormatted, getMealDateFormattedDay } = utils;
 const offerings: Offerings = new Collection(); // This is a temporary mock
 
 const forMealChoiceData: ApplicationCommandChoicesData = {

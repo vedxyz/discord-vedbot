@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
+import { Meal, MealDay } from "bilkent-scraper";
+import dayjs, { Dayjs } from "dayjs";
 import {
   ApplicationCommandOptionChoice,
   // Client,
@@ -11,7 +13,6 @@ import {
   Snowflake,
 } from "discord.js";
 import { endDatabaseConnection, ids } from "../database/database";
-import { Meal } from "../mealscraper/mealscraper";
 import { cfg } from "../settings";
 import { BotModule } from "./interface";
 
@@ -25,6 +26,11 @@ import { BotModule } from "./interface";
 //     });
 //   });
 // };
+
+const trTime = (): Dayjs => dayjs().add(3, "hour");
+const getMealDateFormattedDay = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
+const getMealDateFormatted = (mealDay: MealDay): string => mealDay.date.format("DD/MM/YYYY");
+const getDayOfWeekIndex = (): number => trTime().isoWeekday() - 1;
 
 const capitalizeWord = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1);
 
@@ -80,6 +86,9 @@ const exitBot = async (): Promise<void> => {
 
 export default {
   // fetchConfigChannels,
+  getMealDateFormattedDay,
+  getMealDateFormatted,
+  getDayOfWeekIndex,
   capitalizeWord,
   canExecuteModule,
   getRuleEmbedBase,
