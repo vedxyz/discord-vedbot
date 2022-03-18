@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - production
+  workflow_dispatch:
+jobs:
+  deploy:
+    if: github.event.pull_request.merged
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH
+      uses: appleboy/ssh-action@master
+      with:
+        script_stop: true
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        script: |
+          cd /srv/discord-vedbot
+          git fetch --all
+          git checkout --force origin/production
+          sudo systemctl restart discord-vedbot.service
+        # Allowed by sudoers.d/ directive
