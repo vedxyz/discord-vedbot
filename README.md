@@ -22,11 +22,11 @@ The project can be used with the scripts included under the `package.json` file.
 
 ## To do
 
-- [ ] Migrate to `bilkent-scraper` package
-- [ ] Migrate away from PM2 entirely. Use systemd to run the production build, but do it with SSH?
+- [ ] *Low priority:* Automated testing to an extent?
+- [ ] Migrate fully to the `bilkent-scraper` package
+- [x] Migrate away from PM2 entirely. Use systemd to run the production build, but do it with SSH?
   Get rid of the development build on the server, no need.
-- [ ] Integrate CI/CD (build/lint development, build/lint then deploy production)
-- [ ] Automated testing to an extent?
+- [x] Integrate CI/CD (build/lint development, build/lint then deploy production)
 - [x] Add meal menu commands through `xpdf`'s `pdftotext`
 - [x] Switch to PostgreSQL for dynamic data, keep static in config.json
 - [x] Add role commands for the CS server
