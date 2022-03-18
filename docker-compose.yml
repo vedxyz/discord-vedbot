@@ -1,0 +1,23 @@
+services:
+  discordbot:
+    build: .
+    depends_on:
+      - dbpostgres
+    environment:
+      - RUNNING_IN_CONTAINER=true
+      - NODE_ENV=development
+      - PGHOST=dbpostgres
+      - PGUSER=postgres
+      - PGDATABASE=vedbotdevel
+
+  dbpostgres:
+    image: postgres
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust # Allow connection without password
+      - POSTGRES_DB=vedbotdevel
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./db:/docker-entrypoint-initdb.d
+
+volumes:
+  postgres:

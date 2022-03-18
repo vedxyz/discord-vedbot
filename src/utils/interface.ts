@@ -15,11 +15,16 @@ export interface BotConfig {
   ownerId: Snowflake;
   token: string;
   servers: {
-    [key: string]: {
-      id: Snowflake;
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      [key: string]: any;
+    dh: {
+      mizyaz: {
+        id: string;
+        regexp: string;
+      };
     };
+    // [key: string]: {
+    //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    //   [key: string]: any;
+    // };
   };
 }
 
@@ -27,8 +32,15 @@ export interface BotModule {
   name: string;
   description: string;
   state: boolean;
+  /**
+   * If `true`, run in any guild, regardless of `guilds` array.
+   */
+  anyguild?: boolean;
+  /**
+   * Actions will only be executed on guilds listed here by *server nickname*
+   */
   guilds: string[];
-  onMessage?: (message: Message) => void;
+  onMessage?: (message: Message<true>) => unknown;
   onVoiceUpdate?: (oldState: VoiceState, newState: VoiceState) => unknown;
   onMemberJoin?: (member: GuildMember) => unknown;
   onMemberLeave?: (member: GuildMember) => unknown;
@@ -37,10 +49,20 @@ export interface BotModule {
 }
 
 export interface BotCommand {
+  /**
+   * Used to set the interaction API requests, mostly.
+   */
   data: ApplicationCommandData;
   permissions?: ApplicationCommandPermissionData[];
+  /**
+   * If `true`, run in any guild, regardless of `guilds` array.
+   */
+  anyguild?: boolean;
+  /**
+   * Actions will only be executed on guilds listed here by *server nickname*
+   */
   guilds: string[];
-  execute: (interaction: CommandInteraction) => unknown;
+  execute: (interaction: CommandInteraction<"present">) => unknown;
 }
 
 export interface Course {

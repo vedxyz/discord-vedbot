@@ -1,14 +1,13 @@
-import { exec } from "child_process";
 import { CommandInteraction, MessageEmbed } from "discord.js";
-import path from "path";
-import utils from "../utils";
-import { BotCommand, cfg, vedbot } from "../vedbot";
+import utils from "../utils/utils";
+import fsutils from "../utils/fsutils";
+import { BotCommand } from "../utils/interface";
+import { ids } from "../database/database";
+import { vedbot } from "../settings";
 
 const subcommands = {
   killbot: (interaction: CommandInteraction) => {
-    interaction
-      .reply("```=> Killing the bot.```")
-      .then(() => exec(`pm2 stop ${path.join(__dirname, "..", "..", "ecosystem.config.js")}`));
+    interaction.reply("```=> Killing the bot.```").then(() => utils.exitBot());
   },
   reload: (interaction: CommandInteraction) => {
     const filename = interaction.options.getString("filename", true);
@@ -28,7 +27,7 @@ const subcommands = {
       interaction.reply(`There is no loaded file with name \`${filename}\`!`);
     } else {
       try {
-        utils.botfiles.reload(fileCollection, filename);
+        fsutils.botfiles.reload(fileCollection, filename);
 
         interaction.reply(`File \`${filename}.js\` was reloaded!`);
       } catch (error) {
@@ -42,7 +41,7 @@ const subcommands = {
   },
   togglemodule: (interaction: CommandInteraction) => {
     const availableModules = vedbot.modules.filter((module) =>
-      module.guilds.some((srv) => cfg.servers[srv].id === interaction.guild?.id)
+      module.guilds.some(async (srv) => (await ids.getServerId(srv)) === interaction.guild?.id)
     );
 
     const moduleName = interaction.options.getString("module");
@@ -54,7 +53,7 @@ const subcommands = {
             .setTitle("VedBot Modules")
             .setDescription("Lists modules available for this server. Commands not included.")
             .setTimestamp()
-            .setFooter(`${vedbot.modules.size} modules loaded in total.`)
+            .setFooter({ text: `${vedbot.modules.size} modules loaded in total.` })
             .setColor("RED")
             .setThumbnail(interaction.client.user?.avatarURL() || "")
             .addFields(
@@ -100,7 +99,7 @@ const command: BotCommand = {
             description: "BotFile to be reloaded",
             type: "STRING",
             required: true,
-            choices: utils.botfiles
+            choices: fsutils.botfiles
               .getAllFileNamesSync(vedbot.commands, vedbot.modules)
               .map((filename) => ({ name: filename, value: filename.slice(0, -3) })),
           },
@@ -121,7 +120,7 @@ const command: BotCommand = {
       },
     ],
   },
-  permissions: [utils.permissions.getOwner(cfg)],
+  permissions: [utils.permissions.getOwner()],
   guilds: ["dh", "cs", "cr"],
   execute(interaction) {
     const subcommand = interaction.options.getSubcommand() as keyof typeof subcommands;

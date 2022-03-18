@@ -1,0 +1,22 @@
+[Unit]
+Description=VedBot - my Discord bot
+StartLimitInterval=120
+StartLimitBurst=2
+After=network.target
+
+[Service]
+User=ved
+Environment=NODE_ENV=production
+WorkingDirectory=/srv/discord-vedbot
+EnvironmentFile=/srv/discord-vedbot/prod.env
+ExecStartPre=/usr/bin/npm install --production=false
+ExecStartPre=/usr/bin/npm run build
+ExecStart=/usr/bin/npm run start
+Restart=on-failure
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+
+# Note: The following `sudoers` line allows using the command, with sudo, without a password prompt
+# ved ALL=NOPASSWD: /usr/bin/systemctl restart discord-vedbot.service

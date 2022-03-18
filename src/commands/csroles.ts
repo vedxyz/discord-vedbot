@@ -1,5 +1,8 @@
-import { GuildMember, MessageActionRow, MessageButton, MessageEmbed, MessageSelectMenu } from "discord.js";
-import { BotCommand, offerings } from "../vedbot";
+import { Collection, GuildMember, MessageActionRow, MessageButton, MessageEmbed, MessageSelectMenu } from "discord.js";
+import { BotCommand, Offerings } from "../utils/interface";
+import utils from "../utils/utils";
+
+const offerings: Offerings = new Collection(); // This is a temporary mock
 
 const command: BotCommand = {
   data: {
@@ -12,7 +15,7 @@ const command: BotCommand = {
         description: "Course to manage roles for.",
         type: "STRING",
         required: true,
-        choices: ["CS 201", "CS 223"].map((course) => ({ name: course, value: course })),
+        choices: utils.objectifyChoiceArray(["CS 201", "CS 223"]),
       },
     ],
   },

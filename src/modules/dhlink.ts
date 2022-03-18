@@ -1,5 +1,5 @@
 import { MessageEmbed } from "discord.js";
-import { BotModule } from "../vedbot";
+import { BotModule } from "../utils/interface";
 
 export default {
   name: "dhlink",
@@ -28,7 +28,7 @@ export default {
         .setColor("#F1672D")
         .setThumbnail("https://forum.donanimhaber.com/static/forum/img/dh-forum-logo.png")
         .setTimestamp()
-        .setAuthor(message.member?.displayName ?? "Member", message.author.avatarURL() ?? undefined)
+        .setAuthor({ name: message.member?.displayName ?? "Member", iconURL: message.author.avatarURL() ?? undefined })
         .addFields(DHLinks.map((link, i) => ({ name: `Link #${i + 1}`, value: link, inline: false })));
 
       message.reply({ embeds: [linksEmbed] });

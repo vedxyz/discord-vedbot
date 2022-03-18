@@ -1,7 +1,8 @@
 import { MessageEmbed, MessageOptions } from "discord.js";
-import { BotModule, cfg } from "../vedbot";
+import { cfg } from "../settings";
+import { BotModule } from "../utils/interface";
 
-const mizyazId: string = cfg.servers.dh.mizyaz.id;
+const mizyazId = cfg.servers.dh.mizyaz.id;
 const mizyazRegExp = new RegExp(cfg.servers.dh.mizyaz.regexp, "i");
 
 export default {
@@ -23,7 +24,7 @@ export default {
       message.delete();
 
       const mizyazEmbed = new MessageEmbed()
-        .setAuthor(`${message.member.displayName} says`, message.author.avatarURL() || undefined)
+        .setAuthor({ name: `${message.member.displayName} says`, iconURL: message.author.avatarURL() || undefined })
         .setDescription(message.content)
         .setTimestamp()
         .setColor(message.member.displayHexColor);
