@@ -86,6 +86,7 @@ const exitBot = async (): Promise<void> => {
 
 export default {
   // fetchConfigChannels,
+  trTime,
   getMealDateFormattedDay,
   getMealDateFormatted,
   getDayOfWeekIndex,
