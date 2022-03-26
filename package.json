@@ -11,7 +11,7 @@
   "author": "Ved",
   "license": "MIT",
   "dependencies": {
-    "bilkent-scraper": "^1.0.0",
+    "bilkent-scraper": "^1.0.1",
     "dayjs": "^1.10.8",
     "discord.js": "^13.6.0",
     "node-fetch": "^2.6.7",
