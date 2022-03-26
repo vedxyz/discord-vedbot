@@ -2,6 +2,7 @@ import { ApplicationCommandChoicesData, Collection, MessageEmbed } from "discord
 import { getMealList } from "bilkent-scraper";
 import { SupportedDepartment, BotCommand, Offerings } from "../utils/interface";
 import utils from "../utils/utils";
+import { mealSubscriptions, MealSubscriptionType } from "../database/database";
 
 const { getDayOfWeekIndex, getMealDateFormatted, getMealDateFormattedDay } = utils;
 const offerings: Offerings = new Collection(); // This is a temporary mock
@@ -21,6 +22,12 @@ const langMealChoiceData: ApplicationCommandChoicesData = {
   choices: utils.objectifyChoiceArray(["tr", "eng"]),
 };
 const daysOfWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+
+const subTypeMap = {
+  lunch: MealSubscriptionType.Lunch,
+  dinner: MealSubscriptionType.Dinner,
+  "lunch+dinner": MealSubscriptionType.Both,
+} as {[key: string]: MealSubscriptionType};
 
 const command: BotCommand = {
   data: {
@@ -108,6 +115,47 @@ const command: BotCommand = {
             type: "SUB_COMMAND",
             options: [langMealChoiceData],
           },
+          {
+            name: "subscribe",
+            description: "Get daily private messages for meals",
+            type: "SUB_COMMAND",
+            options: [
+              {
+                name: "type",
+                description: "Which meals will this subscription cover? Maybe both at once?",
+                type: "STRING",
+                required: true,
+                choices: utils.objectifyChoiceArray(["lunch", "dinner", "lunch+dinner"]),
+              },
+              {
+                name: "hour",
+                description: "The hour at which to send you a message (HH:00)",
+                type: "INTEGER",
+                required: true,
+                choices: [...Array(24).keys()].map((hour) => ({ name: `${hour}`, value: hour })),
+              },
+              {
+                name: "weekend",
+                description: "Whether to send messages during the weekend",
+                type: "BOOLEAN",
+                required: true,
+              },
+            ],
+          },
+          {
+            name: "unsubscribe",
+            description: "Remove your subscription for a certain type",
+            type: "SUB_COMMAND",
+            options: [
+              {
+                name: "type",
+                description: "The type of subscription to unsubscribe from",
+                type: "STRING",
+                required: true,
+                choices: utils.objectifyChoiceArray(["lunch", "dinner", "lunch+dinner"]),
+              },
+            ],
+          },
         ],
       },
     ],
@@ -159,6 +207,23 @@ const command: BotCommand = {
         });
       }
     } else if (subcommandGroup === "meal") {
+      if (subcommand === "subscribe") {
+        const subscriptionType = subTypeMap[interaction.options.getString("type", true)];
+        const hour = interaction.options.getInteger("hour", true);
+        const weekend = interaction.options.getBoolean("weekend", true);
+
+        mealSubscriptions.set(interaction.user.id, subscriptionType, hour, weekend);
+        return;
+      }
+
+      if (subcommand === "unsubscribe") {
+        const subscriptionType = subTypeMap[interaction.options.getString("type", true)];
+        await mealSubscriptions.delete(interaction.user.id, subscriptionType);
+        return;
+      }
+
+      // Handle commands other than subscriptions
+
       const language = (interaction.options.getString("language", false) as "tr" | "eng") || "tr";
       const forMeal = (interaction.options.getString("for", false) as "dinner" | "lunch") || "lunch";
       const meals = await getMealList();
