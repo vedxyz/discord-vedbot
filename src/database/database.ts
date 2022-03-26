@@ -160,6 +160,74 @@ export const mentionImages = {
   delete: deleteMentionImageUrl,
 };
 
+export enum MealSubscriptionType {
+  Lunch,
+  Dinner,
+  Both,
+}
+
+interface MealSubscription {
+  userId: Snowflake;
+  type: MealSubscriptionType;
+  weekend: boolean;
+}
+
+const hasMealSubscription = async (userId: Snowflake, subscriptionType: MealSubscriptionType): Promise<boolean> => {
+  const result = await pgpool.query(
+    "SELECT EXISTS(SELECT 1 FROM meal_subscriptions WHERE user_id = $1 AND subscription_type = $2) AS exists",
+    [userId, subscriptionType]
+  );
+  return result.rows[0].exists;
+};
+
+const setMealSubscription = async (
+  userId: Snowflake,
+  subscriptionType: MealSubscriptionType,
+  hour: number,
+  weekend: boolean
+): Promise<void> => {
+  const existing = await pgpool.query(
+    "SELECT subscription_id FROM meal_subscriptions WHERE user_id = $1 AND subscription_type = $2)",
+    [userId, subscriptionType]
+  );
+
+  if (existing.rowCount) {
+    await pgpool.query("UPDATE meal_subscriptions SET hour = $1, weekend = $2 WHERE subscription_id = $3", [
+      hour,
+      weekend,
+      existing.rows[0].subscription_id,
+    ]);
+  } else {
+    await pgpool.query("INSERT INTO meal_subscriptions(user_id, subscription_type, hour, weekend) VALUES($1, $2, $3, $4)", [
+      userId,
+      subscriptionType,
+      hour,
+      weekend
+    ]);
+  }
+};
+
+const deleteMealSubscription = async (userId: Snowflake, subscriptionType: MealSubscriptionType): Promise<void> => {
+  await pgpool.query("DELETE FROM meal_subscriptions WHERE user_id = $1 AND subscription_type = $2", [
+    userId,
+    subscriptionType,
+  ]);
+};
+
+const getMealSubscriptionsForHour = async (hour: number): Promise<MealSubscription[]> => {
+  const result = await pgpool.query("SELECT user_id, subscription_type, weekend FROM meal_subscriptions WHERE hour = $1", [
+    hour,
+  ]);
+  return result.rows.map((row) => ({ userId: row.user_id, type: row.subscription_type, weekend: row.weekend }));
+};
+
+export const mealSubscriptions = {
+  has: hasMealSubscription,
+  set: setMealSubscription,
+  delete: deleteMealSubscription,
+  getForHour: getMealSubscriptionsForHour,
+};
+
 export const endDatabaseConnection = async (): Promise<void> => {
   await pgpool.end();
 };
