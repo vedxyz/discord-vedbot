@@ -7,6 +7,7 @@ import isoWeek from "dayjs/plugin/isoWeek";
 import { cfg, vedbot } from "./settings";
 import { ids } from "./database/database";
 import utils from "./utils/utils";
+// import scheduleMealSubscriptionJob from "./utils/mealsubservice";
 
 dayjs.extend(isoWeek);
 
@@ -50,6 +51,8 @@ client.once("ready", async () => {
       if (Array.isArray(command.permissions)) await guildCommand?.permissions.set({ permissions: command.permissions });
     });
   });
+
+  // scheduleMealSubscriptionJob();
 });
 
 client.on("interactionCreate", async (interaction) => {
