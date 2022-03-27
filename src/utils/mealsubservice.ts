@@ -1,36 +1,43 @@
-import { getMealList, MealList } from "bilkent-scraper";
+import { getMealList } from "bilkent-scraper";
 import { MessageEmbed } from "discord.js";
 import schedule from "node-schedule";
+import path from "path";
 import { mealSubscriptions, MealSubscriptionType } from "../database/database";
-import client from "../vedbot";
+import { srcrootdir } from "../rootdirname";
 import utils from "./utils";
 
-const getMealEmbed = (forMeal: "lunch" | "dinner", meals: MealList) => {
-  const embed = new MessageEmbed()
-    .setTitle(`Bilkent University Cafeteria Meals`)
-    .setTimestamp()
-    .setFooter({ text: "Bon appétit" })
-    .setColor("AQUA")
-    .setThumbnail("https://w3.bilkent.edu.tr/logo/ing-amblem.png")
-    .setDescription(
-      `${utils.capitalizeWord(forMeal)} menu on ${utils.getMealDateFormattedDay(meals.days[utils.getDayOfWeekIndex()])}`
+class SubscriptionState {
+  state = true;
+
+  public toggle(): void {
+    this.state = !this.state;
+  }
+}
+export const subscriptionState = new SubscriptionState();
+
+// The code within the schedule job may be blocking the event loop.
+// See https://github.com/node-schedule/node-schedule/issues/634
+// It might be OK to keep it for now, but at some point, might need to make sure it's non-blocking.
+export const scheduleMealSubscriptionJob = (): schedule.Job =>
+  // runs on every HH:00:30
+  schedule.scheduleJob("30 0 * * * *", async (/* execDate */) => {
+    if (!subscriptionState.state) return;
+
+    // eslint-disable-next-line import/no-cycle
+    const client = (await import(path.join(srcrootdir, "vedbot"))).default;
+
+    const trTime = utils.trTime();
+    const mealDay = (await getMealList()).days[utils.getDayOfWeekIndex()];
+    const subs = (await mealSubscriptions.getForHour(trTime.hour())).filter(
+      (sub) => sub.weekend || (trTime.isoWeekday() !== 6 && trTime.isoWeekday() !== 7)
     );
 
-  utils.populateMealEmbed(embed, meals.days[utils.getDayOfWeekIndex()][forMeal]);
-  return embed;
-};
+    if (subs.length) console.log(`Sending meal subscription messages to ${subs.length} people... (${trTime})`);
 
-// The code within the schedule job blocks the event loop.
-// See https://github.com/node-schedule/node-schedule/issues/634
-// Do not use this code unless you work around this issue.
-const scheduleMealSubscriptionJob = (): schedule.Job =>
-  schedule.scheduleJob("@hourly", async (/* execDate */) => {
-    const trTime = utils.trTime();
-    const meals = await getMealList();
-    const subs = await mealSubscriptions.getForHour(trTime.hour());
-
-    const lunchEmbed = getMealEmbed("lunch", meals);
-    const dinnerEmbed = getMealEmbed("dinner", meals);
+    const lunchEmbed = utils.getMealEmbedBase("lunch", mealDay);
+    const dinnerEmbed = utils.getMealEmbedBase("dinner", mealDay);
+    utils.populateMealEmbed(lunchEmbed, mealDay.lunch);
+    utils.populateMealEmbed(dinnerEmbed, mealDay.dinner);
 
     subs.forEach(async (sub) => {
       if (!sub.weekend && (trTime.isoWeekday() === 6 || trTime.isoWeekday() === 7)) return;
@@ -42,4 +49,3 @@ const scheduleMealSubscriptionJob = (): schedule.Job =>
       await client.users.send(sub.userId, { embeds });
     });
   });
-export default scheduleMealSubscriptionJob;
