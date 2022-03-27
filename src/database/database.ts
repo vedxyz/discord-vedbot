@@ -187,7 +187,7 @@ const setMealSubscription = async (
   weekend: boolean
 ): Promise<void> => {
   const existing = await pgpool.query(
-    "SELECT subscription_id FROM meal_subscriptions WHERE user_id = $1 AND subscription_type = $2)",
+    "SELECT subscription_id FROM meal_subscriptions WHERE user_id = $1 AND subscription_type = $2",
     [userId, subscriptionType]
   );
 
@@ -198,12 +198,10 @@ const setMealSubscription = async (
       existing.rows[0].subscription_id,
     ]);
   } else {
-    await pgpool.query("INSERT INTO meal_subscriptions(user_id, subscription_type, hour, weekend) VALUES($1, $2, $3, $4)", [
-      userId,
-      subscriptionType,
-      hour,
-      weekend
-    ]);
+    await pgpool.query(
+      "INSERT INTO meal_subscriptions(user_id, subscription_type, hour, weekend) VALUES($1, $2, $3, $4)",
+      [userId, subscriptionType, hour, weekend]
+    );
   }
 };
 
@@ -215,9 +213,10 @@ const deleteMealSubscription = async (userId: Snowflake, subscriptionType: MealS
 };
 
 const getMealSubscriptionsForHour = async (hour: number): Promise<MealSubscription[]> => {
-  const result = await pgpool.query("SELECT user_id, subscription_type, weekend FROM meal_subscriptions WHERE hour = $1", [
-    hour,
-  ]);
+  const result = await pgpool.query(
+    "SELECT user_id, subscription_type, weekend FROM meal_subscriptions WHERE hour = $1",
+    [hour]
+  );
   return result.rows.map((row) => ({ userId: row.user_id, type: row.subscription_type, weekend: row.weekend }));
 };
 
