@@ -4,6 +4,7 @@ import fsutils from "../utils/fsutils";
 import { BotCommand } from "../utils/interface";
 import { ids } from "../database/database";
 import { vedbot } from "../settings";
+import { subscriptionState } from "../utils/mealsubservice";
 
 const subcommands = {
   killbot: (interaction: CommandInteraction) => {
@@ -76,6 +77,13 @@ const subcommands = {
       }
     }
   },
+  togglesubs: (interaction: CommandInteraction) => {
+    subscriptionState.toggle();
+    interaction.reply({
+      content: `Cafeteria subscriptions are now **${subscriptionState.state ? "ENABLED" : "DISABLED"}**`,
+      ephemeral: true,
+    });
+  },
 };
 
 const command: BotCommand = {
@@ -117,6 +125,11 @@ const command: BotCommand = {
             required: false,
           },
         ],
+      },
+      {
+        name: "togglesubs",
+        description: "Toggle VedBot cafeteria subscription notifications.",
+        type: "SUB_COMMAND",
       },
     ],
   },
