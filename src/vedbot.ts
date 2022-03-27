@@ -7,7 +7,8 @@ import isoWeek from "dayjs/plugin/isoWeek";
 import { cfg, vedbot } from "./settings";
 import { ids } from "./database/database";
 import utils from "./utils/utils";
-// import scheduleMealSubscriptionJob from "./utils/mealsubservice";
+// eslint-disable-next-line import/no-cycle
+import { scheduleMealSubscriptionJob } from "./utils/mealsubservice";
 
 dayjs.extend(isoWeek);
 
@@ -52,7 +53,7 @@ client.once("ready", async () => {
     });
   });
 
-  // scheduleMealSubscriptionJob();
+  scheduleMealSubscriptionJob();
 });
 
 client.on("interactionCreate", async (interaction) => {

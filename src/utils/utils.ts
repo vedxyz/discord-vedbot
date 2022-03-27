@@ -1,12 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable global-require */
-/* eslint-disable import/no-dynamic-require */
 import { Meal, MealDay } from "bilkent-scraper";
 import dayjs, { Dayjs } from "dayjs";
 import {
   ApplicationCommandOptionChoice,
-  // Client,
-  // TextChannel,
   ApplicationCommandPermissionData,
   CommandInteraction,
   MessageEmbed,
@@ -15,17 +10,6 @@ import {
 import { endDatabaseConnection, ids } from "../database/database";
 import { cfg } from "../settings";
 import { BotModule } from "./interface";
-
-// const fetchConfigChannels = async (
-//   client: Client,
-//   ...serverTuples: [{ [key: string]: Snowflake }, Map<string, TextChannel>][]
-// ): Promise<void> => {
-//   serverTuples.forEach(([cfgChannels, channelMap]) => {
-//     Object.entries(cfgChannels).forEach(async ([channelName, channelID]) => {
-//       channelMap.set(channelName, (await client.channels.fetch(channelID)) as TextChannel);
-//     });
-//   });
-// };
 
 const trTime = (): Dayjs => dayjs().add(3, "hour");
 const getMealDateFormattedDay = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
@@ -47,6 +31,15 @@ const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
     .setFooter({ text: "Teşekkürler" })
     .setColor("ORANGE")
     .setThumbnail(interaction.guild?.iconURL() || "");
+
+const getMealEmbedBase = (forMeal: "lunch" | "dinner", mealDay: MealDay): MessageEmbed =>
+  new MessageEmbed()
+    .setTitle(`Bilkent University Cafeteria Meals`)
+    .setThumbnail("https://w3.bilkent.edu.tr/logo/ing-amblem.png")
+    .setFooter({ text: "Bon appétit" })
+    .setTimestamp()
+    .setColor("AQUA")
+    .setDescription(`${capitalizeWord(forMeal)} menu on ${getMealDateFormattedDay(mealDay)}`);
 
 const populateMealEmbed = (embed: MessageEmbed, meal: Meal, language: keyof Meal["vegetarianPlate"] = "tr"): void => {
   embed.addFields([
@@ -93,6 +86,7 @@ export default {
   capitalizeWord,
   canExecuteModule,
   getRuleEmbedBase,
+  getMealEmbedBase,
   populateMealEmbed,
   objectifyChoiceArray,
   permissions,

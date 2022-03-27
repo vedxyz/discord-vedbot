@@ -3,6 +3,7 @@ import { getMealList } from "bilkent-scraper";
 import { SupportedDepartment, BotCommand, Offerings } from "../utils/interface";
 import utils from "../utils/utils";
 import { mealSubscriptions, MealSubscriptionType } from "../database/database";
+import client from "../vedbot";
 
 const { getDayOfWeekIndex, getMealDateFormatted, getMealDateFormattedDay } = utils;
 const offerings: Offerings = new Collection(); // This is a temporary mock
@@ -27,7 +28,7 @@ const subTypeMap = {
   lunch: MealSubscriptionType.Lunch,
   dinner: MealSubscriptionType.Dinner,
   "lunch+dinner": MealSubscriptionType.Both,
-} as {[key: string]: MealSubscriptionType};
+} as { [key: string]: MealSubscriptionType };
 
 const command: BotCommand = {
   data: {
@@ -208,21 +209,79 @@ const command: BotCommand = {
       }
     } else if (subcommandGroup === "meal") {
       if (subcommand === "subscribe") {
-        const subscriptionType = subTypeMap[interaction.options.getString("type", true)];
+        const subscriptionValue = interaction.options.getString("type", true);
+        const subscriptionType = subTypeMap[subscriptionValue];
         const hour = interaction.options.getInteger("hour", true);
         const weekend = interaction.options.getBoolean("weekend", true);
 
-        mealSubscriptions.set(interaction.user.id, subscriptionType, hour, weekend);
+        await mealSubscriptions.set(interaction.user.id, subscriptionType, hour, weekend);
+        await interaction.reply({
+          embeds: [
+            new MessageEmbed()
+              .setColor("GREEN")
+              .setTitle("Subscribed to cafeteria meals!")
+              .setDescription(
+                `**${subscriptionValue}**, daily at *${hour}:00*, weekends *${weekend ? "included" : "excluded"}*.`
+              ),
+          ],
+          ephemeral: true,
+        });
+        await client.users.send(interaction.user.id, {
+          embeds: [
+            new MessageEmbed()
+              .setColor("DARK_GOLD")
+              .setTitle("Disclaimer (Subscription)")
+              .setDescription(
+                `This cafeteria meal notification service is **provided without guarantees**.
+The PDF of the cafeteria menu is parsed automatically by the bot, and it is known that parsing PDFs absolutely sucks.
+Thus, if the parsing goes wrong, the bot may (rarely) get the menu wrong or fail to deliver entirely.
+Furthermore, the bot may (rarely) experience downtimes for maintenance/development.
+
+That being said, I do hope to keep this as a neat and somewhat reliable service to the best of my abilities and free time.
+Hopefully, you will find it to be the case too.
+
+Tip: You can have up to 3 subscriptions at a time, for "lunch", "dinner" and "lunch+dinner".
+You could take advantage of this to have multiple notifications delivered per day.`
+              ),
+          ],
+        });
         return;
       }
 
       if (subcommand === "unsubscribe") {
-        const subscriptionType = subTypeMap[interaction.options.getString("type", true)];
+        const subscriptionValue = interaction.options.getString("type", true);
+        const subscriptionType = subTypeMap[subscriptionValue];
+
+        const exists = await mealSubscriptions.has(interaction.user.id, subscriptionType);
+        if (!exists) {
+          await interaction.reply({
+            embeds: [
+              new MessageEmbed()
+                .setColor("RED")
+                .setTitle("Couldn't Unsubscribe")
+                .setDescription(`You did not have a subscription for **${subscriptionValue}**.`),
+            ],
+            ephemeral: true,
+          });
+          return;
+        }
+
         await mealSubscriptions.delete(interaction.user.id, subscriptionType);
+        await interaction.reply({
+          embeds: [
+            new MessageEmbed()
+              .setColor("RED")
+              .setTitle("Unsubscribed from cafeteria meals")
+              .setDescription(
+                `Your subscription for **${subscriptionValue}** was removed.\n*Note: if you had any other subscriptions, they are untouched.*`
+              ),
+          ],
+          ephemeral: true,
+        });
         return;
       }
 
-      // Handle commands other than subscriptions
+      // Handle commands besides subscriptions
 
       const language = (interaction.options.getString("language", false) as "tr" | "eng") || "tr";
       const forMeal = (interaction.options.getString("for", false) as "dinner" | "lunch") || "lunch";
@@ -231,7 +290,7 @@ const command: BotCommand = {
 
       if (subcommand === "tomorrow") {
         if (dayOfWeekIdx === 6) {
-          interaction.reply("I don't think I know next week's menu yet?");
+          await interaction.reply("I don't think I know next week's menu yet?");
           return;
         }
         dayOfWeekIdx++;
@@ -239,15 +298,7 @@ const command: BotCommand = {
         dayOfWeekIdx = daysOfWeek.indexOf(interaction.options.getString("day", true));
       }
 
-      const mealEmbed = new MessageEmbed()
-        .setTitle(`Bilkent University Cafeteria Meals`)
-        .setTimestamp()
-        .setFooter({ text: "Bon appétit" })
-        .setColor("AQUA")
-        .setThumbnail("https://w3.bilkent.edu.tr/logo/ing-amblem.png")
-        .setDescription(
-          `${utils.capitalizeWord(forMeal)} menu on ${getMealDateFormattedDay(meals.days[dayOfWeekIdx])}`
-        );
+      const mealEmbed = utils.getMealEmbedBase(forMeal, meals.days[dayOfWeekIdx]);
 
       if (subcommand === "today" || subcommand === "tomorrow" || subcommand === "on") {
         utils.populateMealEmbed(mealEmbed, meals.days[dayOfWeekIdx][forMeal], language);
@@ -267,7 +318,7 @@ const command: BotCommand = {
         });
       }
 
-      interaction.reply({ embeds: [mealEmbed] });
+      await interaction.reply({ embeds: [mealEmbed] });
     }
   },
 };
