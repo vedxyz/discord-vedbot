@@ -176,12 +176,12 @@ const command: BotCommand = {
       const course = offerings.get(query.department)?.find((el) => el.courseCode.split(" ")[1] === query.courseCode);
 
       if (course === undefined) {
-        interaction.reply({ content: "No such course was found.", ephemeral: true });
+        await interaction.reply({ content: "No such course was found.", ephemeral: true });
         return;
       }
 
       if (query.section === null) {
-        interaction.reply({
+        await interaction.reply({
           content: `**${course?.courseCode}** (${course.courseName}) has ${
             course?.sections.length
           } sections with instructors like ${course.sections
@@ -193,11 +193,11 @@ const command: BotCommand = {
         const section = course.sections.find((el) => parseInt(el.section, 10) === query.section);
 
         if (section === undefined) {
-          interaction.reply({ content: "No such section was found.", ephemeral: true });
+          await interaction.reply({ content: "No such section was found.", ephemeral: true });
           return;
         }
 
-        interaction.reply({
+        await interaction.reply({
           content: `**${course?.courseCode}-${section.section}** (${course.courseName}) by ${section.instructor} has ${
             section.quota.indifferent
               ? `${section.quota.total} total`

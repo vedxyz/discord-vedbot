@@ -1,7 +1,7 @@
 // https://discord.com/api/oauth2/authorize?client_id=747882956520947814&permissions=8&scope=applications.commands%20bot
 // The bot is not set to public on the Developer Portal, and as such is open to invitation solely by me.
 
-import Discord, { GuildMember } from "discord.js";
+import Discord, { GuildMember, MessageEmbed } from "discord.js";
 import dayjs from "dayjs";
 import isoWeek from "dayjs/plugin/isoWeek";
 import { cfg, vedbot } from "./settings";
@@ -61,8 +61,24 @@ client.on("interactionCreate", async (interaction) => {
     try {
       await vedbot.commands.get(interaction.commandName).execute(interaction);
     } catch (error) {
-      console.error(error);
-      interaction.reply("**Error**: Unable to execute this command due to some kind of incompetence on my behalf.");
+      console.error(
+        `Error for command ${interaction.commandName}`,
+        interaction.options.data.map((opt) => `Opt '${opt.name}': ${opt.value}`),
+        error
+      );
+
+      try {
+        await interaction.reply({
+          embeds: [
+            new MessageEmbed()
+              .setTitle("Error")
+              .setDescription(" Unable to execute this command due to some kind of incompetence on my behalf.")
+              .setColor("RED"),
+          ],
+        });
+      } catch (innerError) {
+        console.error("Failed to deliver error message also...", innerError);
+      }
     }
   }
 });
@@ -109,7 +125,7 @@ client.on("guildMemberRemove", (member) => {
 //     dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
 // });
 
-client.login(cfg.token);
+client.login(cfg.token).catch(console.error);
 
 process.on("SIGINT", async () => {
   console.log("SIGINT caught!");

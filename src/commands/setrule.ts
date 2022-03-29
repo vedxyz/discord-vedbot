@@ -3,9 +3,12 @@ import { BotCommand } from "../utils/interface";
 import { rules } from "../database/database";
 
 let adminPermissions: BotCommand["permissions"];
-utils.permissions.getAdmins().then((permissions) => {
-  adminPermissions = permissions;
-});
+utils.permissions
+  .getAdmins()
+  .then((permissions) => {
+    adminPermissions = permissions;
+  })
+  .catch(console.error);
 
 const command: BotCommand = {
   data: {
@@ -34,7 +37,7 @@ const command: BotCommand = {
     const ruleContent = interaction.options.getString("content") ?? "";
 
     if (ruleContent.length === 0) {
-      interaction.reply({ content: "You can't have zero-length rules.", ephemeral: true });
+      await interaction.reply({ content: "You can't have zero-length rules.", ephemeral: true });
     }
 
     // console.log(`Writing rule to #${ruleID}: ${ruleContent.substring(0, 50)}${ruleContent.length > 50 ? "..." : ""}`);
@@ -43,10 +46,10 @@ const command: BotCommand = {
       await rules.set(interaction.guildId, { index: ruleID, content: ruleContent });
     } catch (error) {
       console.error(error);
-      interaction.reply("There was a problem saving the rule.");
+      await interaction.reply("There was a problem saving the rule.");
     }
 
-    interaction.reply({
+    await interaction.reply({
       embeds: [
         utils
           .getRuleEmbedBase(interaction)

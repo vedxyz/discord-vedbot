@@ -61,61 +61,62 @@ const command: BotCommand = {
       );
     }
 
-    interaction.reply({
+    await interaction.reply({
       embeds: [new MessageEmbed().setTitle("Waiting for your input...").setColor("AQUA")],
       ephemeral: true,
       components: componentRows,
     });
 
-    interaction.channel
-      ?.awaitMessageComponent({
+    try {
+      const compInteraction = await interaction.channel?.awaitMessageComponent({
         time: 20000,
-        filter: (compInteraction) => {
+        filter: async (thisInteraction) => {
           const valid =
-            compInteraction.user.id === interaction.user.id &&
-            (compInteraction.customId === `selection_${time}` || compInteraction.customId === `deletion_${time}`);
+            thisInteraction.user.id === interaction.user.id &&
+            (thisInteraction.customId === `selection_${time}` || thisInteraction.customId === `deletion_${time}`);
 
           if (valid) {
-            compInteraction.deferUpdate();
+            await thisInteraction.deferUpdate();
             return true;
           }
           return false;
         },
-      })
-      .then(async (compInteraction) => {
-        if (currentRoleId !== undefined) {
-          await member.roles.remove(currentRoleId);
-        }
+      });
 
-        if (compInteraction.isButton()) {
-          interaction.editReply({
-            embeds: [new MessageEmbed().setTitle("Your role has been removed.").setColor("RED")],
-            components: [],
-          });
-        } else if (compInteraction.isSelectMenu()) {
-          member.roles.add(compInteraction.values[0]);
-          interaction.editReply({
-            embeds: [
-              new MessageEmbed()
-                .setTitle("You have been given your role.")
-                .setDescription(`**${interaction.guild?.roles.cache.get(compInteraction.values[0])?.name}**`)
-                .setColor("RANDOM"),
-            ],
-            components: [],
-          });
-        }
-      })
-      .catch(() => {
-        interaction.editReply({
+      if (compInteraction === undefined) throw Error("Interaction component might've timed out");
+
+      if (currentRoleId !== undefined) {
+        await member.roles.remove(currentRoleId);
+      }
+
+      if (compInteraction.isButton()) {
+        await interaction.editReply({
+          embeds: [new MessageEmbed().setTitle("Your role has been removed.").setColor("RED")],
+          components: [],
+        });
+      } else if (compInteraction.isSelectMenu()) {
+        await member.roles.add(compInteraction.values[0]);
+        await interaction.editReply({
           embeds: [
             new MessageEmbed()
-              .setTitle("This command timed out.")
-              .setDescription("You were not given any roles. Try again.")
-              .setColor("RED"),
+              .setTitle("You have been given your role.")
+              .setDescription(`**${interaction.guild?.roles.cache.get(compInteraction.values[0])?.name}**`)
+              .setColor("RANDOM"),
           ],
           components: [],
         });
+      }
+    } catch (err) {
+      await interaction.editReply({
+        embeds: [
+          new MessageEmbed()
+            .setTitle("This command timed out.")
+            .setDescription("You were not given any roles. Try again.")
+            .setColor("RED"),
+        ],
+        components: [],
       });
+    }
   },
 };
 

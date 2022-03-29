@@ -7,10 +7,11 @@ import { vedbot } from "../settings";
 import { subscriptionState } from "../utils/mealsubservice";
 
 const subcommands = {
-  killbot: (interaction: CommandInteraction) => {
-    interaction.reply("```=> Killing the bot.```").then(() => utils.exitBot());
+  killbot: async (interaction: CommandInteraction) => {
+    await interaction.reply("```=> Killing the bot.```");
+    await utils.exitBot();
   },
-  reload: (interaction: CommandInteraction) => {
+  reload: async (interaction: CommandInteraction) => {
     const filename = interaction.options.getString("filename", true);
 
     let file;
@@ -25,22 +26,22 @@ const subcommands = {
     }
 
     if (!file || !fileCollection) {
-      interaction.reply(`There is no loaded file with name \`${filename}\`!`);
+      await interaction.reply(`There is no loaded file with name \`${filename}\`!`);
     } else {
       try {
         fsutils.botfiles.reload(fileCollection, filename);
 
-        interaction.reply(`File \`${filename}.js\` was reloaded!`);
+        await interaction.reply(`File \`${filename}.js\` was reloaded!`);
       } catch (error) {
         console.error(error);
-        interaction.reply({
+        await interaction.reply({
           content: `There was an error while reloading file \`${filename}.js\`:\n\`${error}\``,
           ephemeral: true,
         });
       }
     }
   },
-  togglemodule: (interaction: CommandInteraction) => {
+  togglemodule: async (interaction: CommandInteraction) => {
     const availableModules = vedbot.modules.filter((module) =>
       module.guilds.some(async (srv) => (await ids.getServerId(srv)) === interaction.guild?.id)
     );
@@ -48,7 +49,7 @@ const subcommands = {
     const moduleName = interaction.options.getString("module");
 
     if (moduleName === null) {
-      interaction.reply({
+      await interaction.reply({
         embeds: [
           new MessageEmbed()
             .setTitle("VedBot Modules")
@@ -71,15 +72,15 @@ const subcommands = {
 
       if (module) {
         module.state = !module.state;
-        interaction.reply(`"${moduleName}" module is now **${module.state ? "ENABLED" : "DISABLED"}**.`);
+        await interaction.reply(`"${moduleName}" module is now **${module.state ? "ENABLED" : "DISABLED"}**.`);
       } else {
-        interaction.reply(`"${moduleName}" module is not available.`);
+        await interaction.reply(`"${moduleName}" module is not available.`);
       }
     }
   },
-  togglesubs: (interaction: CommandInteraction) => {
+  togglesubs: async (interaction: CommandInteraction) => {
     subscriptionState.toggle();
-    interaction.reply({
+    await interaction.reply({
       content: `Cafeteria subscriptions are now **${subscriptionState.state ? "ENABLED" : "DISABLED"}**`,
       ephemeral: true,
     });
@@ -135,10 +136,10 @@ const command: BotCommand = {
   },
   permissions: [utils.permissions.getOwner()],
   guilds: ["dh", "cs", "cr"],
-  execute(interaction) {
+  async execute(interaction) {
     const subcommand = interaction.options.getSubcommand() as keyof typeof subcommands;
 
-    subcommands[subcommand](interaction);
+    await subcommands[subcommand](interaction);
   },
 };
 
