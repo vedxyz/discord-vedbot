@@ -11,7 +11,7 @@ export default {
   async onMemberJoin(member) {
     const logChannel = (await client.channels.fetch(await ids.getChannelId(member.guild.id, "log"))) as TextChannel;
 
-    logChannel?.send({
+    await logChannel?.send({
       embeds: [
         new MessageEmbed()
           .setTitle(":o: - Joined the server:")
@@ -49,7 +49,7 @@ export default {
   async onMemberLeave(member) {
     const logChannel = (await client.channels.fetch(await ids.getChannelId(member.guild.id, "log"))) as TextChannel;
 
-    logChannel?.send({
+    await logChannel?.send({
       embeds: [
         new MessageEmbed()
           .setTitle(":x: - Left the server:")

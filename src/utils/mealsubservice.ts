@@ -1,5 +1,5 @@
 import { getMealList } from "bilkent-scraper";
-import { MessageEmbed } from "discord.js";
+import { Client, DiscordAPIError, MessageEmbed } from "discord.js";
 import schedule from "node-schedule";
 import path from "path";
 import { mealSubscriptions, MealSubscriptionType } from "../database/database";
@@ -17,14 +17,14 @@ export const subscriptionState = new SubscriptionState();
 
 // The code within the schedule job may be blocking the event loop.
 // See https://github.com/node-schedule/node-schedule/issues/634
-// It might be OK to keep it for now, but at some point, might need to make sure it's non-blocking.
+// It might be OK to keep it for now, but at some point, I might need to make sure it's non-blocking.
 export const scheduleMealSubscriptionJob = (): schedule.Job =>
   // runs on every HH:00:30
   schedule.scheduleJob("30 0 * * * *", async (/* execDate */) => {
     if (!subscriptionState.state) return;
 
     // eslint-disable-next-line import/no-cycle
-    const client = (await import(path.join(srcrootdir, "vedbot"))).default;
+    const client: Client<true> = (await import(path.join(srcrootdir, "vedbot"))).default;
 
     const trTime = utils.trTime();
     const mealDay = (await getMealList()).days[utils.getDayOfWeekIndex()];
@@ -46,6 +46,10 @@ export const scheduleMealSubscriptionJob = (): schedule.Job =>
       if (sub.type === MealSubscriptionType.Both || sub.type === MealSubscriptionType.Lunch) embeds.push(lunchEmbed);
       if (sub.type === MealSubscriptionType.Both || sub.type === MealSubscriptionType.Dinner) embeds.push(dinnerEmbed);
 
-      await client.users.send(sub.userId, { embeds });
+      try {
+        await client.users.send(sub.userId, { embeds });
+      } catch (err) {
+        if (err instanceof DiscordAPIError) console.log(`Failed to send meal notification to user ${sub.userId}`, err);
+      }
     });
   });

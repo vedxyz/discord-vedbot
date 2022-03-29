@@ -10,7 +10,7 @@ export default {
   description: "Tags a certain friend when a message is implicitly directed to that friend.",
   state: true,
   guilds: ["dh"],
-  onMessage(message) {
+  async onMessage(message) {
     if (message.member === null) return;
 
     const mizyazFlag = message.content.match(mizyazRegExp);
@@ -21,7 +21,7 @@ export default {
       !message.content.endsWith(".") &&
       message.author.id !== mizyazId
     ) {
-      message.delete();
+      await message.delete();
 
       const mizyazEmbed = new MessageEmbed()
         .setAuthor({ name: `${message.member.displayName} says`, iconURL: message.author.avatarURL() || undefined })
@@ -47,7 +47,7 @@ export default {
         messageOptions.allowedMentions = { repliedUser: message.mentions.has(message.mentions.repliedUser ?? "") };
       }
 
-      message.channel.send(messageOptions);
+      await message.channel.send(messageOptions);
     }
   },
 } as BotModule;

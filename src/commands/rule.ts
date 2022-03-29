@@ -25,7 +25,7 @@ const command: BotCommand = {
     if (ruleID === null) {
       const allRules = await rules.getAll(interaction.guildId);
 
-      interaction.reply({
+      await interaction.reply({
         embeds: [
           ruleEmbed.addFields(
             allRules.map((rule) => ({
@@ -37,9 +37,9 @@ const command: BotCommand = {
         ],
       });
     } else if (!(await rules.exists(interaction.guildId, ruleID))) {
-      interaction.reply({ content: `Rule #${ruleID} doesn't exist.`, ephemeral: true });
+      await interaction.reply({ content: `Rule #${ruleID} doesn't exist.`, ephemeral: true });
     } else {
-      interaction.reply({
+      await interaction.reply({
         embeds: [ruleEmbed.addField(`Rule #${ruleID}`, (await rules.get(interaction.guildId, ruleID)).content, false)],
       });
     }

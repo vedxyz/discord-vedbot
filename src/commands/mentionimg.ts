@@ -43,7 +43,7 @@ const command: BotCommand = {
       }
 
       if (!isUrlValidImg) {
-        interaction.reply({
+        await interaction.reply({
           ephemeral: true,
           content: "Your mention image URL doesn't appear to be a valid image.",
         });
@@ -52,14 +52,14 @@ const command: BotCommand = {
 
       await mentionImages.set(interaction.guildId, interaction.user.id, url);
 
-      interaction.reply({
+      await interaction.reply({
         ephemeral: true,
         content: "Your mention image has been set.",
       });
     } else if (subcommand === "remove") {
       await mentionImages.delete(interaction.guildId, interaction.user.id);
 
-      interaction.reply({ ephemeral: true, content: "Your mention image has been removed." });
+      await interaction.reply({ ephemeral: true, content: "Your mention image has been removed." });
     }
   },
 };
