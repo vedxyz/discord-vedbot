@@ -88,7 +88,7 @@ const getChannelId = async (serverId: Snowflake, channelType: string): Promise<S
     serverId,
     channelType,
   ]);
-  return result.rows[0].server_id;
+  return result.rows[0].channel_id;
 };
 
 const getRoleId = async (serverId: Snowflake, roleType: string): Promise<Snowflake> => {
