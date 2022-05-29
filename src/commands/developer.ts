@@ -1,6 +1,5 @@
 import { CommandInteraction, MessageEmbed } from "discord.js";
 import utils from "../utils/utils";
-import fsutils from "../utils/fsutils";
 import { BotCommand } from "../utils/interface";
 import { ids } from "../database/database";
 import { vedbot } from "../settings";
@@ -10,36 +9,6 @@ const subcommands = {
   killbot: async (interaction: CommandInteraction) => {
     await interaction.reply("```=> Killing the bot.```");
     await utils.exitBot();
-  },
-  reload: async (interaction: CommandInteraction) => {
-    const filename = interaction.options.getString("filename", true);
-
-    let file;
-    let fileCollection;
-
-    if (vedbot.commands.has(filename)) {
-      file = vedbot.commands.get(filename);
-      fileCollection = vedbot.commands;
-    } else if (vedbot.modules.has(filename)) {
-      file = vedbot.modules.get(filename);
-      fileCollection = vedbot.modules;
-    }
-
-    if (!file || !fileCollection) {
-      await interaction.reply(`There is no loaded file with name \`${filename}\`!`);
-    } else {
-      try {
-        fsutils.botfiles.reload(fileCollection, filename);
-
-        await interaction.reply(`File \`${filename}.js\` was reloaded!`);
-      } catch (error) {
-        console.error(error);
-        await interaction.reply({
-          content: `There was an error while reloading file \`${filename}.js\`:\n\`${error}\``,
-          ephemeral: true,
-        });
-      }
-    }
   },
   togglemodule: async (interaction: CommandInteraction) => {
     const availableModules = vedbot.modules.filter((module) =>
@@ -97,22 +66,6 @@ const command: BotCommand = {
         name: "killbot",
         description: "Kills the bot.",
         type: "SUB_COMMAND",
-      },
-      {
-        name: "reload",
-        description: "Reloads a bot command/module file.",
-        type: "SUB_COMMAND",
-        options: [
-          {
-            name: "filename",
-            description: "BotFile to be reloaded",
-            type: "STRING",
-            required: true,
-            choices: fsutils.botfiles
-              .getAllFileNamesSync(vedbot.commands, vedbot.modules)
-              .map((filename) => ({ name: filename, value: filename.slice(0, -3) })),
-          },
-        ],
       },
       {
         name: "togglemodule",
