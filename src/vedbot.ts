@@ -37,7 +37,7 @@ const client = new Discord.Client({
 export default client;
 
 client.once("ready", async () => {
-  console.log(">> Ready!");
+  console.log("Entering client ready block...");
 
   // Register slash commands along with their permissions
 
@@ -54,6 +54,8 @@ client.once("ready", async () => {
   });
 
   scheduleMealSubscriptionJob();
+
+  console.log("Client ready initialization complete!");
 });
 
 client.on("interactionCreate", async (interaction) => {
