@@ -4,6 +4,7 @@ import schedule from "node-schedule";
 import path from "path";
 import { mealSubscriptions, MealSubscriptionType } from "../database/database";
 import { srcrootdir } from "../rootdirname";
+import logger from "./logger";
 import utils from "./utils";
 
 class SubscriptionState {
@@ -32,7 +33,7 @@ export const scheduleMealSubscriptionJob = (): schedule.Job =>
       (sub) => sub.weekend || (trTime.isoWeekday() !== 6 && trTime.isoWeekday() !== 7)
     );
 
-    if (subs.length) console.log(`Sending meal subscription messages to ${subs.length} people... (${trTime})`);
+    if (subs.length) logger.info(`Sending meal subscription messages to ${subs.length} people... (${trTime})`);
 
     const lunchEmbed = utils.getMealEmbedBase("lunch", mealDay);
     const dinnerEmbed = utils.getMealEmbedBase("dinner", mealDay);
@@ -49,7 +50,7 @@ export const scheduleMealSubscriptionJob = (): schedule.Job =>
       try {
         await client.users.send(sub.userId, { embeds });
       } catch (err) {
-        if (err instanceof DiscordAPIError) console.log(`Failed to send meal notification to user ${sub.userId}`, err);
+        if (err instanceof DiscordAPIError) logger.error(`Failed to send meal notification to user ${sub.userId}`, err);
       }
     });
   });

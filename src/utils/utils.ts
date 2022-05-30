@@ -1,15 +1,11 @@
 import { Meal, MealDay } from "bilkent-scraper";
 import dayjs, { Dayjs } from "dayjs";
-import {
-  ApplicationCommandOptionChoice,
-  ApplicationCommandPermissionData,
-  CommandInteraction,
-  MessageEmbed,
-  Snowflake,
-} from "discord.js";
+import { APIApplicationCommandOptionChoice } from "discord-api-types/v10";
+import { ApplicationCommandPermissionData, CommandInteraction, MessageEmbed, Snowflake } from "discord.js";
 import { endDatabaseConnection, ids } from "../database/database";
 import { cfg } from "../settings";
-import { BotModule } from "./interface";
+import { BotEvent } from "./interface";
+import logger from "./logger";
 
 const trTime = (): Dayjs => dayjs().add(3, "hour");
 const getMealDateFormattedDay = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
@@ -18,11 +14,11 @@ const getDayOfWeekIndex = (): number => trTime().isoWeekday() - 1;
 
 const capitalizeWord = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1);
 
-const canExecuteModule = (module: BotModule, eventGuildId: Snowflake | undefined): boolean =>
-  module.state &&
-  (module.anyguild ||
+const canExecuteEvent = (event: BotEvent, eventGuildId: Snowflake | undefined): boolean =>
+  event.state &&
+  (event.anyguild ||
     (eventGuildId !== undefined &&
-      module.guilds.some(async (allowedServer) => (await ids.getServerId(allowedServer)) === eventGuildId)));
+      event.guilds.some(async (allowedServer) => (await ids.getServerId(allowedServer)) === eventGuildId)));
 
 const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
   new MessageEmbed()
@@ -58,7 +54,7 @@ const populateMealEmbed = (embed: MessageEmbed, meal: Meal, language: keyof Meal
   ]);
 };
 
-const objectifyChoiceArray = (choices: string[]): ApplicationCommandOptionChoice[] =>
+const objectifyChoiceArray = (choices: string[]): APIApplicationCommandOptionChoice<string>[] =>
   choices.map((choice) => ({ name: choice, value: choice }));
 
 const permissions = {
@@ -72,19 +68,18 @@ const permissions = {
 };
 
 const exitBot = async (): Promise<void> => {
-  console.log("Exiting gracefully...");
+  logger.success("Exiting gracefully...");
   await endDatabaseConnection();
   process.exit();
 };
 
 export default {
-  // fetchConfigChannels,
   trTime,
   getMealDateFormattedDay,
   getMealDateFormatted,
   getDayOfWeekIndex,
   capitalizeWord,
-  canExecuteModule,
+  canExecuteEvent,
   getRuleEmbedBase,
   getMealEmbedBase,
   populateMealEmbed,

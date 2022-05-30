@@ -1,7 +1,7 @@
 import Discord from "discord.js";
-import { BotCommand, BotModule } from "./interface";
+import { BotCommand, BotEvent } from "./interface";
 
-class BotFileCollection<T extends BotCommand | BotModule> extends Discord.Collection<string, T> {
+class BotFileCollection<T extends BotCommand | BotEvent> extends Discord.Collection<string, T> {
   rootdir: string;
 
   constructor(rootdir: string) {

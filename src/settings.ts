@@ -1,11 +1,11 @@
 import BotFileCollection from "./utils/botfilecollection";
 import fsutils from "./utils/fsutils";
-import { BotCommand, BotModule } from "./utils/interface";
+import { BotCommand, BotEvent } from "./utils/interface";
 
 export const cfg = fsutils.config.load();
 
 export const vedbot = {
   commands: new BotFileCollection<BotCommand>("commands"),
-  modules: new BotFileCollection<BotModule>("modules"),
+  events: new BotFileCollection<BotEvent>("events"),
 };
-fsutils.botfiles.loadAll(vedbot.modules, vedbot.commands);
+fsutils.botfiles.loadAll(vedbot.events, vedbot.commands);

@@ -1,10 +1,11 @@
 import { Pool } from "pg";
 import { Snowflake } from "discord.js";
+import logger from "../utils/logger";
 
 const pgpool = new Pool();
 
 pgpool.on("error", (err) => {
-  console.error("Database error:\n", err);
+  logger.error("Database error:\n", err);
 });
 
 interface RuleRow {

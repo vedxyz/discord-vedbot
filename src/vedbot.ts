@@ -5,14 +5,14 @@ import Discord, { GuildMember, MessageEmbed } from "discord.js";
 import dayjs from "dayjs";
 import isoWeek from "dayjs/plugin/isoWeek";
 import { cfg, vedbot } from "./settings";
-import { ids } from "./database/database";
 import utils from "./utils/utils";
 // eslint-disable-next-line import/no-cycle
 import { scheduleMealSubscriptionJob } from "./utils/mealsubservice";
+import logger from "./utils/logger";
 
 dayjs.extend(isoWeek);
 
-const { canExecuteModule } = utils;
+const { canExecuteEvent } = utils;
 
 const client = new Discord.Client({
   intents: [
@@ -34,26 +34,13 @@ const client = new Discord.Client({
     ],
   },
 });
-export default client;
 
 client.once("ready", async () => {
-  console.log(">> Ready!");
-
-  // Register slash commands along with their permissions
-
-  (await ids.getAllServers()).forEach(async ({ id: serverId, nickname }) => {
-    const guildCommandManager = client.guilds.cache.get(serverId)?.commands;
-    const guildCommands = vedbot.commands.filter((command) => command.guilds.includes(nickname));
-
-    await guildCommandManager?.set([]);
-
-    guildCommands.forEach(async (command) => {
-      const guildCommand = await guildCommandManager?.create(command.data);
-      if (Array.isArray(command.permissions)) await guildCommand?.permissions.set({ permissions: command.permissions });
-    });
-  });
+  logger.info("Entering client ready block...");
 
   scheduleMealSubscriptionJob();
+
+  logger.success("Client ready initialization complete!");
 });
 
 client.on("interactionCreate", async (interaction) => {
@@ -61,7 +48,7 @@ client.on("interactionCreate", async (interaction) => {
     try {
       await vedbot.commands.get(interaction.commandName).execute(interaction);
     } catch (error) {
-      console.error(
+      logger.error(
         `Error for command ${interaction.commandName}`,
         interaction.options.data.map((opt) => `Opt '${opt.name}': ${opt.value}`),
         error
@@ -77,7 +64,7 @@ client.on("interactionCreate", async (interaction) => {
           ],
         });
       } catch (innerError) {
-        console.error("Failed to deliver error message also...", innerError);
+        logger.error("Failed to deliver error message also...", innerError);
       }
     }
   }
@@ -86,13 +73,13 @@ client.on("interactionCreate", async (interaction) => {
 client.on("messageCreate", (message) => {
   if (message.author.id === client.user?.id || !message.inGuild()) return;
 
-  ["mizyaz", "dhlink", "mentionimg"].forEach(async (moduleName) => {
-    const module = vedbot.modules.get(moduleName);
+  ["mizyaz", "dhlink", "mentionimg"].forEach(async (eventName) => {
+    const event = vedbot.events.get(eventName);
 
     try {
-      if (canExecuteModule(module, message.guild.id)) await module.onMessage?.(message);
+      if (canExecuteEvent(event, message.guild.id)) await event.onMessage?.(message);
     } catch (error) {
-      console.error(error);
+      logger.error(error);
     }
   });
 });
@@ -100,34 +87,34 @@ client.on("messageCreate", (message) => {
 // client.on("voiceStateUpdate", (oldState, newState) => {});
 
 client.on("guildMemberAdd", (member) => {
-  const guildjoinleave = vedbot.modules.get("guildjoinleave");
+  const guildjoinleave = vedbot.events.get("guildjoinleave");
 
-  if (canExecuteModule(guildjoinleave, member.guild.id)) guildjoinleave?.onMemberJoin?.(member);
+  if (canExecuteEvent(guildjoinleave, member.guild.id)) guildjoinleave?.onMemberJoin?.(member);
 });
 
 client.on("guildMemberRemove", (member) => {
-  const guildjoinleave = vedbot.modules.get("guildjoinleave");
+  const guildjoinleave = vedbot.events.get("guildjoinleave");
 
-  if (canExecuteModule(guildjoinleave, member.guild.id)) guildjoinleave?.onMemberLeave?.(member as GuildMember);
+  if (canExecuteEvent(guildjoinleave, member.guild.id)) guildjoinleave?.onMemberLeave?.(member as GuildMember);
 });
 
 // client.on("messageReactionAdd", (reaction, user) => {
-//   const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
+//   const dhreactrolepicker = vedbot.events.get("dhreactrolepicker");
 
-//   if (canExecuteModule(dhreactrolepicker, reaction.message.guild?.id))
+//   if (canExecuteEvent(dhreactrolepicker, reaction.message.guild?.id))
 //     dhreactrolepicker?.onReactionAdd?.(reaction as MessageReaction, user as User);
 // });
 
 // client.on("messageReactionRemove", (reaction, user) => {
-//   const dhreactrolepicker = vedbot.modules.get("dhreactrolepicker");
+//   const dhreactrolepicker = vedbot.events.get("dhreactrolepicker");
 
-//   if (canExecuteModule(dhreactrolepicker, reaction.message.guild?.id))
+//   if (canExecuteEvent(dhreactrolepicker, reaction.message.guild?.id))
 //     dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
 // });
 
-client.login(cfg.token).catch(console.error);
+client.login(cfg.token).catch(logger.error);
 
 process.on("SIGINT", async () => {
-  console.log("SIGINT caught!");
+  logger.warn("SIGINT caught!");
   await utils.exitBot();
 });

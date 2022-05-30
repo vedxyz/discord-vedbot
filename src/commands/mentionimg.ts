@@ -1,33 +1,24 @@
 import fetch from "node-fetch";
+import { SlashCommandBuilder } from "@discordjs/builders";
 import { BotCommand } from "../utils/interface";
 import { mentionImages } from "../database/database";
 
 const command: BotCommand = {
-  data: {
-    name: "mentionimg",
-    description: "Set or remove a mention image for yourself.",
-    defaultPermission: true,
-    options: [
-      {
-        name: "set",
-        description: "Set a mention image for yourself.",
-        type: "SUB_COMMAND",
-        options: [
-          {
-            name: "url",
-            description: "The URL to the mention image you want",
-            type: "STRING",
-            required: true,
-          },
-        ],
-      },
-      {
-        name: "remove",
-        description: "Remove the current mention image for yourself.",
-        type: "SUB_COMMAND",
-      },
-    ],
-  },
+  data: new SlashCommandBuilder()
+    .setName("mentionimg")
+    .setDescription("Set or remove a mention image for yourself")
+    .setDefaultPermission(true)
+    .addSubcommand((set) =>
+      set
+        .setName("set")
+        .setDescription("Set a mention image for yourself")
+        .addStringOption((url) =>
+          url.setName("url").setDescription("The URL to the mention image you want").setRequired(true)
+        )
+    )
+    .addSubcommand((remove) =>
+      remove.setName("remove").setDescription("Remove the current mention image for yourself")
+    ),
   guilds: ["cr"],
   async execute(interaction) {
     const subcommand = interaction.options.getSubcommand(true);

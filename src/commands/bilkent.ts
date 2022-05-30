@@ -1,27 +1,22 @@
-import { ApplicationCommandChoicesData, Collection, MessageEmbed } from "discord.js";
+import { Collection, MessageEmbed } from "discord.js";
 import { getMealList } from "bilkent-scraper";
+import { SlashCommandBuilder, SlashCommandStringOption } from "@discordjs/builders";
 import { SupportedDepartment, BotCommand, Offerings } from "../utils/interface";
 import utils from "../utils/utils";
 import { mealSubscriptions, MealSubscriptionType } from "../database/database";
-import client from "../vedbot";
 
 const { getDayOfWeekIndex, getMealDateFormatted, getMealDateFormattedDay } = utils;
 const offerings: Offerings = new Collection(); // This is a temporary mock
 
-const forMealChoiceData: ApplicationCommandChoicesData = {
-  name: "for",
-  description: "Pick a meal",
-  type: "STRING",
-  required: false,
-  choices: utils.objectifyChoiceArray(["lunch", "dinner"]),
-};
-const langMealChoiceData: ApplicationCommandChoicesData = {
-  name: "language",
-  description: "Language for the food names",
-  type: "STRING",
-  required: false,
-  choices: utils.objectifyChoiceArray(["tr", "eng"]),
-};
+const forMealOption = new SlashCommandStringOption()
+  .setName("for")
+  .setDescription("Pick a meal")
+  .setChoices(...utils.objectifyChoiceArray(["lunch", "dinner"]));
+const langMealOption = new SlashCommandStringOption()
+  .setName("language")
+  .setDescription("Language for the dish names")
+  .setChoices(...utils.objectifyChoiceArray(["tr", "eng"]));
+
 const daysOfWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 
 const subTypeMap = {
@@ -31,136 +26,118 @@ const subTypeMap = {
 } as { [key: string]: MealSubscriptionType };
 
 const command: BotCommand = {
-  data: {
-    name: "bilkent",
-    description: "Utilities for Bilkent University.",
-    defaultPermission: true,
-    options: [
-      {
-        name: "getcourse",
-        description: "Get information for a specific course",
-        type: "SUB_COMMAND",
-        options: [
-          {
-            name: "department",
-            description: "Department of the course; such as CS, ENG, HIST, etc.",
-            type: "STRING",
-            required: true,
-            choices: utils.objectifyChoiceArray([
-              "CHEM",
-              "CS",
-              "ECON",
-              "EEE",
-              "ENG",
-              "HIST",
-              "HUM",
-              "IE",
-              "LAW",
-              "MATH",
-              "MBG",
-              "PHYS",
-              "PSYC",
-              "TURK",
-            ]),
-          },
-          {
-            name: "course",
-            description: "Number code of the course; such as 101, 223, 200, etc.",
-            type: "STRING",
-            required: true,
-          },
-          {
-            name: "section",
-            description: "Section of the course; such as 1, 2, 3, etc.",
-            type: "INTEGER",
-            required: false,
-          },
-        ],
-      },
-      {
-        name: "meal",
-        description: "Get information for the current week's cafeteria menu",
-        type: "SUB_COMMAND_GROUP",
-        options: [
-          {
-            name: "today",
-            description: "Show today's meals",
-            type: "SUB_COMMAND",
-            options: [forMealChoiceData, langMealChoiceData],
-          },
-          {
-            name: "tomorrow",
-            description: "Show tomorrow's meals",
-            type: "SUB_COMMAND",
-            options: [forMealChoiceData, langMealChoiceData],
-          },
-          {
-            name: "on",
-            description: "Show meals from a specific day of the week",
-            type: "SUB_COMMAND",
-            options: [
-              {
-                name: "day",
-                description: "Pick a day",
-                type: "STRING",
-                required: true,
-                choices: utils.objectifyChoiceArray(daysOfWeek),
-              },
-              forMealChoiceData,
-              langMealChoiceData,
-            ],
-          },
-          {
-            name: "all",
-            description: "List meals for the entire week",
-            type: "SUB_COMMAND",
-            options: [langMealChoiceData],
-          },
-          {
-            name: "subscribe",
-            description: "Get daily private messages for meals",
-            type: "SUB_COMMAND",
-            options: [
-              {
-                name: "type",
-                description: "Which meals will this subscription cover? Maybe both at once?",
-                type: "STRING",
-                required: true,
-                choices: utils.objectifyChoiceArray(["lunch", "dinner", "lunch+dinner"]),
-              },
-              {
-                name: "hour",
-                description: "The hour at which to send you a message (HH:00)",
-                type: "INTEGER",
-                required: true,
-                choices: [...Array(24).keys()].map((hour) => ({ name: `${hour}`, value: hour })),
-              },
-              {
-                name: "weekend",
-                description: "Whether to send messages during the weekend",
-                type: "BOOLEAN",
-                required: true,
-              },
-            ],
-          },
-          {
-            name: "unsubscribe",
-            description: "Remove your subscription for a certain type",
-            type: "SUB_COMMAND",
-            options: [
-              {
-                name: "type",
-                description: "The type of subscription to unsubscribe from",
-                type: "STRING",
-                required: true,
-                choices: utils.objectifyChoiceArray(["lunch", "dinner", "lunch+dinner"]),
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
+  data: new SlashCommandBuilder()
+    .setName("bilkent")
+    .setDescription("Utilities for Bilkent University")
+    .setDefaultPermission(true)
+    .addSubcommand((getcourse) =>
+      getcourse
+        .setName("getcourse")
+        .setDescription("Get information for a specific course")
+        .addStringOption((department) =>
+          department
+            .setName("department")
+            .setDescription("Department of the course; such as CS, ENG, HIST, etc.")
+            .setRequired(true)
+            .setChoices(
+              ...utils.objectifyChoiceArray([
+                "CHEM",
+                "CS",
+                "ECON",
+                "EEE",
+                "ENG",
+                "HIST",
+                "HUM",
+                "IE",
+                "LAW",
+                "MATH",
+                "MBG",
+                "PHYS",
+                "PSYC",
+                "TURK",
+              ])
+            )
+        )
+        .addStringOption((course) =>
+          course
+            .setName("course")
+            .setDescription("Number code of the course; such as 101, 223, 200, etc.")
+            .setRequired(true)
+        )
+        .addIntegerOption((section) =>
+          section.setName("section").setDescription("Section of the course; such as 1, 2, 3, etc.")
+        )
+    )
+    .addSubcommandGroup((meal) =>
+      meal
+        .setName("meal")
+        .setDescription("Get information for the current week's cafeteria menu")
+        .addSubcommand((today) =>
+          today
+            .setName("today")
+            .setDescription("Show today's meals")
+            .addStringOption(forMealOption)
+            .addStringOption(langMealOption)
+        )
+        .addSubcommand((tomorrow) =>
+          tomorrow
+            .setName("tomorrow")
+            .setDescription("Show tomorrow's meals")
+            .addStringOption(forMealOption)
+            .addStringOption(langMealOption)
+        )
+        .addSubcommand((on) =>
+          on
+            .setName("on")
+            .setDescription("Show meals from a specific day of the week")
+            .addStringOption((day) =>
+              day
+                .setName("day")
+                .setDescription("Pick a day")
+                .setRequired(true)
+                .setChoices(...utils.objectifyChoiceArray(daysOfWeek))
+            )
+            .addStringOption(forMealOption)
+            .addStringOption(langMealOption)
+        )
+        .addSubcommand((all) =>
+          all.setName("all").setDescription("List meals for the entire week").addStringOption(langMealOption)
+        )
+        .addSubcommand((subscribe) =>
+          subscribe
+            .setName("subscribe")
+            .setDescription("Get daily private messages for meals")
+            .addStringOption((type) =>
+              type
+                .setName("type")
+                .setDescription("Which meals will this subscription cover? Maybe both at once?")
+                .setRequired(true)
+                .setChoices(...utils.objectifyChoiceArray(["lunch", "dinner", "lunch+dinner"]))
+            )
+            .addIntegerOption((hour) =>
+              hour
+                .setName("hour")
+                .setDescription("The hour at which to send you a message (HH:00)")
+                .setRequired(true)
+                .setChoices(...[...Array(24).keys()].map((hr) => ({ name: `${hr}`, value: hr })))
+            )
+            .addBooleanOption((weekend) =>
+              weekend.setName("weekend").setDescription("Whether to send messages during the weekend").setRequired(true)
+            )
+        )
+        .addSubcommand((unsubscribe) =>
+          unsubscribe
+            .setName("unsubscribe")
+            .setDescription("Remove your subscription for a certain type")
+            .addStringOption((type) =>
+              type
+                .setName("type")
+                .setDescription("The type of subscription to unsubscribe from")
+                .setRequired(true)
+                .setChoices(...utils.objectifyChoiceArray(["lunch", "dinner", "lunch+dinner"]))
+            )
+        )
+    ),
   guilds: ["dh", "cs"],
   async execute(interaction) {
     const subcommandGroup = interaction.options.getSubcommandGroup();
@@ -226,7 +203,7 @@ const command: BotCommand = {
           ],
           ephemeral: true,
         });
-        await client.users.send(interaction.user.id, {
+        await interaction.client.users.send(interaction.user.id, {
           embeds: [
             new MessageEmbed()
               .setColor("DARK_GOLD")
