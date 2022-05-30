@@ -6,7 +6,7 @@ export default {
   description: "Replies with a self selected image when a person is mentioned.",
   state: true,
   guilds: ["cr"],
-  onMessage(message) {
+  async onMessage(message) {
     const matchedImages: string[] = [];
 
     message.mentions.users.each(async (user) => {
@@ -15,6 +15,6 @@ export default {
       }
     });
 
-    if (matchedImages.length !== 0) message.reply({ files: matchedImages });
+    if (matchedImages.length !== 0) await message.reply({ files: matchedImages });
   },
 } as BotEvent;

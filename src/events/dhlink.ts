@@ -6,7 +6,7 @@ export default {
   description: "Convert mobile/desktop DonanimHaber links to their counterparts.",
   state: true,
   guilds: ["dh", "cs"],
-  onMessage(message) {
+  async onMessage(message) {
     const msg = message.content.toLowerCase().split(/\s/);
 
     const DHLinks: string[] = [];
@@ -31,7 +31,7 @@ export default {
         .setAuthor({ name: message.member?.displayName ?? "Member", iconURL: message.author.avatarURL() ?? undefined })
         .addFields(DHLinks.map((link, i) => ({ name: `Link #${i + 1}`, value: link, inline: false })));
 
-      message.reply({ embeds: [linksEmbed] });
+      await message.reply({ embeds: [linksEmbed] });
     }
   },
 } as BotEvent;
