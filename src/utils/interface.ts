@@ -1,5 +1,5 @@
+import { SlashCommandBuilder } from "@discordjs/builders";
 import {
-  ApplicationCommandData,
   ApplicationCommandPermissionData,
   Collection,
   CommandInteraction,
@@ -11,20 +11,24 @@ import {
   VoiceState,
 } from "discord.js";
 
+interface BotConfigServer {
+  id: Snowflake;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // [key: string]: any;
+}
+
 export interface BotConfig {
   ownerId: Snowflake;
   token: string;
+  clientId: Snowflake;
   servers: {
-    dh: {
+    dh: BotConfigServer & {
       mizyaz: {
-        id: string;
+        id: Snowflake;
         regexp: string;
       };
     };
-    // [key: string]: {
-    //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    //   [key: string]: any;
-    // };
+    [key: string]: BotConfigServer;
   };
 }
 
@@ -52,7 +56,7 @@ export interface BotCommand {
   /**
    * Used to set the interaction API requests, mostly.
    */
-  data: ApplicationCommandData;
+  data: Pick<SlashCommandBuilder, "toJSON">;
   permissions?: ApplicationCommandPermissionData[];
   /**
    * If `true`, run in any guild, regardless of `guilds` array.
@@ -62,7 +66,7 @@ export interface BotCommand {
    * Actions will only be executed on guilds listed here by *server nickname*
    */
   guilds: string[];
-  execute: (interaction: CommandInteraction<"present">) => unknown;
+  execute: (interaction: CommandInteraction<"cached" | "raw">) => unknown;
 }
 
 export interface Course {

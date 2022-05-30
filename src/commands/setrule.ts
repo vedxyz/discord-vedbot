@@ -1,3 +1,4 @@
+import { SlashCommandBuilder } from "@discordjs/builders";
 import utils from "../utils/utils";
 import { BotCommand } from "../utils/interface";
 import { rules } from "../database/database";
@@ -11,25 +12,14 @@ utils.permissions
   .catch(console.error);
 
 const command: BotCommand = {
-  data: {
-    name: "setrule",
-    description: "Set rules for the DH server.",
-    defaultPermission: false,
-    options: [
-      {
-        name: "id",
-        description: "ID of a rule",
-        type: "INTEGER",
-        required: true,
-      },
-      {
-        name: "content",
-        description: "New content of rule",
-        type: "STRING",
-        required: false,
-      },
-    ],
-  },
+  data: new SlashCommandBuilder()
+    .setName("setrule")
+    .setDescription("Set rules for the DH server")
+    .setDefaultPermission(false)
+    .addIntegerOption((id) => id.setName("id").setDescription("ID of a rule").setRequired(true))
+    .addStringOption((content) =>
+      content.setName("content").setDescription("New content of the rule").setRequired(false)
+    ),
   permissions: [utils.permissions.getOwner(), ...(typeof adminPermissions !== "undefined" ? adminPermissions : [])],
   guilds: ["dh"],
   async execute(interaction) {

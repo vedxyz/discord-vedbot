@@ -1,7 +1,7 @@
 import { CommandInteraction, MessageEmbed } from "discord.js";
+import { SlashCommandBuilder } from "@discordjs/builders";
 import utils from "../utils/utils";
 import { BotCommand } from "../utils/interface";
-import { ids } from "../database/database";
 import { vedbot } from "../settings";
 import { subscriptionState } from "../utils/mealsubservice";
 
@@ -11,10 +11,6 @@ const subcommands = {
     await utils.exitBot();
   },
   togglemodule: async (interaction: CommandInteraction) => {
-    const availableModules = vedbot.modules.filter((module) =>
-      module.guilds.some(async (srv) => (await ids.getServerId(srv)) === interaction.guild?.id)
-    );
-
     const moduleName = interaction.options.getString("module");
 
     if (moduleName === null) {
@@ -28,7 +24,7 @@ const subcommands = {
             .setColor("RED")
             .setThumbnail(interaction.client.user?.avatarURL() || "")
             .addFields(
-              availableModules.map((module) => ({
+              vedbot.modules.map((module) => ({
                 name: `${module.name} | ${module.state ? "ENABLED" : "DISABLED"}`,
                 value: module.description || "No description added.",
                 inline: false,
@@ -37,7 +33,7 @@ const subcommands = {
         ],
       });
     } else {
-      const module = availableModules.find((_module) => _module.name === moduleName);
+      const module = vedbot.modules.find((_module) => _module.name === moduleName);
 
       if (module) {
         module.state = !module.state;
@@ -57,38 +53,22 @@ const subcommands = {
 };
 
 const command: BotCommand = {
-  data: {
-    name: "developer",
-    description: "Contains utility commands for the developer of this bot.",
-    defaultPermission: false,
-    options: [
-      {
-        name: "killbot",
-        description: "Kills the bot.",
-        type: "SUB_COMMAND",
-      },
-      {
-        name: "togglemodule",
-        description: "List or toggle VedBot modules for the current server.",
-        type: "SUB_COMMAND",
-        options: [
-          {
-            name: "module",
-            description: "Module to be toggled",
-            type: "STRING",
-            required: false,
-          },
-        ],
-      },
-      {
-        name: "togglesubs",
-        description: "Toggle VedBot cafeteria subscription notifications.",
-        type: "SUB_COMMAND",
-      },
-    ],
-  },
+  data: new SlashCommandBuilder()
+    .setName("developer")
+    .setDescription("Contains utility commands for the developer of this bot")
+    .setDefaultPermission(false)
+    .addSubcommand((killbot) => killbot.setName("killbot").setDescription("Kills the bot"))
+    .addSubcommand((togglemodule) =>
+      togglemodule
+        .setName("togglemodule")
+        .setDescription("List or toggle VedBot modules")
+        .addStringOption((module) => module.setName("module").setDescription("Module to be toggled").setRequired(false))
+    )
+    .addSubcommand((togglesubs) =>
+      togglesubs.setName("togglesubs").setDescription("Toggle VedBot cafeteria subscription notifications")
+    ),
   permissions: [utils.permissions.getOwner()],
-  guilds: ["dh", "cs", "cr"],
+  guilds: ["dev"],
   async execute(interaction) {
     const subcommand = interaction.options.getSubcommand() as keyof typeof subcommands;
 

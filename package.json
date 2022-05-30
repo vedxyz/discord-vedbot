@@ -6,14 +6,18 @@
   "scripts": {
     "build": "rimraf ./build && npx tsc",
     "start": "node ./build/vedbot.js",
+    "registercommands": "node ./build/registercommands.js",
     "prettier": "npx prettier --write ./src"
   },
   "author": "Ved",
   "license": "MIT",
   "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/rest": "^0.4.1",
     "bilkent-scraper": "^1.0.1",
-    "dayjs": "^1.10.8",
-    "discord.js": "^13.6.0",
+    "dayjs": "^1.11.2",
+    "discord-api-types": "^0.33.1",
+    "discord.js": "^13.7.0",
     "node-fetch": "^2.6.7",
     "node-schedule": "^2.1.0",
     "pg": "^8.7.3",
@@ -23,16 +27,16 @@
   "devDependencies": {
     "@types/node": "^16.11.26",
     "@types/node-fetch": "^2.6.1",
-    "@types/node-schedule": "^1.3.2",
+    "@types/node-schedule": "^2.1.0",
     "@types/pg": "^8.6.5",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
-    "eslint": "^8.12.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
-    "prettier": "^2.6.1",
-    "typescript": "^4.6.3"
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.2"
   },
   "engines": {
     "node": ">=16.9.0"

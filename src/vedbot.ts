@@ -5,7 +5,6 @@ import Discord, { GuildMember, MessageEmbed } from "discord.js";
 import dayjs from "dayjs";
 import isoWeek from "dayjs/plugin/isoWeek";
 import { cfg, vedbot } from "./settings";
-import { ids } from "./database/database";
 import utils from "./utils/utils";
 // eslint-disable-next-line import/no-cycle
 import { scheduleMealSubscriptionJob } from "./utils/mealsubservice";
@@ -34,24 +33,9 @@ const client = new Discord.Client({
     ],
   },
 });
-export default client;
 
 client.once("ready", async () => {
   console.log("Entering client ready block...");
-
-  // Register slash commands along with their permissions
-
-  (await ids.getAllServers()).forEach(async ({ id: serverId, nickname }) => {
-    const guildCommandManager = client.guilds.cache.get(serverId)?.commands;
-    const guildCommands = vedbot.commands.filter((command) => command.guilds.includes(nickname));
-
-    await guildCommandManager?.set([]);
-
-    guildCommands.forEach(async (command) => {
-      const guildCommand = await guildCommandManager?.create(command.data);
-      if (Array.isArray(command.permissions)) await guildCommand?.permissions.set({ permissions: command.permissions });
-    });
-  });
 
   scheduleMealSubscriptionJob();
 

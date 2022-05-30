@@ -1,12 +1,7 @@
 import { Meal, MealDay } from "bilkent-scraper";
 import dayjs, { Dayjs } from "dayjs";
-import {
-  ApplicationCommandOptionChoice,
-  ApplicationCommandPermissionData,
-  CommandInteraction,
-  MessageEmbed,
-  Snowflake,
-} from "discord.js";
+import { APIApplicationCommandOptionChoice } from "discord-api-types/v10";
+import { ApplicationCommandPermissionData, CommandInteraction, MessageEmbed, Snowflake } from "discord.js";
 import { endDatabaseConnection, ids } from "../database/database";
 import { cfg } from "../settings";
 import { BotModule } from "./interface";
@@ -58,7 +53,7 @@ const populateMealEmbed = (embed: MessageEmbed, meal: Meal, language: keyof Meal
   ]);
 };
 
-const objectifyChoiceArray = (choices: string[]): ApplicationCommandOptionChoice[] =>
+const objectifyChoiceArray = (choices: string[]): APIApplicationCommandOptionChoice<string>[] =>
   choices.map((choice) => ({ name: choice, value: choice }));
 
 const permissions = {
@@ -78,7 +73,6 @@ const exitBot = async (): Promise<void> => {
 };
 
 export default {
-  // fetchConfigChannels,
   trTime,
   getMealDateFormattedDay,
   getMealDateFormatted,

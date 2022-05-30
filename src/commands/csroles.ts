@@ -1,3 +1,4 @@
+import { SlashCommandBuilder } from "@discordjs/builders";
 import { Collection, GuildMember, MessageActionRow, MessageButton, MessageEmbed, MessageSelectMenu } from "discord.js";
 import { BotCommand, Offerings } from "../utils/interface";
 import utils from "../utils/utils";
@@ -5,20 +6,17 @@ import utils from "../utils/utils";
 const offerings: Offerings = new Collection(); // This is a temporary mock
 
 const command: BotCommand = {
-  data: {
-    name: "csroles",
-    description: "Manage your roles for CS course sections.",
-    defaultPermission: true,
-    options: [
-      {
-        name: "course",
-        description: "Course to manage roles for.",
-        type: "STRING",
-        required: true,
-        choices: utils.objectifyChoiceArray(["CS 201", "CS 223"]),
-      },
-    ],
-  },
+  data: new SlashCommandBuilder()
+    .setName("csroles")
+    .setDescription("Manage your roles for CS course sections")
+    .setDefaultPermission(true)
+    .addStringOption((course) =>
+      course
+        .setName("course")
+        .setDescription("Course to manage roles for")
+        .setRequired(true)
+        .setChoices(...utils.objectifyChoiceArray(["CS 201", "CS 223"]))
+    ),
   guilds: ["cs"],
   async execute(interaction) {
     const selectedCourse = interaction.options.getString("course", true);

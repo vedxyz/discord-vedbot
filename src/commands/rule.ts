@@ -1,21 +1,14 @@
+import { SlashCommandBuilder } from "@discordjs/builders";
 import utils from "../utils/utils";
 import { BotCommand } from "../utils/interface";
 import { rules } from "../database/database";
 
 const command: BotCommand = {
-  data: {
-    name: "rule",
-    description: "Get rule(s) for the DH server.",
-    defaultPermission: true,
-    options: [
-      {
-        name: "id",
-        description: "ID of a rule",
-        type: "INTEGER",
-        required: false,
-      },
-    ],
-  },
+  data: new SlashCommandBuilder()
+    .setName("rule")
+    .setDescription("Get rule(s) for the server")
+    .setDefaultPermission(true)
+    .addIntegerOption((id) => id.setName("id").setDescription("ID of a rule").setRequired(false)),
   guilds: ["dh"],
   async execute(interaction) {
     const ruleID = interaction.options.getInteger("id");

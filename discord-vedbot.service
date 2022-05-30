@@ -11,6 +11,7 @@ WorkingDirectory=/srv/discord-vedbot
 EnvironmentFile=/srv/discord-vedbot/prod.env
 ExecStartPre=/usr/bin/npm install --production=false
 ExecStartPre=/usr/bin/npm run build
+ExecStartPre=/usr/bin/npm run registercommands
 ExecStart=/usr/bin/npm run start
 Restart=on-failure
 Type=simple
