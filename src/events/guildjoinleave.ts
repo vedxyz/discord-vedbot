@@ -1,5 +1,5 @@
 import { MessageEmbed, TextChannel } from "discord.js";
-import { BotModule } from "../utils/interface";
+import { BotEvent } from "../utils/interface";
 import { ids } from "../database/database";
 
 export default {
@@ -62,4 +62,4 @@ export default {
       ],
     });
   },
-} as BotModule;
+} as BotEvent;

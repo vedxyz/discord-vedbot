@@ -32,7 +32,7 @@ export interface BotConfig {
   };
 }
 
-export interface BotModule {
+export interface BotEvent {
   name: string;
   description: string;
   state: boolean;

@@ -4,7 +4,7 @@ import { APIApplicationCommandOptionChoice } from "discord-api-types/v10";
 import { ApplicationCommandPermissionData, CommandInteraction, MessageEmbed, Snowflake } from "discord.js";
 import { endDatabaseConnection, ids } from "../database/database";
 import { cfg } from "../settings";
-import { BotModule } from "./interface";
+import { BotEvent } from "./interface";
 
 const trTime = (): Dayjs => dayjs().add(3, "hour");
 const getMealDateFormattedDay = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
@@ -13,11 +13,11 @@ const getDayOfWeekIndex = (): number => trTime().isoWeekday() - 1;
 
 const capitalizeWord = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1);
 
-const canExecuteModule = (module: BotModule, eventGuildId: Snowflake | undefined): boolean =>
-  module.state &&
-  (module.anyguild ||
+const canExecuteEvent = (event: BotEvent, eventGuildId: Snowflake | undefined): boolean =>
+  event.state &&
+  (event.anyguild ||
     (eventGuildId !== undefined &&
-      module.guilds.some(async (allowedServer) => (await ids.getServerId(allowedServer)) === eventGuildId)));
+      event.guilds.some(async (allowedServer) => (await ids.getServerId(allowedServer)) === eventGuildId)));
 
 const getRuleEmbedBase = (interaction: CommandInteraction): MessageEmbed =>
   new MessageEmbed()
@@ -78,7 +78,7 @@ export default {
   getMealDateFormatted,
   getDayOfWeekIndex,
   capitalizeWord,
-  canExecuteModule,
+  canExecuteEvent,
   getRuleEmbedBase,
   getMealEmbedBase,
   populateMealEmbed,

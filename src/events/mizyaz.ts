@@ -1,6 +1,6 @@
 import { MessageEmbed, MessageOptions } from "discord.js";
 import { cfg } from "../settings";
-import { BotModule } from "../utils/interface";
+import { BotEvent } from "../utils/interface";
 
 const mizyazId = cfg.servers.dh.mizyaz.id;
 const mizyazRegExp = new RegExp(cfg.servers.dh.mizyaz.regexp, "i");
@@ -50,4 +50,4 @@ export default {
       await message.channel.send(messageOptions);
     }
   },
-} as BotModule;
+} as BotEvent;

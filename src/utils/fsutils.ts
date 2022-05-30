@@ -4,19 +4,19 @@
 import fs from "fs";
 import Discord from "discord.js";
 import path from "path";
-import { BotCommand, BotConfig, BotModule, Offerings, SupportedDepartment } from "./interface";
+import { BotCommand, BotConfig, BotEvent, Offerings, SupportedDepartment } from "./interface";
 import { srcrootdir, projrootdir } from "../rootdirname";
 import BotFileCollection from "./botfilecollection";
 
 const botfiles = {
-  loadAll: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): void => {
+  loadAll: (...botFileCollections: BotFileCollection<BotCommand | BotEvent>[]): void => {
     console.log("Loading BotFiles...");
     botFileCollections.forEach((collection) => {
       fs.readdirSync(path.join(srcrootdir, collection.rootdir))
         .filter((file) => file.endsWith(".js"))
         .map(
           (file) =>
-            [file, require(path.join(srcrootdir, collection.rootdir, file)).default] as [string, BotCommand | BotModule]
+            [file, require(path.join(srcrootdir, collection.rootdir, file)).default] as [string, BotCommand | BotEvent]
         )
         .forEach(([filename, fileImport]) => {
           collection.set(filename.slice(0, -3), fileImport);
@@ -24,20 +24,20 @@ const botfiles = {
         });
     });
   },
-  reload: (collection: BotFileCollection<BotCommand | BotModule>, filename: string): void => {
+  reload: (collection: BotFileCollection<BotCommand | BotEvent>, filename: string): void => {
     const filePath = path.join(srcrootdir, collection.rootdir, `${filename}.js`);
 
     delete require.cache[require.resolve(filePath)];
-    const reloadedFile: BotCommand | BotModule = require(filePath).default;
+    const reloadedFile: BotCommand | BotEvent = require(filePath).default;
     collection.set(filename, reloadedFile);
     console.log(`Reloaded BotFile: ${filename}.js`);
   },
-  getAllFileNamesSync: (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): string[] =>
+  getAllFileNamesSync: (...botFileCollections: BotFileCollection<BotCommand | BotEvent>[]): string[] =>
     botFileCollections
       .map((collection) => fs.readdirSync(path.join(srcrootdir, collection.rootdir)))
       .reduce((acc, curr) => acc.concat(curr), [])
       .filter((filename) => filename.endsWith(".js")),
-  getAllFileNames: async (...botFileCollections: BotFileCollection<BotCommand | BotModule>[]): Promise<string[]> =>
+  getAllFileNames: async (...botFileCollections: BotFileCollection<BotCommand | BotEvent>[]): Promise<string[]> =>
     (
       await Promise.all(
         botFileCollections.map((collection) => fs.promises.readdir(path.join(srcrootdir, collection.rootdir)))

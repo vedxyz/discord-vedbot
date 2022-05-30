@@ -1,4 +1,4 @@
-import { BotModule } from "../utils/interface";
+import { BotEvent } from "../utils/interface";
 import { mentionImages } from "../database/database";
 
 export default {
@@ -17,4 +17,4 @@ export default {
 
     if (matchedImages.length !== 0) message.reply({ files: matchedImages });
   },
-} as BotModule;
+} as BotEvent;

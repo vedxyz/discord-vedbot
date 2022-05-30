@@ -1,5 +1,5 @@
 import { MessageEmbed } from "discord.js";
-import { BotModule } from "../utils/interface";
+import { BotEvent } from "../utils/interface";
 
 export default {
   name: "dhlink",
@@ -34,4 +34,4 @@ export default {
       message.reply({ embeds: [linksEmbed] });
     }
   },
-} as BotModule;
+} as BotEvent;
