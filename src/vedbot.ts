@@ -8,6 +8,7 @@ import { cfg, vedbot } from "./settings";
 import utils from "./utils/utils";
 // eslint-disable-next-line import/no-cycle
 import { scheduleMealSubscriptionJob } from "./utils/mealsubservice";
+import logger from "./utils/logger";
 
 dayjs.extend(isoWeek);
 
@@ -35,11 +36,11 @@ const client = new Discord.Client({
 });
 
 client.once("ready", async () => {
-  console.log("Entering client ready block...");
+  logger.info("Entering client ready block...");
 
   scheduleMealSubscriptionJob();
 
-  console.log("Client ready initialization complete!");
+  logger.success("Client ready initialization complete!");
 });
 
 client.on("interactionCreate", async (interaction) => {
@@ -47,7 +48,7 @@ client.on("interactionCreate", async (interaction) => {
     try {
       await vedbot.commands.get(interaction.commandName).execute(interaction);
     } catch (error) {
-      console.error(
+      logger.error(
         `Error for command ${interaction.commandName}`,
         interaction.options.data.map((opt) => `Opt '${opt.name}': ${opt.value}`),
         error
@@ -63,7 +64,7 @@ client.on("interactionCreate", async (interaction) => {
           ],
         });
       } catch (innerError) {
-        console.error("Failed to deliver error message also...", innerError);
+        logger.error("Failed to deliver error message also...", innerError);
       }
     }
   }
@@ -78,7 +79,7 @@ client.on("messageCreate", (message) => {
     try {
       if (canExecuteEvent(event, message.guild.id)) await event.onMessage?.(message);
     } catch (error) {
-      console.error(error);
+      logger.error(error);
     }
   });
 });
@@ -111,9 +112,9 @@ client.on("guildMemberRemove", (member) => {
 //     dhreactrolepicker?.onReactionRemove?.(reaction as MessageReaction, user as User);
 // });
 
-client.login(cfg.token).catch(console.error);
+client.login(cfg.token).catch(logger.error);
 
 process.on("SIGINT", async () => {
-  console.log("SIGINT caught!");
+  logger.warn("SIGINT caught!");
   await utils.exitBot();
 });

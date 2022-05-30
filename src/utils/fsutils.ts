@@ -4,13 +4,15 @@
 import fs from "fs";
 import Discord from "discord.js";
 import path from "path";
+import chalk from "chalk";
 import { BotCommand, BotConfig, BotEvent, Offerings, SupportedDepartment } from "./interface";
 import { srcrootdir, projrootdir } from "../rootdirname";
 import BotFileCollection from "./botfilecollection";
+import logger from "./logger";
 
 const botfiles = {
   loadAll: (...botFileCollections: BotFileCollection<BotCommand | BotEvent>[]): void => {
-    console.log("Loading BotFiles...");
+    logger.info("Loading BotFiles...");
     botFileCollections.forEach((collection) => {
       fs.readdirSync(path.join(srcrootdir, collection.rootdir))
         .filter((file) => file.endsWith(".js"))
@@ -20,7 +22,7 @@ const botfiles = {
         )
         .forEach(([filename, fileImport]) => {
           collection.set(filename.slice(0, -3), fileImport);
-          console.log(`Loaded BotFile: ${filename}`);
+          logger.info(`Loaded BotFile: ${chalk.green(filename)}`);
         });
     });
   },
@@ -30,7 +32,7 @@ const botfiles = {
     delete require.cache[require.resolve(filePath)];
     const reloadedFile: BotCommand | BotEvent = require(filePath).default;
     collection.set(filename, reloadedFile);
-    console.log(`Reloaded BotFile: ${filename}.js`);
+    logger.success(`Reloaded BotFile: ${filename}.js`);
   },
   getAllFileNamesSync: (...botFileCollections: BotFileCollection<BotCommand | BotEvent>[]): string[] =>
     botFileCollections
@@ -52,7 +54,7 @@ const config = {
   load: (): BotConfig => JSON.parse(fs.readFileSync(configPath, "utf8")),
   save: async (cfg: BotConfig): Promise<void> => {
     await fs.promises.writeFile(configPath, JSON.stringify(cfg, null, 2));
-    console.log("Saved config.json");
+    logger.success("Saved config.json");
   },
 };
 

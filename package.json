@@ -15,6 +15,7 @@
     "@discordjs/builders": "^0.13.0",
     "@discordjs/rest": "^0.4.1",
     "bilkent-scraper": "^1.0.1",
+    "chalk": "^4.1.2",
     "dayjs": "^1.11.2",
     "discord-api-types": "^0.33.1",
     "discord.js": "^13.7.0",

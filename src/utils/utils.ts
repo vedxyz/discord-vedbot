@@ -5,6 +5,7 @@ import { ApplicationCommandPermissionData, CommandInteraction, MessageEmbed, Sno
 import { endDatabaseConnection, ids } from "../database/database";
 import { cfg } from "../settings";
 import { BotEvent } from "./interface";
+import logger from "./logger";
 
 const trTime = (): Dayjs => dayjs().add(3, "hour");
 const getMealDateFormattedDay = (mealDay: MealDay): string => mealDay.date.format("dddd, DD/MM/YYYY");
@@ -67,7 +68,7 @@ const permissions = {
 };
 
 const exitBot = async (): Promise<void> => {
-  console.log("Exiting gracefully...");
+  logger.success("Exiting gracefully...");
   await endDatabaseConnection();
   process.exit();
 };
